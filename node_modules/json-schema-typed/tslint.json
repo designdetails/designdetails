@@ -1,0 +1,8 @@
+{
+  "extends": ["tslint-slick/library"],
+  "rules": {
+    "max-union-size": false,
+    "no-any": false,
+    "no-reserved-keywords": false
+  }
+}

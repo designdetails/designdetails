@@ -1,4 +1,5 @@
-# Design Details
+![Design Details](./static/img/dd-wide.png)
+
 A weekly conversation about design process and culture, hosted by [Brian Lovin](https://twitter.com/brian_lovin) and [Marshall Bock](https://twitter.com/marshallbock). Design Details is a member of the [Spec Network](https://spec.fm/) of podcasts.
 
 ### What to do

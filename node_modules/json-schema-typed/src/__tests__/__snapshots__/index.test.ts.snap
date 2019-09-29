@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Format 1`] = `
+Object {
+  "Date": "date",
+  "DateTime": "date-time",
+  "Email": "email",
+  "Hostname": "hostname",
+  "IDNEmail": "idn-email",
+  "IDNHostname": "idn-hostname",
+  "IPv4": "ipv4",
+  "IPv6": "ipv6",
+  "IRI": "iri",
+  "IRIReference": "iri-reference",
+  "JSONPointer": "json-pointer",
+  "JSONPointerURIFragment": "json-pointer-uri-fragment",
+  "RegEx": "regex",
+  "RelativeJSONPointer": "relative-json-pointer",
+  "Time": "time",
+  "URI": "uri",
+  "URIReference": "uri-reference",
+  "URITemplate": "uri-template",
+  "UUID": "uuid",
+}
+`;
+
+exports[`Keys 1`] = `
+Array [
+  "$comment",
+  "$id",
+  "$ref",
+  "$schema",
+  "additionalItems",
+  "additionalProperties",
+  "allOf",
+  "anyOf",
+  "const",
+  "contains",
+  "contentEncoding",
+  "contentMediaType",
+  "default",
+  "definitions",
+  "dependencies",
+  "description",
+  "else",
+  "enum",
+  "examples",
+  "exclusiveMaximum",
+  "exclusiveMinimum",
+  "format",
+  "if",
+  "items",
+  "maximum",
+  "maxItems",
+  "maxLength",
+  "maxProperties",
+  "minimum",
+  "minItems",
+  "minLength",
+  "minProperties",
+  "multipleOf",
+  "not",
+  "oneOf",
+  "pattern",
+  "patternProperties",
+  "properties",
+  "propertyNames",
+  "readOnly",
+  "required",
+  "then",
+  "title",
+  "type",
+  "uniqueItems",
+  "writeOnly",
+]
+`;
+
+exports[`Type 1`] = `
+Object {
+  "Array": "array",
+  "Boolean": "boolean",
+  "Integer": "integer",
+  "Null": "null",
+  "Number": "number",
+  "Object": "object",
+  "String": "string",
+}
+`;

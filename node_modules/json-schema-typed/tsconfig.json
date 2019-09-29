@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/tsconfig-slick/esnext.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "types": ["jest", "node"]
+  },
+  "exclude": ["./__meta__"]
+}
