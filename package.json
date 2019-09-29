@@ -1,7 +1,5 @@
 {
   "name": "design-details",
-  "version": "1.0.0",
-  "description": "The website for the Design Details Podcast",
   "scripts": {
     "dev": "next",
     "build": "next build",
