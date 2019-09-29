@@ -2,6 +2,7 @@ import App from 'next/app'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo';
 import SEO from '../config/next-seo'
+import theme from '../config/theme'
 
 class MyApp extends App {
   render() {
@@ -24,10 +25,10 @@ class MyApp extends App {
           <link rel="icon" type="image/png" sizes="96x96" href="/static/meta/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png" />
           <link rel="manifest" href="/static/manifest.json" />
-          <meta name="msapplication-TileColor" content="#49928F" />
+          <meta name="msapplication-TileColor" content={theme.brand.primary} />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="theme-color" content="#49928F" />
-          <link rel="mask-icon" href="/static/meta/website_icon.svg" color="#49928F"></link>
+          <meta name="theme-color" content={theme.brand.primary} />
+          <link rel="mask-icon" href="/static/meta/website_icon.svg" color={theme.brand.primary}></link>
         </Head>
         <Component {...pageProps} />
       </>
