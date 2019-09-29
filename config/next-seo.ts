@@ -7,7 +7,7 @@ export default {
     url: 'https://designdetails.fm',
     site_name: 'Design Details',
     images: [{
-      url: 'https://designdetails.fm/img/dd-wide.png',
+      url: 'https://designdetails.fm/static/img/dd-wide.png',
       width: 1600,
       height: 400,
       alt: 'Design Details'
