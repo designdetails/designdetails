@@ -1,7 +1,0 @@
-{
-  "automerge": true,
-  "extends": [
-    "config:base"
-  ],
-  "semanticCommits": true
-}

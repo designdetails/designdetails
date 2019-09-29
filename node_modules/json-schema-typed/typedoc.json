@@ -1,6 +1,0 @@
-{
-  "exclude": "**/__tests__/**",
-  "excludeNotExported": true,
-  "mode": "file",
-  "out": "docs"
-}
