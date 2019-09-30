@@ -58,6 +58,5 @@ export const DayOne = styled.div`
 
   svg {
     fill: #fff;
-    margin-top: -1px;
   }
 `

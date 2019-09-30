@@ -4,7 +4,7 @@ import { hexa } from '../utils'
 
 export const Grid = styled.div`
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 24px;
   grid-template-columns: repeat(4, 1fr);
 
   @media(max-width: 968px) {
@@ -24,7 +24,7 @@ export const Person = styled.div`
   border-radius: 8px;
   background: ${theme.ui.default};
   text-align: center;
-  padding: 16px;
+  padding: 24px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 
   a, button {
@@ -35,10 +35,10 @@ export const Person = styled.div`
 export const CoverPhoto = styled.img`
   width: 100%;
   height: 96px;
-  margin-left: -16px;
-  margin-top: -16px;
-  margin-right: -16px;
-  width: calc(100% + 32px);
+  margin-left: -24px;
+  margin-top: -24px;
+  margin-right: -24px;
+  width: calc(100% + 48px);
   border-radius: 8px 8px 0 0;
 `
 
