@@ -1,7 +1,6 @@
-import { Grid, Supporter, AvatarContainer, Avatar, DayOne } from './styles'
-import Tooltip from '../Tooltip'
+import { Grid, Supporter, AvatarContainer, Avatar } from './styles'
 import supporters from '../../config/supporters'
-import { Star } from '../Icons';
+import { StarCircle } from '../Icons';
 
 export default ({ state }) => {
   const selection = supporters.filter(supporter => supporter.state === state)
@@ -14,7 +13,7 @@ export default ({ state }) => {
         <Supporter key={supporter.name}>
         <AvatarContainer>
             <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
-            {supporter.dayOne && <DayOne><Star /></DayOne> }
+            {supporter.dayOne && <StarCircle /> }
           </AvatarContainer>
         
           {supporter.name}

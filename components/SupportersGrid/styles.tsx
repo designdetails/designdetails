@@ -34,29 +34,22 @@ export const AvatarContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+
+  svg {
+    fill: #901EEA;
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: relative;
+    top: 2px;
+    right: 14px;
+    background: #FDE8E6;
+    border-radius: 30px;
+    border: 2px solid #FDE8E6;
+  }
 `
 
 export const Avatar = styled.img`
   width: 44px;
   height: 44px;
   border-radius: 50%;
-`
-
-export const DayOne = styled.div`
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background: #901EEA;
-  align-self: flex-end;
-  justify-self: flex-end;
-  margin-left: -12px;
-  margin-top: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 4px #FDE8E6;
-
-  svg {
-    fill: #fff;
-  }
 `
