@@ -29,6 +29,8 @@ export const NavItem = styled.div`
   color: ${props => props.active ? theme.text.primary : theme.text.tertiary};
   border-bottom: 2px solid ${props => props.active ? theme.text.primary : 'transparent'};
   fill: blue;
+  position: relative;
+  bottom: -1px;
 
   svg {
     position: relative;
