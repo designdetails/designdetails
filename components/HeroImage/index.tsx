@@ -11,4 +11,8 @@ export default styled.img`
   @media(min-width: 1256px) {
     border-radius: 12px 12px 0 0;
   }
+
+  @media(max-width: 1256px) {
+    min-height: 1px;
+  }
 `

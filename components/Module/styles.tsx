@@ -33,7 +33,7 @@ export const Description = styled.p`
   font-size: 16px;
   font-weight: 500;
   max-width: 768px;
-  color: ${props => props.tint ? tint(props.tint, -20) : theme.text.secondary};
+  color: ${props => props.tint ? tint(props.tint, -30) : theme.text.secondary};
   margin: 0;
   margin-bottom: 16px;
   line-height: 1.4;
