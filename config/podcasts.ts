@@ -1,4 +1,3 @@
-import hosts from './hosts';
 import theme from './theme'
 
 export default {
@@ -18,7 +17,6 @@ export default {
   breakerUrl: 'https://www.breaker.audio/design-details',
   applePodcastId: '947191070',
   twitterUsername: 'designdetailsfm',
-  hosts: [hosts.marshallbock, hosts.brian_lovin],
   featuredEpisodes: [161416, 113490, 74759, 48685],
   colors: {
     text: theme.brand.primary,

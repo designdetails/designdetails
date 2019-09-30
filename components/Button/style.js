@@ -5,13 +5,13 @@ import theme from '../../config/theme';
 const getPadding = (size) => {
   switch (size) {
     case 'small':
-      return '4px 8px';
+      return '8px 12px';
     case 'default':
-      return '10px 20px';
+      return '12px 16px';
     case 'large':
-      return '14px 28px';
+      return '16px 2px';
     default: {
-      return '10px 20px';
+      return '12px 16px';
     }
   }
 };
@@ -37,7 +37,7 @@ const base = css`
   align-self: center;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: ${props => getFontSize(props.size)};
   font-weight: 600;
   white-space: nowrap;

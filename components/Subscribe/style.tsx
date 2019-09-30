@@ -5,7 +5,7 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 8px;
+  grid-gap: 4px;
   align-items: center;
   width: 100%;
 `
@@ -14,12 +14,12 @@ export const Option = styled.div`
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   grid-template-rows: auto;
-  grid-gap: 16px;
+  grid-gap: 12px;
   padding: 8px;
   border-radius: 8px;
   transition: all 0.1s ease-in-out;
-  margin: 0 -8px;
-  width: calc(100% + 16px);
+  margin: 0 -4px;
+  width: calc(100% + 8px);
 
   &:hover {
     transition: all 0.1s ease-in-out;

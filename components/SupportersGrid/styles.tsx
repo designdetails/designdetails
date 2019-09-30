@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import theme from '../../config/theme'
-import { hexa } from '../utils';
+import { tint, hexa } from '../utils';
 
 export const Grid = styled.div`
   display: grid;
@@ -22,12 +22,15 @@ export const Supporter = styled.div`
   display: flex;
   align-items: center;
   padding: 8px;
-  background: ${theme.ui.default};
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background: ${hexa(theme.social.patreon, 0.08)};
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
-  color: ${theme.text.secondary};
+  color: ${tint(theme.social.patreon, -50)};
+
+  &:hover {
+    background: ${hexa(theme.social.patreon, 0.12)};
+  }
 `
 
 export const AvatarContainer = styled.div`
@@ -56,7 +59,7 @@ export const DayOne = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 4px #fff;
+  box-shadow: 0 0 0 4px #FDE8E6;
 
   svg {
     fill: #fff;

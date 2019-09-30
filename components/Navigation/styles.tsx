@@ -9,6 +9,7 @@ export const Container = styled.div`
   border-bottom: 1px solid ${theme.ui.border};
   position: sticky;
   top: 0;
+  z-index: 999;
 `
 export const NavItem = styled.div`
   display: flex;

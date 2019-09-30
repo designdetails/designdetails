@@ -4,13 +4,14 @@ import Module from '../components/Module'
 import Subscribe from '../components/Subscribe'
 import Welcome from '../components/Welcome'
 import SupportersGrid from '../components/SupportersGrid'
-import { StarCircle, PlusCircle, HeartCircle, QuestionCircle, Twitter } from '../components/Icons'
+import Team from '../components/Team'
+import { StarCircle, PlusCircle, HeartCircle, QuestionCircle, TwitterCircle, InfoCircle } from '../components/Icons'
 import { PatreonButton, GitHubButton, TwitterButton } from '../components/Button'
 import theme from '../config/theme'
 
 const Home: NextPage = () => (
   <PageWrapper>
-    <Module col={'1 / span 2'}>
+    <Module style={{ alignSelf: 'flex-start'}} col={'1 / span 2'}>
       <Module.Title>
         <PlusCircle />
         Subscribe
@@ -55,17 +56,29 @@ const Home: NextPage = () => (
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
 
-    <Module tint={theme.social.twitter} col={'4 / span 3'}>
+    <Module style={{ alignSelf: 'flex-start' }} tint={theme.social.twitter} col={'4 / span 3'}>
       <Module.Title tint={theme.social.twitter}>
-        <Twitter />
+        <TwitterCircle />
         Follow along
       </Module.Title>
       <Module.Description tint={theme.social.twitter}>
         We'll be tweeting new episodes, polls, questions, and show updates. Follow us and say hi!
       </Module.Description>
-      <div style={{ marginTop: '32px' }}>
+      <a href="https://twitter.com/designdetailsfm" target="_blank" rel="noopener noreferrer">
         <TwitterButton>@designdetailsfm</TwitterButton>
-      </div>
+      </a>
+    </Module>
+
+    <Module col={'1 / span 6'}>
+      <Module.Title>
+        <InfoCircle />
+        Our team
+      </Module.Title>
+      <Module.Description>
+        It takes a four-person village to pull this show together. These are the people in that village. Except, we're distributed around the US and mostly just text each other. Anyways, if you want to see what we're up to, follow us on Twitter.
+      </Module.Description>
+      
+      <Team />
     </Module>
   </PageWrapper>
 )
