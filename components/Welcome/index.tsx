@@ -1,4 +1,5 @@
 import { Grid, Option } from './styles'
+import { Chevron } from '../Icons'
 
 const startingEpisodes = [
   {
@@ -34,7 +35,10 @@ const startingEpisodes = [
 export default () => (
   <Grid>
     {startingEpisodes.map(ep => (
-      <Option key={ep.title} target="_blank" rel="noopener noreferrer" href={ep.url}>{ep.title}</Option>
+      <Option key={ep.title} target="_blank" rel="noopener noreferrer" href={ep.url}>
+        <Chevron />
+        {ep.title}
+      </Option>
     ))}
   </Grid>
 )

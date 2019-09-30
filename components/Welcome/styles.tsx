@@ -16,6 +16,12 @@ export const Option = styled.a`
   width: 100%;
   display: flex;
   border-radius: 8px;
+  align-items: center;
+
+  svg {
+    fill: ${theme.brand.primary};
+    margin-right: 12px;
+  }
 
   &:hover {
     background: ${hexa(theme.brand.primary, 0.20)};
