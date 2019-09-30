@@ -1,5 +1,6 @@
 import HeroImage from '../HeroImage'
 import Navigation from '../Navigation'
+import Footer from '../Footer'
 import { Container, GridWrapper } from './styles'
 
 export default ({ children }) => (
@@ -9,5 +10,6 @@ export default ({ children }) => (
     <GridWrapper>
       {children}
     </GridWrapper>
+    <Footer />
   </Container>
 )
