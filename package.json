@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tippy.js/react": "^3.0.0",
     "next": "^9.0.7",
     "next-seo": "^2.1.0",
     "react": "^16.10.1",
