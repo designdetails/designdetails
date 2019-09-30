@@ -5,7 +5,7 @@ import Subscribe from '../components/Subscribe'
 import Welcome from '../components/Welcome'
 import SupportersGrid from '../components/SupportersGrid'
 import Team from '../components/Team'
-import { StarCircle, PlusCircle, HeartCircle, QuestionCircle, TwitterCircle, InfoCircle } from '../components/Icons'
+import { StarCircle, PlusCircle, HeartCircle, QuestionCircle, TwitterCircle, InfoCircle, SearchCircle } from '../components/Icons'
 import { PatreonButton, GitHubButton, TwitterButton } from '../components/Button'
 import theme from '../config/theme'
 
@@ -21,11 +21,11 @@ const Home: NextPage = () => (
 
     <Module tint={theme.brand.primary} col={'3 / span 4'}>
       <Module.Title tint={theme.brand.primary}>
-        <StarCircle />
+        <SearchCircle />
         Where to begin?
       </Module.Title>
       <Module.Description tint={theme.brand.primary}>
-        If you're new to the show, you've got a lot to catch up on. In the last five years we've recorded more than 300 episodes. Here are a few of our favorites that will help make your start a little easier!
+        In the last five years we've recorded more than 300 episodes. Here are a few of our favorites that will help make your start a little easier!
       </Module.Description>
       <Welcome />
     </Module>

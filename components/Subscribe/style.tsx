@@ -8,6 +8,7 @@ export const Grid = styled.div`
   grid-gap: 16px;
   align-items: center;
   width: 100%;
+  margin-top: 8px;
 `
 
 export const Option = styled.div`
