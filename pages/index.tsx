@@ -48,10 +48,10 @@ const Home: NextPage = () => (
     <Module col={'1 / span 3'}>
       <Module.Title>
         <QuestionCircle />
-        Ask a question
+        Have a question?
       </Module.Title>
       <Module.Description>
-        Got something on your mind? We'd love to help. Head over to our repo and create an issue, and we'll reply back when we discuss it. If you'd prefer to ask anonymously, you can email us or send us a message on Twitter.
+        We'd love to help. Head over to our repo and create an issue, and we'll reply back when we discuss it on the show. DM us if you'd like to ask a question anonymously.
       </Module.Description>
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
@@ -75,7 +75,7 @@ const Home: NextPage = () => (
         Our team
       </Module.Title>
       <Module.Description>
-        It takes a four-person village to pull this show together. These are the people in that village. Except, we're distributed around the US and mostly just text each other. Anyways, if you want to see what we're up to, follow us on Twitter.
+        It takes a four-person village to pull this show together. These are the people in that village. Except, we're distributed around the US and mostly just text each other. If you want to see what we're up to, follow us on Twitter.
       </Module.Description>
       
       <Team />
