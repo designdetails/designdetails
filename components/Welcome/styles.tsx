@@ -21,6 +21,8 @@ export const Option = styled.a`
   svg {
     fill: ${theme.brand.primary};
     margin-right: 12px;
+    min-width: 6px;
+    min-height: 9px;
   }
 
   &:hover {
@@ -30,5 +32,18 @@ export const Option = styled.a`
   &:last-of-type {
     border-bottom: 0;
     margin-bottom: 0;
+  }
+
+  @media(max-width: 512px) {
+    padding: 12px 0;
+    align-items: flex-start;
+
+    svg {
+      margin-top: 8px;
+    }
+
+    &:hover {
+      background: transparent;
+    }
   }
 `
