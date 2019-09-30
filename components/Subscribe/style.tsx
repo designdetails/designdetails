@@ -5,7 +5,7 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 4px;
+  grid-gap: 16px;
   align-items: center;
   width: 100%;
 `
@@ -14,28 +14,26 @@ export const Option = styled.div`
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   grid-template-rows: auto;
-  grid-gap: 12px;
+  grid-gap: 4px;
   padding: 8px;
   border-radius: 8px;
-  transition: all 0.1s ease-in-out;
   margin: 0 -4px;
   width: calc(100% + 8px);
+  background: rgba(0,0,0,0.04);
 
   &:hover {
-    transition: all 0.1s ease-in-out;
     background: rgba(0,0,0,0.08);
   }
 
   &:active {
     background: ${theme.ui.border};
     transform: translateY(1px);
-    transition: all 0.1s ease-in-out;
   }
 `
 
 export const Avatar = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 10px;
   background-color: ${theme.ui.default};
 `
