@@ -6,6 +6,7 @@ export default {
     wash: '#f6f7f8',
     default: '#fff',
     border: 'rgba(0,0,0,0.08)',
+    borderLight: 'rgba(0,0,0,0.04)',
   },
   icon: {
     primary: '#000',

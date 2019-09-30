@@ -3,9 +3,10 @@ import theme from '../../config/theme'
 import { hexa, tint } from '../utils'
 
 export const Container = styled.div`
-  background: ${props => props.tint ? hexa(props.tint, 0.08) : theme.ui.wash};
+  background: ${props => props.tint ? hexa(props.tint, 0.08) : theme.ui.borderLight};
   border-radius: 12px;
-  padding: 16px;
+  padding: 16px 20px;
+  display: grid;
   grid-column: ${props => props.col};
 
   @media(max-width: 768px) {
@@ -31,6 +32,7 @@ export const Title = styled.h3`
 export const Description = styled.p`
   font-size: 16px;
   font-weight: 500;
+  max-width: 768px;
   color: ${props => props.tint ? tint(props.tint, -20) : theme.text.secondary};
   margin: 0;
   margin-bottom: 16px;

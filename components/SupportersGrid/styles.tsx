@@ -22,15 +22,10 @@ export const Supporter = styled.div`
   display: flex;
   align-items: center;
   padding: 8px;
-  background: ${hexa(theme.social.patreon, 0.08)};
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   color: ${tint(theme.social.patreon, -50)};
-
-  &:hover {
-    background: ${hexa(theme.social.patreon, 0.12)};
-  }
 `
 
 export const AvatarContainer = styled.div`

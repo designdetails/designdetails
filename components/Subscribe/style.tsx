@@ -17,12 +17,11 @@ export const Option = styled.div`
   grid-gap: 4px;
   padding: 8px;
   border-radius: 8px;
-  margin: 0 -4px;
-  width: calc(100% + 8px);
-  background: rgba(0,0,0,0.04);
+  margin: 0 -8px;
+  width: calc(100% + 16px);
 
   &:hover {
-    background: rgba(0,0,0,0.08);
+    background: rgba(0,0,0,0.04);
   }
 
   &:active {

@@ -11,7 +11,7 @@ import theme from '../config/theme'
 
 const Home: NextPage = () => (
   <PageWrapper>
-    <Module style={{ alignSelf: 'flex-start'}} col={'1 / span 2'}>
+    <Module col={'1 / span 2'}>
       <Module.Title>
         <PlusCircle />
         Subscribe
@@ -56,7 +56,7 @@ const Home: NextPage = () => (
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
 
-    <Module style={{ alignSelf: 'flex-start' }} tint={theme.social.twitter} col={'4 / span 3'}>
+    <Module tint={theme.social.twitter} col={'4 / span 3'}>
       <Module.Title tint={theme.social.twitter}>
         <TwitterCircle />
         Follow along
@@ -64,7 +64,7 @@ const Home: NextPage = () => (
       <Module.Description tint={theme.social.twitter}>
         We'll be tweeting new episodes, polls, questions, and show updates. Follow us and say hi!
       </Module.Description>
-      <a href="https://twitter.com/designdetailsfm" target="_blank" rel="noopener noreferrer">
+      <a style={{ display: 'flex', alignItems: 'flex-end' }} href="https://twitter.com/designdetailsfm" target="_blank" rel="noopener noreferrer">
         <TwitterButton>@designdetailsfm</TwitterButton>
       </a>
     </Module>
