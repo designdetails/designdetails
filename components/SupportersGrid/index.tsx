@@ -13,7 +13,7 @@ export default ({ state }) => {
         
         <Supporter key={supporter.name}>
         <AvatarContainer>
-            <Avatar src={supporter.image} />
+            <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
             {supporter.dayOne && <DayOne><Star /></DayOne> }
           </AvatarContainer>
         

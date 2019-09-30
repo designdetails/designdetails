@@ -6,8 +6,8 @@ export default () => (
   <Grid>
     {team.map(person => (
       <Person key={person.twitterUsername}>
-        <CoverPhoto src={person.coverPhotoUrl} />
-        <Avatar src={person.profilePhotoUrl} />
+        <CoverPhoto alt={`${person.name}'s cover photo`} src={person.coverPhotoUrl} />
+        <Avatar alt={`${person.name}'s avatar`} src={person.profilePhotoUrl} />
         <Name>{person.name}</Name>
         <Role>{person.role}</Role>
         <a href={`https://twitter.com/${person.twitterUsername}`} target="_blank" rel="noopener norefferer">

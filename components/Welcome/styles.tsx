@@ -11,7 +11,7 @@ export const Grid = styled.div`
 
 export const Option = styled.a`
   padding: 12px;
-  color: ${tint(theme.brand.primary, -10)};
+  color: ${tint(theme.brand.primary, -30)};
   font-weight: 600;
   width: 100%;
   display: flex;
