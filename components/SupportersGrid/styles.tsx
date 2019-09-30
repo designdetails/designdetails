@@ -21,7 +21,7 @@ export const Grid = styled.div`
 export const Supporter = styled.div`
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
