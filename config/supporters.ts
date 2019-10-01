@@ -15,6 +15,7 @@ const randomPatreonImage = () => {
 export default [
   {
     name: 'Abhishek Warokar',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -22,6 +23,7 @@ export default [
 
   {
     name: 'Adam Carroll',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -29,6 +31,7 @@ export default [
 
   {
     name: 'Andrew Crandall',
+    twitterUsername: '',
     image: '/static/img/patreon/andrew_crandall.jpeg',
     state: 'active',
     dayOne: true
@@ -36,6 +39,7 @@ export default [
 
   {
     name: 'Aurora Pleguezuelo',
+    twitterUsername: '',
     image: '/static/img/patreon/aurora_pleguezuelo.jpe',
     state: 'active',
     dayOne: true
@@ -43,6 +47,7 @@ export default [
 
   {
     name: 'Brandon Weiss',
+    twitterUsername: '',
     image: '/static/img/patreon/brandon_weiss.jpeg',
     state: 'active',
     dayOne: true
@@ -50,6 +55,7 @@ export default [
 
   {
     name: 'Claudio Vallejo',
+    twitterUsername: '',
     image: '/static/img/patreon/claudio_vallejo.jpeg',
     state: 'active',
     dayOne: true
@@ -57,6 +63,7 @@ export default [
 
   {
     name: 'Cameron Campbell',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -64,6 +71,7 @@ export default [
 
   {
     name: 'Christian Ruiz',
+    twitterUsername: '',
     image: '/static/img/patreon/christian_ruiz.jpg',
     state: 'active',
     dayOne: true
@@ -71,6 +79,7 @@ export default [
 
   {
     name: 'Karl Koch',
+    twitterUsername: '_kejk',
     image: '/static/img/patreon/karl_koch.jpeg',
     state: 'active',
     dayOne: true
@@ -78,6 +87,7 @@ export default [
 
   {
     name: 'Doris Saturday',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -85,6 +95,7 @@ export default [
 
   {
     name: 'Effy Zhang',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -92,6 +103,7 @@ export default [
 
   {
     name: 'Essa Saulat',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -99,6 +111,7 @@ export default [
 
   {
     name: 'Jeff Parsons',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -106,6 +119,7 @@ export default [
 
   {
     name: 'Joseph Brueggen',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -113,6 +127,7 @@ export default [
 
   {
     name: 'Kris Puckett',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -120,6 +135,7 @@ export default [
 
   {
     name: 'Kyle Mitchell',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -127,6 +143,7 @@ export default [
 
   {
     name: 'MannnnnnyX',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -134,6 +151,7 @@ export default [
 
   {
     name: 'Max Stoiber',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -141,6 +159,7 @@ export default [
 
   {
     name: 'Sam Mason',
+    twitterUsername: '',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true

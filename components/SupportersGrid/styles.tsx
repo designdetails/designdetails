@@ -26,6 +26,12 @@ export const Supporter = styled.div`
   font-size: 16px;
   font-weight: 600;
   color: ${tint(theme.social.patreon, -50)};
+  
+  a {
+    text-decoration: none;
+    font-weight: 900;
+    color: ${tint(theme.social.patreon, -50)};
+  }
 `
 
 export const AvatarContainer = styled.div`
