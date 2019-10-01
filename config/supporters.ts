@@ -12,6 +12,8 @@ const randomPatreonImage = () => {
   return images[Math.floor(Math.random()*images.length)];
 }
 
+// Simply add a new Twitter display name inside the inverted commas. Once added, run a new build and deploy to see an updated Twitter URL for that Patreon supporter.
+
 export default [
   {
     name: 'Abhishek Warokar',
