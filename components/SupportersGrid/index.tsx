@@ -11,29 +11,29 @@ export default ({ state }) => {
     
   <Grid>
       {selection.map(supporter => (
-    <ConditionalWrap
-    condition={!!supporter.twitterUsername}
-    wrap={children => (
-      <Supporter key={supporter.twitterUsername}>
-        <AvatarContainer>
-            <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
-            {supporter.dayOne && <StarCircle /> }
-          </AvatarContainer>
-          <a href={`https://twitter.com/${supporter.twitterUsername}`} target="_blank" rel="noopener norefferer">
-          {supporter.name}
-          </a>
-        </Supporter>
-    )}
-    >
-    <Supporter key={supporter.name}>
-        <AvatarContainer>
-            <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
-            {supporter.dayOne && <StarCircle /> }
-          </AvatarContainer>
-          {supporter.name}
-        </Supporter>
-  </ConditionalWrap>
-  ))};
+      <ConditionalWrap
+      condition={!!supporter.twitterUsername}
+      wrap={children => (
+        <Supporter key={supporter.twitterUsername}>
+          <AvatarContainer>
+              <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
+              {supporter.dayOne && <StarCircle /> }
+            </AvatarContainer>
+            <a href={`https://twitter.com/${supporter.twitterUsername}`} target="_blank" rel="noopener norefferer">
+            {supporter.name}
+            </a>
+          </Supporter>
+      )}
+      >
+      <Supporter key={supporter.name}>
+          <AvatarContainer>
+              <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
+              {supporter.dayOne && <StarCircle /> }
+            </AvatarContainer>
+            {supporter.name}
+          </Supporter>
+    </ConditionalWrap>
+    ))}
   </Grid>
   )
 };
