@@ -35,7 +35,6 @@ export const AvatarContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
 
   svg {
     fill: #901EEA;
@@ -54,6 +53,8 @@ export const Avatar = styled.img`
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  min-width: 44px;
+  min-height: 44px;
 `
 
 export const Meta = styled.div`
