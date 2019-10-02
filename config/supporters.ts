@@ -1,3 +1,5 @@
+let curr = 0
+
 const randomPatreonImage = () => {
   const images = [
     '/static/img/patreon/random/1.png',
@@ -8,8 +10,13 @@ const randomPatreonImage = () => {
     '/static/img/patreon/random/6.png',
     '/static/img/patreon/random/7.png',
   ]
+  if (curr === 6) {
+    curr = 0
+  } else {
+    curr++
+  }
 
-  return images[Math.floor(Math.random()*images.length)];
+  return images[curr];
 }
 
 // Simply add a new Twitter display name inside the inverted commas. Once added, run a new build and deploy to see an updated Twitter URL for that Patreon supporter.
