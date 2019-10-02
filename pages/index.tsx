@@ -5,12 +5,15 @@ import Subscribe from '../components/Subscribe'
 import Welcome from '../components/Welcome'
 import SupportersGrid from '../components/SupportersGrid'
 import Team from '../components/Team'
-import { StarCircle, PlusCircle, HeartCircle, QuestionCircle, TwitterCircle, InfoCircle, SearchCircle } from '../components/Icons'
+import LatestEpisode from '../components/LatestEpisode'
+import { PlusCircle, HeartCircle, QuestionCircle, TwitterCircle, InfoCircle, SearchCircle } from '../components/Icons'
 import { PatreonButton, GitHubButton, TwitterButton } from '../components/Button'
 import theme from '../config/theme'
 
 const Home: NextPage = () => (
   <PageWrapper>
+    <LatestEpisode />
+
     <Module col={'1 / span 2'}>
       <Module.Title>
         <PlusCircle />

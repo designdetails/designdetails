@@ -26,20 +26,11 @@ export const Person = styled.div`
   text-align: center;
   padding: 24px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  margin-top: 8px;
 
   a, button {
     width: 100%;
   }
-`
-
-export const CoverPhoto = styled.img`
-  width: 100%;
-  height: 96px;
-  margin-left: -24px;
-  margin-top: -24px;
-  margin-right: -24px;
-  width: calc(100% + 48px);
-  border-radius: 8px 8px 0 0;
 `
 
 export const Avatar = styled.img`
@@ -47,8 +38,6 @@ export const Avatar = styled.img`
   height: 60px;
   border-radius: 60px;
   margin: 0 auto;
-  margin-top: -36px;
-  box-shadow: 0 0 0 4px #fff;
 `
 
 export const Name = styled.h4`
