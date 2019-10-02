@@ -1,4 +1,4 @@
-import { Grid, Supporter, AvatarContainer, Avatar } from './styles'
+import { Grid, Supporter, AvatarContainer, Avatar, Name, Username, Meta } from './styles'
 import supporters from '../../config/supporters'
 import { StarCircle } from '../Icons'
 import ConditionalWrap from 'conditional-wrap';
@@ -11,28 +11,25 @@ export default ({ state }) => {
     
   <Grid>
       {selection.map(supporter => (
-      <ConditionalWrap
-      condition={!!supporter.twitterUsername}
-      wrap={children => (
-        <Supporter key={supporter.twitterUsername}>
-          <AvatarContainer>
+        <Supporter key={supporter.name}>
+          <ConditionalWrap
+            condition={!!supporter.twitterUsername}
+            wrap={children => (
+              <a href={`https://twitter.com/${supporter.twitterUsername}`} target="_blank" rel="noopener norefferer">
+                {children}
+              </a>
+            )}
+          >
+            <AvatarContainer>
               <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
               {supporter.dayOne && <StarCircle /> }
             </AvatarContainer>
-            <a href={`https://twitter.com/${supporter.twitterUsername}`} target="_blank" rel="noopener norefferer">
-            {supporter.name}
-            </a>
-          </Supporter>
-      )}
-      >
-      <Supporter key={supporter.name}>
-          <AvatarContainer>
-              <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
-              {supporter.dayOne && <StarCircle /> }
-            </AvatarContainer>
-            {supporter.name}
-          </Supporter>
-    </ConditionalWrap>
+            <Meta>
+              <Name>{supporter.name}</Name>
+              {supporter.twitterUsername && <Username>@{supporter.twitterUsername}</Username>}
+            </Meta>
+        </ConditionalWrap>
+      </Supporter>
     ))}
   </Grid>
   )

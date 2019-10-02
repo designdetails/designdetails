@@ -23,14 +23,10 @@ export const Supporter = styled.div`
   align-items: center;
   padding: 8px 8px 8px 0;
   border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: ${tint(theme.social.patreon, -50)};
-  
+
   a {
-    text-decoration: none;
-    font-weight: 900;
-    color: ${tint(theme.social.patreon, -50)};
+    display: flex;
+    width: 100%;
   }
 `
 
@@ -58,4 +54,21 @@ export const Avatar = styled.img`
   width: 44px;
   height: 44px;
   border-radius: 50%;
+`
+
+export const Meta = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Name = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  color: ${tint(theme.social.patreon, -50)};
+`
+
+export const Username = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${tint(theme.social.patreon, -40)};
 `
