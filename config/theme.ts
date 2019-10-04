@@ -4,7 +4,7 @@ export default {
   },
   ui: {
     wash: '#f6f7f8',
-    default: '#fff',
+    default: '#ffffff',
     border: 'rgba(0,0,0,0.08)',
     borderLight: 'rgba(0,0,0,0.04)',
   },
@@ -14,9 +14,9 @@ export default {
     tertiary: 'rgba(0,0,0,0.4)',
   },
   text: {
-    primary: '#000 ',
-    secondary: '#333',
-    tertiary: '#555',
+    primary: '#000000',
+    secondary: '#333333',
+    tertiary: '#555555',
   },
   social: {
     patreon: '#F86754',

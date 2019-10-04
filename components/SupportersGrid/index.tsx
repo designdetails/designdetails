@@ -44,7 +44,7 @@ export default ({ state }) => {
               >
                 <AvatarContainer>
                   <Avatar alt={`${supporter.name}'s profile photo`} src={supporter.image} />
-                  {supporter.dayOne && <StarCircle /> }
+                  {supporter.dayOne ? <StarCircle /> : <div style={{width:'20px'}} /> }
                 </AvatarContainer>
                 <Meta>
                   <Name>{supporter.name}</Name>

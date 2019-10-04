@@ -32,7 +32,7 @@ export const golden = [
 
 export default [
   {
-    name: 'Abhishek Warokar',
+    name: 'Adam Carroll',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',
@@ -40,11 +40,11 @@ export default [
   },
 
   {
-    name: 'Adam Carroll',
+    name: 'Alec Sukoski',
     twitterUsername: null,
-    image: randomPatreonImage(),
+    image: '/static/img/patreon/alec_sukoski.jpg',
     state: 'active',
-    dayOne: true
+    dayOne: false
   },
 
   {
@@ -64,17 +64,17 @@ export default [
   },
 
   {
-    name: 'Brandon Weiss',
+    name: 'Bradford Ulrich',
     twitterUsername: null,
-    image: '/static/img/patreon/brandon_weiss.jpeg',
+    image: randomPatreonImage(),
     state: 'active',
-    dayOne: true
+    dayOne: false
   },
 
   {
-    name: 'Claudio Vallejo',
+    name: 'Brandon Weiss',
     twitterUsername: null,
-    image: '/static/img/patreon/claudio_vallejo.jpeg',
+    image: '/static/img/patreon/brandon_weiss.jpeg',
     state: 'active',
     dayOne: true
   },
@@ -88,6 +88,14 @@ export default [
   },
 
   {
+    name: 'Claudio Vallejo',
+    twitterUsername: null,
+    image: '/static/img/patreon/claudio_vallejo.jpeg',
+    state: 'active',
+    dayOne: true
+  },
+
+  {
     name: 'Christian Ruiz',
     twitterUsername: null,
     image: '/static/img/patreon/christian_ruiz.jpg',
@@ -96,11 +104,11 @@ export default [
   },
 
   {
-    name: 'Karl Koch',
-    twitterUsername: '_kejk',
-    image: '/static/img/patreon/karl_koch.jpeg',
+    name: 'Derek Graham',
+    twitterUsername: null,
+    image: randomPatreonImage(),
     state: 'active',
-    dayOne: true
+    dayOne: false
   },
 
   {
@@ -136,9 +144,33 @@ export default [
   },
 
   {
+    name: 'John Wood',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: true
+  },
+
+  {
     name: 'Joseph Brueggen',
     twitterUsername: null,
     image: randomPatreonImage(),
+    state: 'active',
+    dayOne: true
+  },
+
+  {
+    name: 'Justin Allen',
+    twitterUsername: null,
+    image: '/static/img/patreon/justin_allen.jpeg',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Karl Koch',
+    twitterUsername: '_kejk',
+    image: '/static/img/patreon/karl_koch.jpeg',
     state: 'active',
     dayOne: true
   },
@@ -168,11 +200,27 @@ export default [
   },
 
   {
+    name: 'Manuel Solera',
+    twitterUsername: null,
+    image: '/static/img/patreon/manuel_solera.jpeg',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Max Stoiber',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
+  },
+
+  {
+    name: 'Sam Bernhardt',
+    twitterUsername: null,
+    image: '/static/img/patreon/sam_bernhardt.jpeg',
+    state: 'active',
+    dayOne: false
   },
 
   {

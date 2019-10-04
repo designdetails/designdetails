@@ -22,7 +22,7 @@ export const Grid = styled.div`
 
 export const Person = styled.div`
   border-radius: 8px;
-  background: ${theme.ui.default};
+  background: ${hexa(theme.ui.default, 0.5)};
   text-align: center;
   padding: 24px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);

@@ -38,7 +38,7 @@ export const MicAvatar = styled.img`
 export const MicName = styled.p`
   font-size: 18px;
   font-weight: 600;
-  color: ${theme.text.primary};
+  color: ${tint(theme.social.patreon, -50)};
   margin: 0;
   margin-top: 12px;
 `
@@ -46,7 +46,7 @@ export const MicName = styled.p`
 export const MicTagline = styled.p`
   font-size: 16px;
   font-weight: 500;
-  color: ${theme.text.secondary};
+  color: ${tint(theme.social.patreon, -40)};
   margin: 0;
   margin-bottom: 16px;
 `
