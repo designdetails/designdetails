@@ -18,6 +18,40 @@ export const Grid = styled.div`
   }
 `
 
+export const Microphone = styled.a`
+  display: flex;
+  flex: 1 0 33%;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+
+  &:hover {
+    background: ${tint('#FDE8E6', -4)};
+  }
+`
+
+export const MicAvatar = styled.img`
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+`
+
+export const MicName = styled.p`
+  font-size: 18px;
+  font-weight: 600;
+  color: ${theme.text.primary};
+  margin: 0;
+  margin-top: 12px;
+`
+
+export const MicTagline = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${theme.text.secondary};
+  margin: 0;
+  margin-bottom: 16px;
+`
+
 export const Supporter = styled.div`
   display: flex;
   align-items: center;

@@ -19,6 +19,15 @@ const randomPatreonImage = () => {
   return images[curr];
 }
 
+export const golden = [
+  {
+    name: 'Sisu',
+    imageUrl: '/static/img/patreon/golden/sisu.png',
+    url: 'https://sisu.ai/',
+    tagline: 'Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at sisu.ai.'
+  }
+]
+
 // Simply add a new Twitter display name inside the inverted commas. Once added, run a new build and deploy to see an updated Twitter URL for that Patreon supporter.
 
 export default [
