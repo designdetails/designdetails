@@ -82,12 +82,15 @@ export const AvatarContainer = styled.div`
   }
 `
 
-export const Avatar = styled.img`
+export const Avatar = styled.div`
   width: 44px;
   height: 44px;
   border-radius: 50%;
   min-width: 44px;
   min-height: 44px;
+  background: url('${props => props.src}');
+  background-size: cover;
+  background-position: 50% 50%;
 `
 
 export const Meta = styled.div`
