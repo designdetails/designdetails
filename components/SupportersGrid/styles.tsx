@@ -33,7 +33,6 @@ export const Microphone = styled.a`
 export const MicAvatar = styled.img`
   width: 60px;
   height: 60px;
-  border-radius: 60px;
 `
 
 export const MicName = styled.p`
