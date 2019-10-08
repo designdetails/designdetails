@@ -57,10 +57,18 @@ export default [
 
   {
     name: 'Aurora Pleguezuelo',
-    twitterUsername: null,
+    twitterUsername: 'auareyou',
     image: '/static/img/patreon/aurora_pleguezuelo.jpe',
     state: 'active',
     dayOne: true
+  },
+
+  {
+    name: 'Bob Weisbecker',
+    twitterUsername: null,
+    image: '/static/img/patreon/bob_weisbecker.jpeg',
+    state: 'active',
+    dayOne: false
   },
 
   {
@@ -73,7 +81,7 @@ export default [
 
   {
     name: 'Brandon Weiss',
-    twitterUsername: null,
+    twitterUsername: 'brandon_weiss',
     image: '/static/img/patreon/brandon_weiss.jpeg',
     state: 'active',
     dayOne: true
@@ -97,10 +105,18 @@ export default [
 
   {
     name: 'Christian Ruiz',
-    twitterUsername: null,
+    twitterUsername: 'razgriz94',
     image: '/static/img/patreon/christian_ruiz.jpg',
     state: 'active',
     dayOne: true
+  },
+
+  {
+    name: 'Danny Haagen',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
   },
 
   {
@@ -144,6 +160,14 @@ export default [
   },
 
   {
+    name: 'Jing Zhang',
+    twitterUsername: null,
+    image: '/static/img/patreon/jing_zhang.jpeg',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'John Wood',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -153,7 +177,7 @@ export default [
 
   {
     name: 'Joseph Brueggen',
-    twitterUsername: null,
+    twitterUsername: 'josephbrueggen',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
@@ -209,10 +233,34 @@ export default [
 
   {
     name: 'Max Stoiber',
-    twitterUsername: null,
+    twitterUsername: 'mxstbr',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
+  },
+
+  {
+    name: 'Melinda Yang',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Paul Dippold',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Ryan Parag',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
   },
 
   {
