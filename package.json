@@ -9,7 +9,7 @@
     "@tippy.js/react": "^3.0.0",
     "conditional-wrap": "^1.0.0",
     "next": "^9.0.7",
-    "next-seo": "^2.1.0",
+    "next-seo": "^2.1.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.2",
     "styled-components": "^4.4.0",
