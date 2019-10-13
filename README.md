@@ -18,6 +18,45 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [Breaker](https://www.breaker.audio/design-details)
 - [RSS Feed](http://simplecast.fm/podcasts/1034/rss)
 
+### Made possible by
+- [Sisu](https://sisu.ai) - Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at [sisu.ai](https://sisu.ai).
+
+### [Supporters](https://patreon.com/designdetails)
+- Adam Carroll
+- Alec Sukoski
+- Andrew Crandall
+- Aurora Pleguezuelo [@auareyou](https://twitter.com/auareyou)
+- Bob Weisbecker
+- Bradford Ulrich
+- Brandon Weiss [@brandon_weiss](https://twitter.com/brandon_weiss)
+- Cameron Campbell
+- Claudio Vallejo
+- Christian Ruiz [@razgriz94](https://twitter.com/razgriz94)
+- Danny Haagen
+- Derek Graham
+- Doris Saturday
+- Effy Zhang
+- Essa Saulat
+- James Lyons
+- Jeff Parsons
+- Jing Zhang
+- John Wood
+- Joseph Brueggen [@josephbrueggen](https://twitter.com/josephbrueggen)
+- Justin Allen
+- Karl Koch [@_kejk](https://twitter.com/_kejk)
+- Kris Puckett
+- Kyle Mitchell
+- MannnnnnyX
+- Manuel Solera
+- Max Stoiber [@mxstbr](https://twitter.com/mxstbr)
+- Melinda Yang
+- Mike Hickman
+- Paul Dippold
+- Ryan Parag
+- Sam Bernhardt
+- Sam Mason
+- Vtine Ubaldo
+
 ### Team
 - [@marshallbock](https://twitter.com/marshallbock)
 - [@brian_lovin](https://twitter.com/brian_lovin)

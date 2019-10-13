@@ -152,6 +152,14 @@ export default [
   },
 
   {
+    name: 'James Lyons',
+    twitterUsername: null,
+    image: '/static/img/patreon/james_lyons.png',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Jeff Parsons',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -248,6 +256,14 @@ export default [
   },
 
   {
+    name: 'Mike Hickman',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Paul Dippold',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -277,5 +293,13 @@ export default [
     image: randomPatreonImage(),
     state: 'active',
     dayOne: true
+  },
+
+  {
+    name: 'Vtine Ubaldo',
+    twitterUsername: null,
+    image: '/static/img/patreon/vtine_ubaldo.jpeg',
+    state: 'active',
+    dayOne: false
   },
 ]
