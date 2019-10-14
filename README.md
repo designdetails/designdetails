@@ -31,7 +31,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Brandon Weiss [@brandon_weiss](https://twitter.com/brandon_weiss)
 - Cameron Campbell
 - Claudio Vallejo
-- Christian Ruiz [@razgriz94](https://twitter.com/razgriz94)
+- Cristian Ruiz [@razgriz94](https://twitter.com/razgriz94)
 - Danny Haagen
 - Derek Graham
 - Doris Saturday
