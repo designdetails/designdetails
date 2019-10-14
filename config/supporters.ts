@@ -104,9 +104,9 @@ export default [
   },
 
   {
-    name: 'Christian Ruiz',
+    name: 'Cristian Ruiz',
     twitterUsername: 'razgriz94',
-    image: '/static/img/patreon/christian_ruiz.jpg',
+    image: '/static/img/patreon/cristian_ruiz.jpg',
     state: 'active',
     dayOne: true
   },
