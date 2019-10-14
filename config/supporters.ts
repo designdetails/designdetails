@@ -296,7 +296,7 @@ export default [
   },
 
   {
-    name: 'Vtine Ubaldo',
+    name: 'Valentine Ubaldo',
     twitterUsername: null,
     image: '/static/img/patreon/vtine_ubaldo.jpeg',
     state: 'active',
