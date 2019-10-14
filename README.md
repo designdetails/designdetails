@@ -55,7 +55,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Ryan Parag
 - Sam Bernhardt
 - Sam Mason
-- Vtine Ubaldo
+- Valentine Ubaldo
 
 ### Team
 - [@marshallbock](https://twitter.com/marshallbock)
