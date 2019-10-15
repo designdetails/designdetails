@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { hexa, tint } from '../utils';
 import theme from '../../config/theme';
 
-const getPadding = (size) => {
+const getPadding = size => {
   switch (size) {
     case 'small':
       return '8px 12px';
@@ -16,7 +16,7 @@ const getPadding = (size) => {
   }
 };
 
-const getFontSize = (size) => {
+const getFontSize = size => {
   switch (size) {
     case 'small':
       return '14px';
@@ -76,10 +76,7 @@ export const Button = styled.button`
   border: 1px solid ${theme.ui.border};
   color: ${theme.text.secondary};
   background-color: ${theme.ui.default};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.ui.default}, ${
-      theme.bg.wash
-    })`};
+  background-image: ${`linear-gradient(to bottom, ${theme.ui.default}, ${theme.ui.wash})`};
   
   &:hover {
     color: ${theme.text.primary};
@@ -87,51 +84,40 @@ export const Button = styled.button`
 
   &:active {
     border: 1px solid ${theme.ui.border};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.ui.default}, ${
-        theme.bg.wash
-      })`};
+    background-image: ${`linear-gradient(to top, ${theme.ui.default}, ${theme.ui.wash})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props => theme.ui.default}, 0 0 0 3px ${
-  theme.ui.border
-};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${theme.ui.border};
   }
 `;
 
 export const PrimaryButton = styled.button`
   ${base}
-  border: 1px solid ${theme.brand.default};
+  border: 1px solid ${theme.brand.primary};
   color: ${theme.ui.default};
-  background-color: ${theme.brand.alt};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.brand.alt}, ${
-      theme.brand.default
-    })`};
+  background-color: ${theme.brand.primary};
+  background-image: ${`linear-gradient(to bottom, ${theme.brand.primary}, ${theme.brand.primary})`};
 
   &:hover {
     color: ${theme.ui.default};
-    background-image: ${props =>
-      `linear-gradient(to bottom, ${tint(theme.brand.alt, 16)}, ${tint(
-        theme.brand.default,
-        16
-      )})`};
+    background-image: ${`linear-gradient(to bottom, ${tint(
+      theme.brand.primary,
+      16
+    )}, ${tint(theme.brand.primary, 16)})`};
     box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
-    border: 1px solid ${theme.brand.default};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.brand.alt}, ${
-        theme.brand.default
-      })`};
+    border: 1px solid ${theme.brand.primary};
+    background-image: ${`linear-gradient(to top, ${theme.brand.primary}, ${theme.brand.primary})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props =>
-      theme.ui.default}, 0 0 0 3px ${props =>
-  hexa(theme.brand.alt, 0.16)};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
+  theme.brand.primary,
+  0.16
+)};
   }
 `;
 
@@ -143,14 +129,14 @@ export const GhostButton = styled.button`
   background-image: none;
 
   &:hover {
-    background: ${props => tint(theme.bg.wash, -3)};
+    background: ${tint(theme.ui.wash, -3)};
     color: ${theme.text.primary};
     box-shadow: none;
   }
 
   &:focus {
     box-shadow: 0 0 0 1px ${theme.ui.default},
-      0 0 0 3px ${props => hexa(theme.text.tertiary, 0.08)};
+      0 0 0 3px ${hexa(theme.text.tertiary, 0.08)};
   }
 `;
 
@@ -172,9 +158,7 @@ export const OutlineButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props => theme.ui.default}, 0 0 0 3px ${
-  theme.ui.border
-};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${theme.ui.border};
   }
 `;
 
@@ -225,7 +209,7 @@ export const ButtonSegmentRow = styled.div`
   ${PrimaryButton} {
     &:focus {
       box-shadow: 0 0 0 1px ${theme.ui.default},
-        0 0 0 3px ${props => hexa(theme.brand.alt, 0.16)};
+        0 0 0 3px ${hexa(theme.brand.primary, 0.16)};
     }
   }
 `;
@@ -235,33 +219,27 @@ export const FacebookButton = styled.button`
   border: 1px solid ${theme.social.facebook};
   color: ${theme.ui.default};
   background-color: ${theme.social.facebook};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.social.facebook}, ${
-      theme.social.facebook
-    })`};
+  background-image: ${`linear-gradient(to bottom, ${theme.social.facebook}, ${theme.social.facebook})`};
 
   &:hover {
     color: ${theme.ui.default};
-    background-image: ${props =>
-      `linear-gradient(to bottom, ${tint(
-        theme.social.facebook,
-        16
-      )}, ${tint(theme.social.facebook, 16)})`};
+    background-image: ${`linear-gradient(to bottom, ${tint(
+      theme.social.facebook,
+      16
+    )}, ${tint(theme.social.facebook, 16)})`};
     box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.facebook};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.social.facebook}, ${
-        theme.social.facebook
-      })`};
+    background-image: ${`linear-gradient(to top, ${theme.social.facebook}, ${theme.social.facebook})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props =>
-      theme.ui.default}, 0 0 0 3px ${props =>
-  hexa(theme.social.facebook, 0.16)};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
+  theme.social.facebook,
+  0.16
+)};
   }
 `;
 
@@ -270,33 +248,27 @@ export const TwitterButton = styled.button`
   border: 1px solid ${theme.social.twitter};
   color: ${theme.ui.default};
   background-color: ${theme.social.twitter};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.social.twitter}, ${
-      theme.social.twitter
-    })`};
+  background-image: ${`linear-gradient(to bottom, ${theme.social.twitter}, ${theme.social.twitter})`};
 
   &:hover {
     color: ${theme.ui.default};
-    background-image: ${props =>
-      `linear-gradient(to bottom, ${tint(
-        theme.social.twitter,
-        4
-      )}, ${tint(theme.social.twitter, 4)})`};
+    background-image: ${`linear-gradient(to bottom, ${tint(
+      theme.social.twitter,
+      4
+    )}, ${tint(theme.social.twitter, 4)})`};
     box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.twitter};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.social.twitter}, ${
-        theme.social.twitter
-      })`};
+    background-image: ${`linear-gradient(to top, ${theme.social.twitter}, ${theme.social.twitter})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props =>
-      theme.ui.default}, 0 0 0 3px ${props =>
-  hexa(theme.social.twitter, 0.16)};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
+  theme.social.twitter,
+  0.16
+)};
   }
 
   svg {
@@ -309,34 +281,28 @@ export const PatreonButton = styled.button`
   border: 1px solid ${theme.social.patreon};
   color: ${theme.ui.default};
   background-color: ${theme.social.patreon};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.social.patreon}, ${
-      theme.social.patreon
-    })`};
+  background-image: ${`linear-gradient(to bottom, ${theme.social.patreon}, ${theme.social.patreon})`};
 
 
   &:hover {
     color: ${theme.ui.default};
-    background-image: ${props =>
-      `linear-gradient(to bottom, ${tint(
-        theme.social.patreon,
-        4
-      )}, ${tint(theme.social.patreon, 4)})`};
+    background-image: ${`linear-gradient(to bottom, ${tint(
+      theme.social.patreon,
+      4
+    )}, ${tint(theme.social.patreon, 4)})`};
     box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.patreon};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.social.patreon}, ${
-        theme.social.patreon
-      })`};
+    background-image: ${`linear-gradient(to top, ${theme.social.patreon}, ${theme.social.patreon})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props =>
-      theme.ui.default}, 0 0 0 3px ${props =>
-  hexa(theme.social.patreon, 0.16)};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
+  theme.social.patreon,
+  0.16
+)};
   }
 `;
 
@@ -345,34 +311,28 @@ export const GitHubButton = styled.button`
   border: 1px solid ${theme.social.github};
   color: ${theme.ui.default};
   background-color: ${theme.social.github};
-  background-image: ${props =>
-    `linear-gradient(to bottom, ${theme.social.github}, ${
-      theme.social.github
-    })`};
+  background-image: ${`linear-gradient(to bottom, ${theme.social.github}, ${theme.social.github})`};
 
 
   &:hover {
     color: ${theme.ui.default};
-    background-image: ${props =>
-      `linear-gradient(to bottom, ${tint(
-        theme.social.github,
-        4
-      )}, ${tint(theme.social.github, 4)})`};
+    background-image: ${`linear-gradient(to bottom, ${tint(
+      theme.social.github,
+      4
+    )}, ${tint(theme.social.github, 4)})`};
     box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.github};
-    background-image: ${props =>
-      `linear-gradient(to top, ${theme.social.github}, ${
-        theme.social.github
-      })`};
+    background-image: ${`linear-gradient(to top, ${theme.social.github}, ${theme.social.github})`};
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${props =>
-      theme.ui.default}, 0 0 0 3px ${props =>
-  hexa(theme.social.github, 0.16)};
+    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
+  theme.social.github,
+  0.16
+)};
   }
 
   svg {

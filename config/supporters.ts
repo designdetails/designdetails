@@ -1,4 +1,4 @@
-let curr = 0
+let curr = 0;
 
 const randomPatreonImage = () => {
   const images = [
@@ -8,25 +8,26 @@ const randomPatreonImage = () => {
     '/static/img/patreon/random/4.png',
     '/static/img/patreon/random/5.png',
     '/static/img/patreon/random/6.png',
-    '/static/img/patreon/random/7.png',
-  ]
+    '/static/img/patreon/random/7.png'
+  ];
   if (curr === 6) {
-    curr = 0
+    curr = 0;
   } else {
-    curr++
+    curr++;
   }
 
   return images[curr];
-}
+};
 
 export const golden = [
   {
     name: 'Sisu',
     imageUrl: '/static/img/patreon/golden/sisu.png',
     url: 'https://sisu.ai/',
-    tagline: 'Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at sisu.ai.'
+    tagline:
+      'Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at sisu.ai.'
   }
-]
+];
 
 // Simply add a new Twitter display name inside the inverted commas. Once added, run a new build and deploy to see an updated Twitter URL for that Patreon supporter.
 
@@ -301,5 +302,5 @@ export default [
     image: '/static/img/patreon/vtine_ubaldo.jpeg',
     state: 'active',
     dayOne: false
-  },
-]
+  }
+];

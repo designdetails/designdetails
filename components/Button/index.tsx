@@ -20,5 +20,5 @@ export {
   PatreonButton,
   GitHubButton,
   ButtonRow,
-  ButtonSegmentRow,
+  ButtonSegmentRow
 };

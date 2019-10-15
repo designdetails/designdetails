@@ -1,4 +1,4 @@
-import theme from './theme'
+import theme from './theme';
 
 export default {
   id: 1034,
@@ -20,6 +20,6 @@ export default {
   featuredEpisodes: [161416, 113490, 74759, 48685],
   colors: {
     text: theme.brand.primary,
-    button: theme.brand.primary,
-  },
-}
+    button: theme.brand.primary
+  }
+};

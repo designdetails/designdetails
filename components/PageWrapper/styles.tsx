@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import theme from '../../config/theme'
+import styled from 'styled-components';
+import theme from '../../config/theme';
 
 export const Container = styled.div`
   background: ${theme.ui.wash};
@@ -8,11 +8,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media(min-width: 1256px) {
+  @media (min-width: 1256px) {
     margin: 32px auto;
     border-radius: 12px;
   }
-`
+`;
 export const GridWrapper = styled.div`
   display: grid;
   width: 100%;
@@ -21,11 +21,11 @@ export const GridWrapper = styled.div`
   grid-gap: 24px;
   padding-top: 24px;
 
-  @media(max-width: 1256px) {
+  @media (max-width: 1256px) {
     padding: 24px;
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`
+`;

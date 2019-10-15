@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import theme from '../../config/theme';
 
 export default styled.img`
@@ -8,11 +8,11 @@ export default styled.img`
   margin: 0;
   background: ${theme.brand.primary};
 
-  @media(min-width: 1256px) {
+  @media (min-width: 1256px) {
     border-radius: 12px 12px 0 0;
   }
 
-  @media(max-width: 1256px) {
+  @media (max-width: 1256px) {
     min-height: 1px;
   }
-`
+`;

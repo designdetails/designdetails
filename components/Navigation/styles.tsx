@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import theme from '../../config/theme'
+import styled from 'styled-components';
+import theme from '../../config/theme';
 
 export const Container = styled.div`
   display: flex;
@@ -14,20 +14,21 @@ export const Container = styled.div`
   z-index: 999;
   border-radius: 0 0 12px 12px;
 
-  @media(max-width: 1256px) {
+  @media (max-width: 1256px) {
     border-radius: 0;
     border-left: 0;
     border-right: 0;
   }
-`
+`;
 export const NavItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
   font-weight: 500;
-  color: ${props => props.active ? theme.text.primary : theme.text.tertiary};
-  border-bottom: 2px solid ${props => props.active ? theme.text.primary : 'transparent'};
+  color: ${props => (props.active ? theme.text.primary : theme.text.tertiary)};
+  border-bottom: 2px solid
+    ${props => (props.active ? theme.text.primary : 'transparent')};
   fill: blue;
   position: relative;
   bottom: -1px;
@@ -40,12 +41,14 @@ export const NavItem = styled.div`
   }
 
   &:hover {
-    color: ${props => props.active ? theme.text.primary : theme.text.secondary};
-    border-bottom: 2px solid ${props => props.active ? theme.text.primary : theme.ui.border};
+    color: ${props =>
+      props.active ? theme.text.primary : theme.text.secondary};
+    border-bottom: 2px solid
+      ${props => (props.active ? theme.text.primary : theme.ui.border)};
 
     svg {
       margin-left: 8px;
       fill: ${theme.icon.secondary};
     }
   }
-`
+`;

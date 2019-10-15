@@ -1,10 +1,8 @@
-import { Container, Title, Description } from './styles'
+import { Container, Title, Description } from './styles';
 
-const Module = props => (
-  <Container {...props} />
-)
+const Module = props => <Container {...props} />;
 
-Module.Title = Title
-Module.Description = Description
+Module.Title = Title;
+Module.Description = Description;
 
-export default Module
+export default Module;
