@@ -4,7 +4,7 @@ export default [
     role: 'Co-host',
     twitterUsername: 'brian_lovin',
     profilePhotoUrl: '/static/img/team/brian_lovin.jpg',
-    coverPhotoUrl: '/static/img/team/brian_lovin_cover.jpeg',
+    coverPhotoUrl: '/static/img/team/brian_lovin_cover.jpeg'
   },
   {
     name: 'Marshall Bock',
@@ -26,5 +26,5 @@ export default [
     twitterUsername: 'luperdev',
     profilePhotoUrl: '/static/img/team/luperdev.jpg',
     coverPhotoUrl: '/static/img/team/luperdev_cover.jpeg'
-  },
-]
+  }
+];

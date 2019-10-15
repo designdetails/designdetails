@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import theme from '../../config/theme'
-import { tint, hexa } from '../utils';
+import styled from 'styled-components';
+import theme from '../../config/theme';
+import { tint } from '../utils';
 
 export const Grid = styled.div`
   display: grid;
@@ -9,14 +9,14 @@ export const Grid = styled.div`
   grid-template-rows: auto;
   margin-top: 24px;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media(max-width: 512px) {
+  @media (max-width: 512px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const Microphone = styled.a`
   display: flex;
@@ -28,12 +28,12 @@ export const Microphone = styled.a`
   &:hover {
     background: ${tint('#FDE8E6', -4)};
   }
-`
+`;
 
 export const MicAvatar = styled.img`
   width: 60px;
   height: 60px;
-`
+`;
 
 export const MicName = styled.p`
   font-size: 18px;
@@ -41,7 +41,7 @@ export const MicName = styled.p`
   color: ${tint(theme.social.patreon, -50)};
   margin: 0;
   margin-top: 12px;
-`
+`;
 
 export const MicTagline = styled.p`
   font-size: 16px;
@@ -49,7 +49,7 @@ export const MicTagline = styled.p`
   color: ${tint(theme.social.patreon, -40)};
   margin: 0;
   margin-bottom: 16px;
-`
+`;
 
 export const Supporter = styled.div`
   display: flex;
@@ -61,7 +61,7 @@ export const Supporter = styled.div`
     display: flex;
     width: 100%;
   }
-`
+`;
 
 export const AvatarContainer = styled.div`
   display: flex;
@@ -70,17 +70,17 @@ export const AvatarContainer = styled.div`
   justify-content: center;
 
   svg {
-    fill: #901EEA;
+    fill: #901eea;
     align-self: flex-end;
     justify-self: flex-end;
     position: relative;
     top: 2px;
     right: 14px;
-    background: #FDE8E6;
+    background: #fde8e6;
     border-radius: 30px;
-    border: 2px solid #FDE8E6;
+    border: 2px solid #fde8e6;
   }
-`
+`;
 
 export const Avatar = styled.div`
   width: 44px;
@@ -91,21 +91,21 @@ export const Avatar = styled.div`
   background: url('${props => props.src}');
   background-size: cover;
   background-position: 50% 50%;
-`
+`;
 
 export const Meta = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const Name = styled.p`
   font-size: 16px;
   font-weight: 600;
   color: ${tint(theme.social.patreon, -50)};
-`
+`;
 
 export const Username = styled.p`
   font-size: 16px;
   font-weight: 500;
   color: ${tint(theme.social.patreon, -40)};
-`
+`;

@@ -1,5 +1,7 @@
+/// <reference types="cypress" />
+
 import supporters, { golden } from '../../config/supporters';
-import team from '../../config/team'
+import team from '../../config/team';
 
 describe('Home', () => {
   before(() => {
@@ -7,36 +9,44 @@ describe('Home', () => {
   });
 
   it('should render latest episode', () => {
-    cy.get(`[data-cy="latest-episode"]`).should('be.visible')
+    cy.get(`[data-cy="latest-episode"]`).should('be.visible');
   });
 
   it('should render subscription options', () => {
     cy.fixture('subscription-options').then(subscriptions => {
-      subscriptions.map((subscription: string) => cy.get(`[data-cy="subscription-${subscription}"]`).should('be.visible'))
-    })
-  })
+      subscriptions.map((subscription: string) =>
+        cy.get(`[data-cy="subscription-${subscription}"]`).should('be.visible')
+      );
+    });
+  });
 
   it('should render suggested episodes', () => {
-    cy.get(`[data-cy="suggested-episodes"]`).should('be.visible')
-  })
+    cy.get(`[data-cy="suggested-episodes"]`).should('be.visible');
+  });
 
   it('should render golden microphones', () => {
-    golden.map(gold => cy.get(`[data-cy="golden-${gold.name}"]`).should('be.visible'))
-  })
+    golden.map(gold =>
+      cy.get(`[data-cy="golden-${gold.name}"]`).should('be.visible')
+    );
+  });
 
   it('should render supporters', () => {
-    supporters.map(supporter => cy.get(`[data-cy="supporter-${supporter.name}"]`).should('be.visible'))
-  })
+    supporters.map(supporter =>
+      cy.get(`[data-cy="supporter-${supporter.name}"]`).should('be.visible')
+    );
+  });
 
   it('should render question button', () => {
-    cy.get(`[data-cy="question-button"]`).should('be.visible')
-  })
+    cy.get(`[data-cy="question-button"]`).should('be.visible');
+  });
 
   it('should render follow on twitter button', () => {
-    cy.get(`[data-cy="follow-button"]`).should('be.visible')
-  })
+    cy.get(`[data-cy="follow-button"]`).should('be.visible');
+  });
 
   it('should render team members', () => {
-    team.map(t => cy.get(`[data-cy="team-${t.name}"]`).should('be.visible'))
-  })
+    team.map(team =>
+      cy.get(`[data-cy="team-${team.name}"]`).should('be.visible')
+    );
+  });
 });

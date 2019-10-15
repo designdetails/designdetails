@@ -1,7 +1,11 @@
 import * as Styled from './style';
-import { Twitter } from '../Icons'
+import { Twitter } from '../Icons';
 
-export default function TwitterButton(props) {
+interface Props {
+  children: React.ReactChildren | string;
+}
+
+export default function TwitterButton(props: Props) {
   const { children } = props;
   return (
     <Styled.TwitterButton {...props}>

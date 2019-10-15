@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { hexa, tint } from '../utils'
-import theme from '../../config/theme'
+import styled from 'styled-components';
+import { hexa, tint } from '../utils';
+import theme from '../../config/theme';
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   width: 100%;
-`
+`;
 
 export const Option = styled.a`
   padding: 12px;
@@ -26,7 +26,7 @@ export const Option = styled.a`
   }
 
   &:hover {
-    background: ${hexa(theme.brand.primary, 0.20)};
+    background: ${hexa(theme.brand.primary, 0.2)};
   }
 
   &:last-of-type {
@@ -34,7 +34,7 @@ export const Option = styled.a`
     margin-bottom: 0;
   }
 
-  @media(max-width: 512px) {
+  @media (max-width: 512px) {
     padding: 12px 0;
     align-items: flex-start;
 
@@ -46,4 +46,4 @@ export const Option = styled.a`
       background: transparent;
     }
   }
-`
+`;

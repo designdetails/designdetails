@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import theme from '../../config/theme'
+import styled from 'styled-components';
+import theme from '../../config/theme';
 
 export const Container = styled.div`
   width: 100%;
   text-align: center;
   margin: 128px 0;
-`
+`;
 
 export const Text = styled.p`
   font-size: 16px;
@@ -15,4 +15,4 @@ export const Text = styled.p`
   a {
     color: ${theme.text.primary};
   }
-`
+`;

@@ -1,6 +1,10 @@
 import * as Styled from './style';
 
-export default function Button(props) {
+interface Props {
+  children: React.ReactChildren;
+}
+
+export default function Button(props: Props) {
   const { children } = props;
   return <Styled.Button {...props}>{children}</Styled.Button>;
 }

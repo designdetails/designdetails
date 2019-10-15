@@ -1,5 +1,5 @@
-import { Grid, Option } from './styles'
-import { Chevron } from '../Icons'
+import { Grid, Option } from './styles';
+import { Chevron } from '../Icons';
 
 const startingEpisodes = [
   {
@@ -24,21 +24,27 @@ const startingEpisodes = [
   },
   {
     url: 'https://spec.fm/podcasts/design-details/292309',
-    title: '292: Building Design Systems (feat. Linzi Berry)',
+    title: '292: Building Design Systems (feat. Linzi Berry)'
   },
   {
     url: 'https://spec.fm/podcasts/design-details/308804',
-    title: '314: Beauty, Vulnerability, and Doing Things That Matter (feat. Haraldur Thorleifsson)'
+    title:
+      '314: Beauty, Vulnerability, and Doing Things That Matter (feat. Haraldur Thorleifsson)'
   }
-]
+];
 
 export default () => (
   <Grid>
     {startingEpisodes.map(ep => (
-      <Option key={ep.title} target="_blank" rel="noopener noreferrer" href={ep.url}>
+      <Option
+        key={ep.title}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={ep.url}
+      >
         <Chevron />
         {ep.title}
       </Option>
     ))}
   </Grid>
-)
+);
