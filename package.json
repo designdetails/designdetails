@@ -7,7 +7,7 @@
     "prettier": "prettier",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "lint:staged": "lint-staged",
+    "lint:staged": "lint-staged"
   },
   "dependencies": {
     "@tippy.js/react": "^3.1.0",
