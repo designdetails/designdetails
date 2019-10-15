@@ -24,7 +24,7 @@ export default ({ state }) => {
     <React.Fragment>
       <Grid>
         {golden.map(microphone => (
-          <Microphone href={microphone.url} target="_blank" rel="noopener noreferrer" key={microphone.name}>
+          <Microphone data-cy={`golden-${microphone.name}`} href={microphone.url} target="_blank" rel="noopener noreferrer" key={microphone.name}>
             <MicAvatar src={microphone.imageUrl} />
             <MicName>{microphone.name}</MicName>
             <MicTagline>{microphone.tagline}</MicTagline>
@@ -33,7 +33,7 @@ export default ({ state }) => {
       </Grid>
       <Grid>
           {selection.map(supporter => (
-            <Supporter key={supporter.name}>
+            <Supporter data-cy={`supporter-${supporter.name}`} key={supporter.name}>
               <ConditionalWrap
                 condition={!!supporter.twitterUsername}
                 wrap={children => (

@@ -22,7 +22,7 @@ const Home: NextPage = () => (
       <Subscribe />
     </Module>
 
-    <Module tint={theme.brand.primary} col={'3 / span 4'}>
+    <Module data-cy="suggested-episodes" tint={theme.brand.primary} col={'3 / span 4'}>
       <Module.Title tint={theme.brand.primary}>
         <SearchCircle />
         Where to begin?
@@ -48,7 +48,7 @@ const Home: NextPage = () => (
       <SupportersGrid state={'former'} />
     </Module>
 
-    <Module col={'1 / span 3'}>
+    <Module data-cy="question-button" col={'1 / span 3'}>
       <Module.Title>
         <QuestionCircle />
         Have a question?
@@ -59,7 +59,7 @@ const Home: NextPage = () => (
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
 
-    <Module tint={theme.social.twitter} col={'4 / span 3'}>
+    <Module data-cy="follow-button" tint={theme.social.twitter} col={'4 / span 3'}>
       <Module.Title tint={theme.social.twitter}>
         <TwitterCircle />
         Follow along
@@ -72,7 +72,7 @@ const Home: NextPage = () => (
       </a>
     </Module>
 
-    <Module col={'1 / span 6'}>
+    <Module data-cy="team" col={'1 / span 6'}>
       <Module.Title>
         <InfoCircle />
         Our team

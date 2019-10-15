@@ -57,6 +57,7 @@ class LatestEpisode extends React.Component {
           seamless 
           src={`https://embed.simplecast.com/${id}?color=f5f5f5`} 
           width='100%' 
+          data-cy="latest-episode"
         />
       </Module>
     )
