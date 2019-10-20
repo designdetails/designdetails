@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import theme from '../../config/theme';
 import { tint } from '../utils';
 
@@ -91,6 +91,11 @@ export const Avatar = styled.div`
   background: url('${props => props.src}');
   background-size: cover;
   background-position: 50% 50%;
+
+  ${props => props.inactive && css`
+    filter: grayscale(1);
+    opacity: 0.5;
+  `}
 `;
 
 export const Meta = styled.div`
