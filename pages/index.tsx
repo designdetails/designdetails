@@ -3,7 +3,7 @@ import PageWrapper from '../components/PageWrapper';
 import Module from '../components/Module';
 import Subscribe from '../components/Subscribe';
 import Welcome from '../components/Welcome';
-import SupportersGrid from '../components/SupportersGrid';
+import SupportersGrid, { GoldenMicrophones } from '../components/SupportersGrid';
 import Team from '../components/Team';
 import LatestEpisode from '../components/LatestEpisode';
 import {
@@ -60,7 +60,10 @@ const Home: NextPage = () => (
         supporting us directly by becoming a patron.
       </Module.Description>
       <PatreonButton>Support us on Patreon</PatreonButton>
+      <GoldenMicrophones />
       <SupportersGrid state={'active'} />
+
+      <Module.Title style={{ paddingTop: '58px', marginBottom: 0 }}  tint={theme.social.patreon}>Previous supporters</Module.Title>
       <SupportersGrid state={'former'} />
     </Module>
 

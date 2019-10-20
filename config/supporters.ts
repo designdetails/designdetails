@@ -188,7 +188,7 @@ export default [
     name: 'Joseph Brueggen',
     twitterUsername: 'josephbrueggen',
     image: randomPatreonImage(),
-    state: 'active',
+    state: 'former',
     dayOne: true
   },
 
@@ -251,6 +251,14 @@ export default [
   {
     name: 'Melinda Yang',
     twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Michael Knepprath',
+    twitterUsername: 'mknepprath',
     image: randomPatreonImage(),
     state: 'active',
     dayOne: false

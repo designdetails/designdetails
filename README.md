@@ -50,6 +50,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Manuel Solera
 - Max Stoiber [@mxstbr](https://twitter.com/mxstbr)
 - Melinda Yang
+- Michael Knepprath [@mknepprath](https://twitter.com/mknepprath)
 - Mike Hickman
 - Paul Dippold
 - Ryan Parag
