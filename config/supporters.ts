@@ -305,6 +305,14 @@ export default [
   },
 
   {
+    name: 'Stephen Hathaway',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Valentine Ubaldo',
     twitterUsername: null,
     image: '/static/img/patreon/vtine_ubaldo.jpeg',

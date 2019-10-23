@@ -41,7 +41,6 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Jeff Parsons
 - Jing Zhang
 - John Wood
-- Joseph Brueggen [@josephbrueggen](https://twitter.com/josephbrueggen)
 - Justin Allen
 - Karl Koch [@_kejk](https://twitter.com/_kejk)
 - Kris Puckett
@@ -56,7 +55,11 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Ryan Parag
 - Sam Bernhardt
 - Sam Mason
+- Stephen Hathaway
 - Valentine Ubaldo
+
+### Past Supporters
+- Joseph Brueggen [@josephbrueggen](https://twitter.com/josephbrueggen)
 
 ### Team
 - [@marshallbock](https://twitter.com/marshallbock)
