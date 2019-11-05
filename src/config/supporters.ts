@@ -137,6 +137,14 @@ export default [
   },
 
   {
+    name: 'Eden Wulf',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Effy Zhang',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -273,7 +281,23 @@ export default [
   },
 
   {
+    name: 'Oscar Lozano',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Paul Dippold',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Roy Stanfield',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',
@@ -308,6 +332,14 @@ export default [
     name: 'Stephen Hathaway',
     twitterUsername: null,
     image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Struan Robertson',
+    twitterUsername: null,
+    image: '/static/img/patreon/struan_robertson.jpeg',
     state: 'active',
     dayOne: false
   },
