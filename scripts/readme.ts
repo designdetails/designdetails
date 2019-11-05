@@ -1,4 +1,4 @@
-import supporters from '../config/supporters';
+import supporters from '../src/config/supporters';
 
 let str = '';
 

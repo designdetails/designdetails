@@ -35,6 +35,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Danny Haagen
 - Derek Graham
 - Doris Saturday
+- Eden Wulf
 - Effy Zhang
 - Essa Saulat
 - James Lyons
@@ -51,11 +52,14 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Melinda Yang
 - Michael Knepprath [@mknepprath](https://twitter.com/mknepprath)
 - Mike Hickman
+- Oscar Lozano
 - Paul Dippold
+- Roy Stanfield
 - Ryan Parag
 - Sam Bernhardt
 - Sam Mason
 - Stephen Hathaway
+- Struan Robertson
 - Valentine Ubaldo
 
 ### Past Supporters

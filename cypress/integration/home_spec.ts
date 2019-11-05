@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import supporters, { golden } from '../../config/supporters';
-import team from '../../config/team';
+import supporters, { golden } from '../../src/config/supporters';
+import team from '../../src/config/team';
 
 describe('Home', () => {
   before(() => {
