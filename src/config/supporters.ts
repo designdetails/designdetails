@@ -196,7 +196,7 @@ export default [
     name: 'Joseph Brueggen',
     twitterUsername: 'josephbrueggen',
     image: randomPatreonImage(),
-    state: 'former',
+    state: 'active',
     dayOne: true
   },
 
