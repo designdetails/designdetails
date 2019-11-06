@@ -1,4 +1,4 @@
-![Design Details](./static/img/dd-wide.png)
+![Design Details](./public/static/img/dd-wide.png)
 
 A weekly conversation about design process and culture, hosted by [Brian Lovin](https://twitter.com/brian_lovin) and [Marshall Bock](https://twitter.com/marshallbock).
 
