@@ -20,6 +20,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 
 ### Made possible by
 - [Sisu](https://sisu.ai) - Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at [sisu.ai](https://sisu.ai).
+- [Flywheel](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details) - Flywheel is a delightfully designed managed WordPress hosting platform, thoughtfully built for busy creatives. Streamline your workflow with their slick platform and sweet set of workflow tools perfectly made for designers! Get started at [getflywheel.com/designdetails](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details).
 
 ### [Supporters](https://patreon.com/designdetails)
 - Adam Carroll

@@ -63,8 +63,8 @@ const Home: NextPage = () => (
       <GoldenMicrophones />
       <SupportersGrid state={'active'} />
 
-      <Module.Title style={{ paddingTop: '58px', marginBottom: 0 }}  tint={theme.social.patreon}>Previous supporters</Module.Title>
-      <SupportersGrid state={'former'} />
+      {/* <Module.Title style={{ paddingTop: '58px', marginBottom: 0 }}  tint={theme.social.patreon}>Previous supporters</Module.Title>
+      <SupportersGrid state={'former'} /> */}
     </Module>
 
     <Module data-cy="question-button" col={'1 / span 3'}>

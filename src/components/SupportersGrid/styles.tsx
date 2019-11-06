@@ -9,7 +9,30 @@ export const Grid = styled.div`
   grid-template-rows: auto;
   margin-top: 24px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 512px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const GoldenGrid = styled.div`
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-top: 24px;
+  border-bottom: 1px solid ${tint('#FDE8E6', -4)};
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
 

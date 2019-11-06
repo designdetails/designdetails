@@ -4,6 +4,7 @@ import supporters, { golden } from '../../config/supporters';
 import { StarCircle } from '../Icons';
 import {
   Grid,
+  GoldenGrid,
   Supporter,
   AvatarContainer,
   Avatar,
@@ -21,7 +22,7 @@ interface Props {
 }
 
 export const GoldenMicrophones = () => (
-  <Grid>
+  <GoldenGrid>
     {golden.map(microphone => (
       <Microphone
         data-cy={`golden-${microphone.name}`}
@@ -35,7 +36,7 @@ export const GoldenMicrophones = () => (
         <MicTagline>{microphone.tagline}</MicTagline>
       </Microphone>
     ))}
-  </Grid>
+  </GoldenGrid>
 )
 
 export default ({ state }: Props) => {
