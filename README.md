@@ -24,45 +24,80 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 
 ### [Supporters](https://patreon.com/designdetails)
 - Adam Carroll
+- Aishwarya Sheth
 - Alec Sukoski
+- Ali Salem
 - Andrew Crandall
+- Anojan Sivaranjan
 - Aurora Pleguezuelo [@auareyou](https://twitter.com/auareyou)
 - Bob Weisbecker
 - Bradford Ulrich
 - Brandon Weiss [@brandon_weiss](https://twitter.com/brandon_weiss)
 - Cameron Campbell
+- Charlie Van Meter
 - Claudio Vallejo
+- Coard Miller
 - Cristian Ruiz [@razgriz94](https://twitter.com/razgriz94)
+- Damian Bilski
 - Danny Haagen
+- Darren Soulsby
 - Derek Graham
 - Doris Saturday
+- Ed Johnson-Williams
 - Eden Wulf
 - Effy Zhang
+- Erik
 - Essa Saulat
+- FoxFire720 [@kybellmay](https://twitter.com/kybellmay)
+- Jackie Eaton
+- Jacqueline Nguyen
+- James Carleton
 - James Lyons
 - Jeff Parsons
 - Jing Zhang
+- Joan Disho
 - John Wood
 - Joseph Brueggen [@josephbrueggen](https://twitter.com/josephbrueggen)
 - Justin Allen
 - Karl Koch [@_kejk](https://twitter.com/_kejk)
+- Kevin Bennett
 - Kris Puckett
+- Kryston Schwarze
 - Kyle Mitchell
+- Lisa Pesok
+- Lovro Podobnik
 - MannnnnnyX
 - Manuel Solera
+- Mark Powell
+- Marvin Messenzehl
 - Max Stoiber [@mxstbr](https://twitter.com/mxstbr)
+- Meena Balasubramaniam
 - Melinda Yang
+- Michael Goliver
 - Michael Knepprath [@mknepprath](https://twitter.com/mknepprath)
 - Mike Hickman
 - Oscar Lozano
 - Paul Dippold
+- Pekka Siika-aho
+- Richard
+- Ronald Huynh
 - Roy Stanfield
+- Ryan Donnelly
 - Ryan Parag
+- Sahil Chaturvedi
 - Sam Bernhardt
 - Sam Mason
+- Shaun Whitworth
+- Shivani Goel
+- Sofia Bautista
 - Stephen Hathaway
 - Struan Robertson
+- Timothy Pui-Fai Li
+- Tobias Treppmann
 - Valentine Ubaldo
+- Will
+- William Goi
+- 明勳 李
 
 ### Team
 - [@marshallbock](https://twitter.com/marshallbock)
