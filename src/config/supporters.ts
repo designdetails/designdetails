@@ -40,6 +40,14 @@ export const golden = [
 
 export default [
   {
+    name: 'Aaron Heine',
+    twitterUsername: null,
+    image: '/static/img/patreon/aaron_heine.jpeg',
+    state: 'active',
+    dayOne: false
+  },
+  
+  {
     name: 'Adam Carroll',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -67,6 +75,14 @@ export default [
     name: 'Ali Salem',
     twitterUsername: null,
     image: '/static/img/patreon/ali_salem.png',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Amy Geddes',
+    twitterUsername: null,
+    image: randomPatreonImage(),
     state: 'active',
     dayOne: false
   },
@@ -120,6 +136,30 @@ export default [
   },
 
   {
+    name: 'Breno Baldrati',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Cal Rowston',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Callum Cussen',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Cameron Campbell',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -131,6 +171,14 @@ export default [
     name: 'Charlie Van Meter',
     twitterUsername: null,
     image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Chris Martin',
+    twitterUsername: null,
+    image: '/static/img/patreon/chris_martin.jpeg',
     state: 'active',
     dayOne: false
   },
@@ -177,6 +225,14 @@ export default [
 
   {
     name: 'Darren Soulsby',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'David Afolayan',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',
@@ -240,7 +296,31 @@ export default [
   },
 
   {
+    name: 'Filipa Amado',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'FoxFire720',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'George Tsolpakis',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Greg Wilkinson',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',
@@ -368,6 +448,22 @@ export default [
   },
 
   {
+    name: 'Lauren Chilcote',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Lauren Mosenthal',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Lista Pesok',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -379,6 +475,14 @@ export default [
     name: 'Lovro Podobnik',
     twitterUsername: null,
     image: '/static/img/patreon/lovro_podobnik.jpeg',
+    state: 'former',
+    dayOne: false
+  },
+
+  {
+    name: 'Luke Seeley',
+    twitterUsername: null,
+    image: randomPatreonImage(),
     state: 'active',
     dayOne: false
   },
@@ -480,6 +584,14 @@ export default [
   },
 
   {
+    name: 'Paweł Sysiak',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
     name: 'Pekka Siika-aho',
     twitterUsername: null,
     image: randomPatreonImage(),
@@ -499,6 +611,14 @@ export default [
     name: 'Ronald Huynh',
     twitterUsername: null,
     image: '/static/img/patreon/ronald_huynh.jpeg',
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Ricky Salsberry',
+    twitterUsername: null,
+    image: randomPatreonImage(),
     state: 'active',
     dayOne: false
   },
@@ -601,6 +721,14 @@ export default [
 
   {
     name: 'Tobias Treppmann',
+    twitterUsername: null,
+    image: randomPatreonImage(),
+    state: 'active',
+    dayOne: false
+  },
+
+  {
+    name: 'Tt_55',
     twitterUsername: null,
     image: randomPatreonImage(),
     state: 'active',

@@ -23,24 +23,31 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [Flywheel](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details) - Flywheel is a delightfully designed managed WordPress hosting platform, thoughtfully built for busy creatives. Streamline your workflow with their slick platform and sweet set of workflow tools perfectly made for designers! Get started at [getflywheel.com/designdetails](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details).
 
 ### [Supporters](https://patreon.com/designdetails)
+- Aaron Heine
 - Adam Carroll
 - Aishwarya Sheth
 - Alec Sukoski
 - Ali Salem
+- Amy Geddes
 - Andrew Crandall
 - Anojan Sivaranjan
 - Aurora Pleguezuelo [@auareyou](https://twitter.com/auareyou)
 - Bob Weisbecker
 - Bradford Ulrich
 - Brandon Weiss [@brandon_weiss](https://twitter.com/brandon_weiss)
+- Breno Baldrati
+- Cal Rowston
+- Callum Cussen
 - Cameron Campbell
 - Charlie Van Meter
+- Chris Martin
 - Claudio Vallejo
 - Coard Miller
 - Cristian Ruiz [@razgriz94](https://twitter.com/razgriz94)
 - Damian Bilski
 - Danny Haagen
 - Darren Soulsby
+- David Afolayan
 - Derek Graham
 - Doris Saturday
 - Ed Johnson-Williams
@@ -48,7 +55,10 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Effy Zhang
 - Erik
 - Essa Saulat
+- Filipa Amado
 - FoxFire720 [@kybellmay](https://twitter.com/kybellmay)
+- George Tsolpakis
+- Greg Wilkinson
 - Jackie Eaton
 - Jacqueline Nguyen
 - James Carleton
@@ -64,8 +74,11 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Kris Puckett
 - Kryston Schwarze
 - Kyle Mitchell
+- Lauren Chilcote
+- Lauren Mosenthal
 - Lisa Pesok
 - Lovro Podobnik
+- Luke Seeley
 - MannnnnnyX
 - Manuel Solera
 - Mark Powell
@@ -78,8 +91,10 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Mike Hickman
 - Oscar Lozano
 - Paul Dippold
+- Paweł Sysiak
 - Pekka Siika-aho
 - Richard
+- Ricky Salsberry
 - Ronald Huynh
 - Roy Stanfield
 - Ryan Donnelly
@@ -94,6 +109,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Struan Robertson
 - Timothy Pui-Fai Li
 - Tobias Treppmann
+- Tt_55
 - Valentine Ubaldo
 - Will
 - William Goi
