@@ -62,24 +62,26 @@ export default ({ state }: Props) => {
               </a>
             )}
           >
-            <AvatarContainer>
-              <Avatar
-                alt={`${supporter.name}'s profile photo`}
-                src={supporter.image}
-                inactive={supporter.state !== 'active'}
-              />
-              {supporter.dayOne ? (
-                <StarCircle />
-              ) : (
-                <div style={{ width: '20px' }} />
-              )}
-            </AvatarContainer>
-            <Meta>
-              <Name>{supporter.name}</Name>
-              {supporter.twitterUsername && (
-                <Username>@{supporter.twitterUsername}</Username>
-              )}
-            </Meta>
+            <React.Fragment>
+              <AvatarContainer>
+                <Avatar
+                  alt={`${supporter.name}'s profile photo`}
+                  src={supporter.image}
+                  inactive={supporter.state !== 'active'}
+                />
+                {supporter.dayOne ? (
+                  <StarCircle />
+                ) : (
+                  <div style={{ width: '20px' }} />
+                )}
+              </AvatarContainer>
+              <Meta>
+                <Name>{supporter.name}</Name>
+                {supporter.twitterUsername && (
+                  <Username>@{supporter.twitterUsername}</Username>
+                )}
+              </Meta>
+            </React.Fragment>
           </ConditionalWrap>
         </Supporter>
       ))}
