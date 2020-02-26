@@ -38,7 +38,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "lint-staged": "^10.0.7",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
     "typescript": "^3.8.2",
