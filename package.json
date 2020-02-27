@@ -16,7 +16,7 @@
     "next": "^9.2.2",
     "next-seo": "^4.4.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.0",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.7"
   },
