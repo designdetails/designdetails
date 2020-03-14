@@ -106,13 +106,10 @@ const Home: NextPage = () => (
     <Module data-cy="team" col={'1 / span 6'}>
       <Module.Title>
         <InfoCircle />
-        Our team
+        About us
       </Module.Title>
       <Module.Description>
-        It takes a four-person village to pull this show together. These are the
-        people in that village. Except, we’re distributed around the US and
-        mostly just text each other. If you want to see what we’re up to, follow
-        us on Twitter.
+        We‘re both designers who love talking about design, development, products, interfaces, games, and more. Marshall currently leads design at YouTube Gaming and Brian is working on GitHub's native mobile apps.
       </Module.Description>
 
       <Team />
