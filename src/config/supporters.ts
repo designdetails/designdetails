@@ -21,18 +21,11 @@ const randomPatreonImage = () => {
 
 export const golden = [
   {
-    name: 'Sisu',
-    imageUrl: '/static/img/patreon/golden/sisu.png',
-    url: 'https://sisu.ai/',
+    name: 'Fathom',
+    imageUrl: '/static/img/patreon/golden/fathom.png',
+    url: 'https://designdetails.fm/fathom',
     tagline:
-      'Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at sisu.ai.'
-  },
-  {
-    name: 'Flywheel',
-    imageUrl: '/static/img/patreon/golden/flywheel.png',
-    url: 'https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details',
-    tagline:
-      'Flywheel is a delightfully designed managed WordPress hosting platform, thoughtfully built for busy creatives. Streamline your workflow with their slick platform and sweet set of workflow tools perfectly made for designers!'
+      'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.'
   }
 ];
 
