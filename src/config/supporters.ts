@@ -85,14 +85,14 @@ const patrons = [
      "name":"Amy Geddes",
      "twitterUsername":null,
      "image":randomPatreonImage(),
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
      "name":"Andrew Crandall",
      "twitterUsername":null,
      "image":"/static/img/patreon/andrew_crandall.jpeg",
-     "state":"active",
+     "state":"former",
      "dayOne":true
   },
   {
@@ -295,14 +295,14 @@ const patrons = [
      "name":"Danny Haagen",
      "twitterUsername":null,
      "image":randomPatreonImage(),
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
      "name":"Darren Soulsby",
      "twitterUsername":null,
      "image":randomPatreonImage(),
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
@@ -491,7 +491,7 @@ const patrons = [
      "name":"Jackie Eaton",
      "twitterUsername":null,
      "image":"/static/img/patreon/jackie_eaton.jpeg",
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
@@ -659,7 +659,7 @@ const patrons = [
      "name":"Kris Puckett",
      "twitterUsername":null,
      "image":randomPatreonImage(),
-     "state":"active",
+     "state":"former",
      "dayOne":true
   },
   {
@@ -743,7 +743,7 @@ const patrons = [
      "name":"Manuel Solera",
      "twitterUsername":null,
      "image":"/static/img/patreon/manuel_solera.jpeg",
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
@@ -1086,7 +1086,7 @@ const patrons = [
      "name":"Stephen Hathaway",
      "twitterUsername":null,
      "image":randomPatreonImage(),
-     "state":"active",
+     "state":"former",
      "dayOne":false
   },
   {
