@@ -10,6 +10,8 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 ### Quick links
 - [All Episodes](https://spec.fm/podcasts/design-details)
 - [Twitter](https://twitter.com/designdetailsfm)
+- [Instagram](https://instagram.com/designdetailsfm)
+- [YouTube](https://www.youtube.com/channel/UC8Dakb6zA4KDEzHx_rYqzxQ/)
 - [Apple Podcasts](https://geo.itunes.apple.com/ca/podcast/feed/id947191070)
 - [Overcast](https://overcast.fm/itunes947191070)
 - [PocketCasts](http://pca.st/itunes/947191070)
@@ -19,8 +21,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [RSS Feed](http://simplecast.fm/podcasts/1034/rss)
 
 ### Made possible by
-- [Sisu](https://sisu.ai) - Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at [sisu.ai](https://sisu.ai).
-- [Flywheel](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details) - Flywheel is a delightfully designed managed WordPress hosting platform, thoughtfully built for busy creatives. Streamline your workflow with their slick platform and sweet set of workflow tools perfectly made for designers! Get started at [getflywheel.com/designdetails](https://getflywheel.com/?utm_campaign=brand-awareness&utm_medium=sponsorship&utm_source=podcast&utm_content=design-details).
+- [Fathom](https://designdetails.fm/fathom) - Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at [sisu.ai](https://sisu.ai).
 
 ### [Supporters](https://patreon.com/designdetails)
 - Aaron Heine
@@ -114,12 +115,86 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Will
 - William Goi
 - 明勳 李
+- Simon Madsen
+- Daniel Maniés
+- Sam Chang
+- Julia Purcell
+- Kyle Kochanek
+- Isa Simó
+- Richard Sison
+- Kevin Gutowski
+- Michael Powers
+- Ollie Taylor
+- Jason Jun
+- Gunnar Gray
+- Damien Menard-Oxman
+- Jonathan Prozzi
+- Patrick Marx
+- Arjun Mahesh
+- Ankur Priyadarshi Chauhan
+- Martin M.
+- Thiago Valadares Noleto Damasceno
+- Julius
+- Guilherme Nogales
+- Carly Batson
+- Grace Lee
+- Dániel Góré
+- George Thayamkery
+- Shogo Tsuruda
+- Claire Jardin
+- Rex Shi
+- Joe Thomas
+- Seth Richardson
+- James Morgan
+- Alisa B
+- Sergio Rovira
+- Geetha Kardahally
+- Kati Presley
+- Jan Früchtl
+- Ying Yao
+- Ting-Ju Chen
+- Kevin Haag
+- Austin Robinson
+- Scott Foltz
+- Elise Alix
+- Danielle Shepherd
+- Mike Jongbloet
+- Joseph Flynn
+- Priscilla Then
+- Loukas Papantoniou
+- Wan Jung Hung
+- Ryan Koble
+- Billy Purdy
+- Michael Fitzgerald
+- Elias
+- Peter Reaper-Reynolds
+- Will Vaughan
+- Sean Kushi
+- Robert Weisbecker
+- Dan Wu
+- Chen Li
+- Guarang Alat
+- Dennis Cortes
+- Grovkillen & TD-er
+- Connelly Rader
+- zeneosjun
+- Neesha
+- Chris Northcutt
+- Vinnie
+- Matthew Atkinson
+- Adam Fuhrer
+- Mathias Arlund
+- Keaton Taylor
+- Ethan
+- Kristian Hjelle
+- He Hexi
+- Rachel Murawski
+- Rafly Nurfallah
+- Tanveer Singh Mahendra
 
 ### Team
 - [@marshallbock](https://twitter.com/marshallbock)
 - [@brian_lovin](https://twitter.com/brian_lovin)
-- [@sarahberus](https://twitter.com/sarahberus)
-- [@luperdev](https://twitter.com/luperdev)
 
 ### Spec
 Design Details is a member of the [Spec Network](https://spec.fm/) of podcasts.
