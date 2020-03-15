@@ -13,6 +13,7 @@ export const Container = styled.div`
     border-radius: 12px;
   }
 `;
+
 export const GridWrapper = styled.div`
   display: grid;
   width: 100%;
@@ -29,3 +30,22 @@ export const GridWrapper = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const EpisodesPageGrid = styled.div`
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "sidebar content";
+  grid-gap: 24px;
+  padding-top: 24px;
+
+  @media (max-width: 1256px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content" "sidebar";
+  }
+`

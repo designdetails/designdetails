@@ -9,5 +9,3 @@ for (const s of supporters) {
       : ''
   }\n`;
 }
-
-console.log(str);

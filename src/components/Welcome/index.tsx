@@ -1,33 +1,34 @@
-import { Grid, Option } from './styles';
+import { Grid } from './styles';
 import { Chevron } from '../Icons';
+import Link from 'next/link';
 
 const startingEpisodes = [
   {
-    url: 'https://spec.fm/podcasts/design-details/220880',
+    id: 220880,
     title: '271: Principles of Design'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/161416',
+    id: 161416,
     title: '253: Follow The Troll Flow (feat. May-Li Khoe & Chikezie Ejiasi)'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/113490',
+    id: 113490,
     title: '235: Incremental Correctness (feat. Guillermo Rauch)'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/306429',
+    id: 306429,
     title: '309: Career Progression for Product Designers'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/298638',
+    id: 298638,
     title: '297: Day-to-Day Design Struggles'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/292309',
+    id: 292309,
     title: '292: Building Design Systems (feat. Linzi Berry)'
   },
   {
-    url: 'https://spec.fm/podcasts/design-details/308804',
+    id: 308804,
     title:
       '314: Beauty, Vulnerability, and Doing Things That Matter (feat. Haraldur Thorleifsson)'
   }
@@ -36,15 +37,16 @@ const startingEpisodes = [
 export default () => (
   <Grid>
     {startingEpisodes.map(ep => (
-      <Option
-        key={ep.title}
-        target="_blank"
-        rel="noopener noreferrer"
-        href={ep.url}
+      <Link
+        key={ep.id}
+        href={`/episodes/[id]`}
+        as={`/episodes/${ep.id}`}
       >
-        <Chevron />
-        {ep.title}
-      </Option>
+        <a>
+          <Chevron />
+          {ep.title}
+        </a>
+      </Link>
     ))}
   </Grid>
 );
