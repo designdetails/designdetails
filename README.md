@@ -21,7 +21,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [RSS Feed](http://simplecast.fm/podcasts/1034/rss)
 
 ### Made possible by
-- [Fathom](https://designdetails.fm/fathom) - Sisu is looking for a thoughtful and data-savvy designer to help build the next generation of analytics software. You can find out more at [sisu.ai](https://sisu.ai).
+- [Fathom](https://designdetails.fm/fathom) - Fathom is a fast, simple, privacy-first analytics tool for your websites. Sign up now and get $20 off your first invoice.
 
 ### [Supporters](https://patreon.com/designdetails)
 - Aaron Heine
