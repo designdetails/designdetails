@@ -23,8 +23,8 @@ async function getData(url) {
     });
 }
 
-export default function EpisodeContent({ id }) {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes/${id}`, getData, { revalidateOnFocus: false })
+export default function EpisodeContent({ id, episode }) {
+  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes/${id}`, getData, { initialData: episode, revalidateOnFocus: false })
 
   if (error) {
     return (
