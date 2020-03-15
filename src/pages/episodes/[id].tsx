@@ -12,14 +12,14 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-function Episode({ id }) {
+function Episode({ id, episode }) {
   return (
     <PageWrapper>
       <EpisodesPageGrid>
         <EpisodesSidebar />
 
         <Content>
-          <EpisodeContent id={id} />
+          <EpisodeContent id={id} episode={episode} />
         </Content>
       </EpisodesPageGrid>
     </PageWrapper>
