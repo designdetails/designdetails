@@ -29,18 +29,23 @@ export const Title = styled.h3`
   color: ${props => (props.tint ? tint(props.tint, -20) : theme.text.primary)};
   margin: 0;
   margin-bottom: 8px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 24px 1fr;
+  align-items: flex-start;
 
   svg {
     margin-right: 8px;
     fill: currentColor;
+    position: relative;
+    top: 4px;
   }
 `;
 
 export const LargeTitle = styled(Title)`
   font-size: 32px;
   line-height: 1.2;
+  grid-template-columns: 1fr;
 `
 
 export const Description = styled.p`
@@ -52,4 +57,5 @@ export const Description = styled.p`
   margin: 0;
   margin-bottom: 16px;
   line-height: 1.4;
+  word-break: break-word;
 `;

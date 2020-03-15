@@ -23,11 +23,12 @@ export const GridWrapper = styled.div`
   padding-top: 24px;
 
   @media (max-width: 1256px) {
-    padding: 24px;
+    padding: 12px;
   }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    grid-gap: 12px;
   }
 `;
 
@@ -41,11 +42,12 @@ export const EpisodesPageGrid = styled.div`
   padding-top: 24px;
 
   @media (max-width: 1256px) {
-    padding: 24px;
+    padding: 12px;
   }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-areas: "content" "sidebar";
+    grid-gap: 12px;
   }
 `
