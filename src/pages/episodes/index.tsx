@@ -1,4 +1,4 @@
-import { NextPage } from 'next';
+import { NextSeo } from 'next-seo'
 import styled from 'styled-components'
 import PageWrapper from '../../components/PageWrapper';
 import Module from '../../components/Module';
@@ -18,6 +18,27 @@ const Content = styled.div`
 
 const Episodes = ({ episodes }) => (
   <PageWrapper>
+    <NextSeo
+      title={"App Dissection"}
+      description={"A visual exploration of digital products"}
+      openGraph={{
+        title: 'Design Details',
+        description: 'A weekly conversation about design process and culture',
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://designdetails.fm',
+        site_name: 'Design Details',
+        images: [
+          {
+            url: 'https://designdetails.fm/static/img/dd-wide.png',
+            width: 1600,
+            height: 400,
+            alt: 'Design Details'
+          }
+        ]
+      }}
+    />
+
     <EpisodesPageGrid>
       <EpisodesSidebar />
 
