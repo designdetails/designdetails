@@ -24,7 +24,7 @@ async function getData(url) {
 }
 
 export default function EpisodeContent({ id }) {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes/${id}`, getData, { revalidateOnFocus: false})
+  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes/${id}`, getData, { revalidateOnFocus: false })
 
   if (error) {
     return (
@@ -65,8 +65,8 @@ export default function EpisodeContent({ id }) {
           cardType: 'summary_large_image',
         }}
       />
-      <ModuleCustom tint={theme.brand.primary}>
 
+      <ModuleCustom tint={theme.brand.primary}>
         <iframe
           frameBorder="0"
           height="200px"
