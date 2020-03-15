@@ -3,7 +3,7 @@ export default [
     name: 'Brian Lovin',
     role: 'Co-host',
     twitterUsername: 'brian_lovin',
-    profilePhotoUrl: '/static/img/team/brian_lovin.jpg',
+    profilePhotoUrl: '/static/img/team/brian_lovin.jpeg',
     coverPhotoUrl: '/static/img/team/brian_lovin_cover.jpeg'
   },
   {

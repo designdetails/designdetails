@@ -17,8 +17,10 @@
     "next-seo": "^4.4.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-markdown": "^4.3.1",
     "styled-components": "^4.4.1",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "swr": "^0.1.18"
   },
   "devDependencies": {
     "@bahmutov/add-typescript-to-cypress": "^2.1.2",

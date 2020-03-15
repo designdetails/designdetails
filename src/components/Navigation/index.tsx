@@ -15,19 +15,13 @@ const Navigation = ({ router }: Props) => (
       </a>
     </Link>
 
-    {/* <Link href={'/about'}>
-      <a><NavItem active={router.pathname === '/about'}>About</NavItem></a>
-    </Link> */}
-
-    <a
-      href="https://spec.fm/podcasts/design-details"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <NavItem>
-        Episodes <LinkExternal />
-      </NavItem>
-    </a>
+    <Link href={'/episodes'}>
+      <a>
+        <NavItem active={router.pathname.includes('/episodes')}>
+          Episodes
+        </NavItem>
+      </a>
+    </Link>
 
     <a
       href="https://patreon.com/designdetails"

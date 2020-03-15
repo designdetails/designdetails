@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import theme from '../../config/theme';
 import { hexa, tint } from '../utils';
 
@@ -13,6 +13,14 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     grid-column: span 1;
   }
+
+  ${props => props.isLink && css`
+    &:hover {
+      background: ${props =>
+        props.tint ? hexa(props.tint, 0.2) : theme.ui.borderLight};
+      }
+    }
+  `}
 `;
 
 export const Title = styled.h3`
@@ -29,6 +37,11 @@ export const Title = styled.h3`
     fill: currentColor;
   }
 `;
+
+export const LargeTitle = styled(Title)`
+  font-size: 32px;
+  line-height: 1.2;
+`
 
 export const Description = styled.p`
   font-size: 16px;
