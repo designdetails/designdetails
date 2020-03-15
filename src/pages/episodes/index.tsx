@@ -16,7 +16,7 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-const Episodes: NextPage = ({ episodes }) => (
+const Episodes = ({ episodes }) => (
   <PageWrapper>
     <EpisodesPageGrid>
       <EpisodesSidebar />
