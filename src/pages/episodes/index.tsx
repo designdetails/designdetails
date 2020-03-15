@@ -14,31 +14,15 @@ const Content = styled.div`
   display: grid;
   grid-gap: 24px;
   grid-auto-rows: min-content;
+  grid-column: span 1;
+
+  @media (max-width: 768px) {
+    grid-gap: 12px;
+  }
 `
 
 const Episodes = () => (
   <PageWrapper>
-    <NextSeo
-      title={"App Dissection"}
-      description={"A visual exploration of digital products"}
-      openGraph={{
-        title: 'Design Details',
-        description: 'A weekly conversation about design process and culture',
-        type: 'website',
-        locale: 'en_US',
-        url: 'https://designdetails.fm',
-        site_name: 'Design Details',
-        images: [
-          {
-            url: 'https://designdetails.fm/static/img/dd-wide.png',
-            width: 1600,
-            height: 400,
-            alt: 'Design Details'
-          }
-        ]
-      }}
-    />
-
     <EpisodesPageGrid>
       <EpisodesSidebar />
 
