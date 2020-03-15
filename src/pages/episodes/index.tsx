@@ -16,7 +16,7 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-const Episodes: NextPage = () => (
+const Episodes: NextPage = ({ episodes }) => (
   <PageWrapper>
     <EpisodesPageGrid>
       <EpisodesSidebar />
@@ -34,10 +34,28 @@ const Episodes: NextPage = () => (
           <Welcome />
         </Module>
 
-        <EpisodesList />
+        <EpisodesList episodes={episodes} />
       </Content>
     </EpisodesPageGrid>
   </PageWrapper>
 );
+
+async function getData(url) {
+  return await fetch(url)
+    .then(res => res.json())
+    .then(res => res.filter(ep => !!ep.published))
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+Episodes.getInitialProps = async ({ res }) => {
+  if (res) {
+    res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
+  }
+
+  const episodes = await getData(`https://spec.fm/api/podcasts/1034/episodes`);
+  return { episodes }
+}
 
 export default Episodes;
