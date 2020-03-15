@@ -1,4 +1,4 @@
-import { NextPage } from 'next';
+import { NextSeo } from 'next-seo'
 import styled from 'styled-components'
 import PageWrapper from '../../components/PageWrapper';
 import Module from '../../components/Module';
@@ -16,8 +16,29 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-const Episodes = ({ episodes }) => (
+const Episodes = () => (
   <PageWrapper>
+    <NextSeo
+      title={"App Dissection"}
+      description={"A visual exploration of digital products"}
+      openGraph={{
+        title: 'Design Details',
+        description: 'A weekly conversation about design process and culture',
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://designdetails.fm',
+        site_name: 'Design Details',
+        images: [
+          {
+            url: 'https://designdetails.fm/static/img/dd-wide.png',
+            width: 1600,
+            height: 400,
+            alt: 'Design Details'
+          }
+        ]
+      }}
+    />
+
     <EpisodesPageGrid>
       <EpisodesSidebar />
 
@@ -34,28 +55,10 @@ const Episodes = ({ episodes }) => (
           <Welcome />
         </Module>
 
-        <EpisodesList episodes={episodes} />
+        <EpisodesList />
       </Content>
     </EpisodesPageGrid>
   </PageWrapper>
 );
-
-async function getData(url) {
-  return await fetch(url)
-    .then(res => res.json())
-    .then(res => res.filter(ep => !!ep.published))
-    .catch(err => {
-      console.error(err);
-    });
-}
-
-Episodes.getInitialProps = async ({ res }) => {
-  if (res) {
-    res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
-  }
-
-  const episodes = await getData(`https://spec.fm/api/podcasts/1034/episodes`);
-  return { episodes }
-}
 
 export default Episodes;

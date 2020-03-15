@@ -15,8 +15,8 @@ async function getData(url) {
     });
 }
 
-const EpisodesList = ({ episodes }) => {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes`, getData, { initialData: episodes, revalidateOnFocus: false})
+const EpisodesList = () => {
+  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes`, getData, { revalidateOnFocus: false})
 
   if (error) {
     return (
