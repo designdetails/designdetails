@@ -4,11 +4,11 @@ import theme from '../../config/theme';
 export const Container = styled.div`
   background: ${theme.ui.wash};
   margin: 0 auto;
-  max-width: 1256px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 1256px) {
+  @media (min-width: 1280px) {
     margin: 32px auto;
     border-radius: 12px;
   }
@@ -22,7 +22,7 @@ export const GridWrapper = styled.div`
   grid-gap: 24px;
   padding-top: 24px;
 
-  @media (max-width: 1256px) {
+  @media (max-width: 1280px) {
     padding: 12px;
   }
 
@@ -41,8 +41,8 @@ export const EpisodesPageGrid = styled.div`
   grid-gap: 24px;
   padding-top: 24px;
 
-  @media (max-width: 1256px) {
-    padding: 12px;
+  @media (max-width: 1280px) {
+    padding: 24px 12px 0;
   }
 
   @media (max-width: 768px) {
