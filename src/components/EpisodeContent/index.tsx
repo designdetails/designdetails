@@ -7,6 +7,7 @@ import theme from '../../config/theme'
 import Module from '../Module';
 import LoadingSpinner from '../LoadingSpinner';
 import Markdown from '../Markdown'
+import { getEpisode } from '../../data';
 
 const ModuleCustom = styled(Module)`
   @media (max-width: 768px) {
@@ -15,16 +16,8 @@ const ModuleCustom = styled(Module)`
   }
 `
 
-async function getData(url) {
-  return await fetch(url)
-    .then(res => res.json())
-    .catch(err => {
-      console.error(err);
-    });
-}
-
-export default function EpisodeContent({ id, episode }) {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes/${id}`, getData, { initialData: episode, revalidateOnFocus: false })
+export default function EpisodeContent({ episode, id }) {
+  const { data, error } = useSWR(`${id}`, getEpisode, { initialData: episode, revalidateOnFocus: false })
 
   if (error) {
     return (
@@ -57,7 +50,7 @@ export default function EpisodeContent({ id, episode }) {
         title={data.title}
         description={data.description}
         openGraph={{
-          url: `https://designdetails.fm/episodes/${id}`,
+          url: `https://designdetails.fm/episodes/${data.id}`,
           title: data.title,
           description: data.description,
         }}

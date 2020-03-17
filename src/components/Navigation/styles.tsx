@@ -14,7 +14,7 @@ export const Container = styled.div`
   z-index: 999;
   border-radius: 0 0 12px 12px;
 
-  @media (max-width: 1256px) {
+  @media (max-width: 1280px) {
     border-radius: 0;
     border-left: 0;
     border-right: 0;

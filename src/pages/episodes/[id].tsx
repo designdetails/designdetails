@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import fetch from 'isomorphic-unfetch'
 import PageWrapper from '../../components/PageWrapper';
 import EpisodeContent from '../../components/EpisodeContent';
 import EpisodesSidebar from '../../components/EpisodesSidebar'
 import { EpisodesPageGrid } from '../../components/PageWrapper/styles';
+import { getEpisodes, getEpisode } from '../../data';
 
 const Content = styled.div`
   grid-area: content;
@@ -12,7 +12,7 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-function Episode({ id, episode }) {
+function Episode({ episode, id }) {
   return (
     <PageWrapper>
       <EpisodesPageGrid>
@@ -26,21 +26,19 @@ function Episode({ id, episode }) {
   );
 }
 
-async function getData(url) {
-  return await fetch(url)
-    .then(res => res.json())
-    .catch(err => {
-      console.error(err);
-    });
+export async function getStaticPaths() {
+  const episodes = await getEpisodes();
+  const paths = episodes.map(({ id }) => ({
+    // parameters must be strings
+    params: { id: `${id}` }
+  }))
+  
+  return { paths, fallback: true }
 }
 
-Episode.getInitialProps = async ({ query, res }) => {
-  if (res) {
-    res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
-  }
-
-  const episode = await getData(`https://spec.fm/api/podcasts/1034/episodes/${query.id}`);
-  return { id: query.id, episode }
+export async function getStaticProps({ params }) {
+  const episode = await getEpisode(params.id);
+  return { props: { episode, id: params.id }}
 }
 
 export default Episode;
