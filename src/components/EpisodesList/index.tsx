@@ -5,18 +5,10 @@ import { PlayCircle } from '../Icons';
 import Module from '../Module';
 import LoadingSpinner from '../LoadingSpinner';
 import theme from '../../config/theme';
+import { getEpisodes } from '../../data';
 
-async function getData(url) {
-  return await fetch(url)
-    .then(res => res.json())
-    .then(res => res.filter(ep => !!ep.published))
-    .catch(err => {
-      console.error(err);
-    });
-}
-
-const EpisodesList = () => {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes`, getData, { revalidateOnFocus: false})
+function EpisodesList({ episodes }) {
+  const { data, error } = useSWR('episodes', getEpisodes, { initialData: episodes, revalidateOnFocus: false})
 
   if (error) {
     return (
