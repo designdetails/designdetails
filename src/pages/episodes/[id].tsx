@@ -12,14 +12,14 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-function Episode({ episode }) {
+function Episode({ episode, id }) {
   return (
     <PageWrapper>
       <EpisodesPageGrid>
         <EpisodesSidebar />
 
         <Content>
-          <EpisodeContent episode={episode} />
+          <EpisodeContent id={id} episode={episode} />
         </Content>
       </EpisodesPageGrid>
     </PageWrapper>
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const episode = await getEpisode(params.id);
-  return { props: { episode }}
+  return { props: { episode, id: params.id }}
 }
 
 export default Episode;

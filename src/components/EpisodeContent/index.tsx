@@ -16,8 +16,8 @@ const ModuleCustom = styled(Module)`
   }
 `
 
-export default function EpisodeContent({ episode }) {
-  const { data, error } = useSWR(episode.id, getEpisode, { initialData: episode, revalidateOnFocus: false })
+export default function EpisodeContent({ episode, id }) {
+  const { data, error } = useSWR(`${id}`, getEpisode, { initialData: episode, revalidateOnFocus: false })
 
   if (error) {
     return (
@@ -50,7 +50,7 @@ export default function EpisodeContent({ episode }) {
         title={data.title}
         description={data.description}
         openGraph={{
-          url: `https://designdetails.fm/episodes/${episode.id}`,
+          url: `https://designdetails.fm/episodes/${data.id}`,
           title: data.title,
           description: data.description,
         }}
