@@ -2,7 +2,7 @@ name: weekly episode deployment
 
 on:
   schedule:
-    - cron:  '34 * * * *'
+    - cron:  '30 12 * * 3'
 
 jobs:
   deploy:
