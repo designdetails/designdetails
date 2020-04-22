@@ -32,13 +32,13 @@ export async function getStaticPaths() {
     // parameters must be strings
     params: { id: `${id}` }
   }))
-  
+
   return { paths, fallback: true }
 }
 
 export async function getStaticProps({ params }) {
   const episode = await getEpisode(params.id);
-  return { props: { episode, id: params.id }}
+  return { props: { episode, id: params.id } }
 }
 
 export default Episode;

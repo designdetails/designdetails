@@ -15,10 +15,10 @@ async function getData(url) {
 }
 
 function LatestEpisode() {
-  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes`, getData, { revalidateOnFocus: false})
+  const { data, error } = useSWR(`https://spec.fm/api/podcasts/1034/episodes`, getData, { revalidateOnFocus: false })
 
   if (error) return null
-  
+
   if (!data) {
     return (
       <Module tint={theme.brand.primary} col={'1 / span 6'}>
