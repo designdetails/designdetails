@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
+    env:
+      SIMPLECAST_V2_API_KEY: ${{ secrets.SIMPLECAST_V2_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v1
