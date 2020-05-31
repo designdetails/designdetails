@@ -38,7 +38,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const episode = await getEpisode(params.id);
-  return { props: { episode, id: params.id } }
+  return {
+    unstable_revalidate: 60 * 60,
+    props: { episode, id: params.id }
+  }
 }
 
 export default Episode;
