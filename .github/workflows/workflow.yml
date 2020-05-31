@@ -11,9 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
+    env:
+      SIMPLECAST_V2_API_KEY: ${{ secrets.SIMPLECAST_V2_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Cache Next.js
+        uses: actions/cache@v1
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
