@@ -12,7 +12,7 @@ function LinkRenderer(props: any) {
 }
 
 function Markdown({ children }) {
-  return <Notes renderers={{ link: LinkRenderer }}>{children}</Notes>;
+  return <Notes escapeHtml={false} renderers={{ link: LinkRenderer }}>{children}</Notes>;
 }
 
 export default Markdown;

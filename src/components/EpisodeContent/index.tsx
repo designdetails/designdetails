@@ -1,13 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import useSWR from 'swr'
 import { NextSeo } from 'next-seo'
-import { PlayCircle } from '../Icons';
 import theme from '../../config/theme'
 import Module from '../Module';
-import LoadingSpinner from '../LoadingSpinner';
 import Markdown from '../Markdown'
-import { getEpisode } from '../../data';
 
 const ModuleCustom = styled(Module)`
   @media (max-width: 768px) {
@@ -16,10 +12,9 @@ const ModuleCustom = styled(Module)`
   }
 `
 
-export default function EpisodeContent({ episode, id }) {
-  const { data, error } = useSWR(`${id}`, getEpisode, { initialData: episode, revalidateOnFocus: false })
+export default function EpisodeContent({ episode }) {
 
-  if (error) {
+  if (!episode) {
     return (
       <Module tint={theme.brand.primary}>
         <Module.Title tint={theme.brand.primary}>
@@ -29,30 +24,15 @@ export default function EpisodeContent({ episode, id }) {
     )
   }
 
-  if (!data) {
-    return (
-      <Module tint={theme.brand.primary}>
-        <Module.Title tint={theme.brand.primary}>
-          <PlayCircle />
-          Loading episodes...
-        </Module.Title>
-        <LoadingSpinner style={{ padding: '85px 0' }} />
-      </Module>
-    )
-  }
-
-  const { sharing_url } = data;
-  const [, shareId] = sharing_url.split('s/');
-
   return (
     <React.Fragment>
       <NextSeo
-        title={data.title}
-        description={data.description}
+        title={episode.title}
+        description={episode.description}
         openGraph={{
-          url: `https://designdetails.fm/episodes/${data.id}`,
-          title: data.title,
-          description: data.description,
+          url: `https://designdetails.fm/episodes/${episode.id}`,
+          title: episode.title,
+          description: episode.description,
         }}
         twitter={{
           cardType: 'summary_large_image',
@@ -65,17 +45,17 @@ export default function EpisodeContent({ episode, id }) {
           height="200px"
           scrolling="no"
           seamless
-          src={`https://embed.simplecast.com/${shareId}?color=f5f5f5`}
+          src={`https://player.simplecast.com/${episode.id}?dark=false`}
           width="100%"
           data-cy="latest-episode"
-          style={{ margin: "0 0 32px"}}
+          style={{ margin: "0 0 32px" }}
         />
 
         <Module.LargeTitle>
-          {data.title}
+          {episode.title}
         </Module.LargeTitle>
-        
-        <Markdown>{data.long_description}</Markdown>
+
+        <Markdown>{episode.long_description}</Markdown>
       </ModuleCustom>
     </React.Fragment>
   )

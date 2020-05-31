@@ -19,7 +19,7 @@ function Episode({ episode, id }) {
         <EpisodesSidebar />
 
         <Content>
-          <EpisodeContent id={id} episode={episode} />
+          <EpisodeContent episode={episode} />
         </Content>
       </EpisodesPageGrid>
     </PageWrapper>
@@ -27,10 +27,10 @@ function Episode({ episode, id }) {
 }
 
 export async function getStaticPaths() {
-  const episodes = await getEpisodes();
-  const paths = episodes.map(({ id }) => ({
+  const episodes = await getEpisodes({ limit: 1000, offset: 0 });
+  const paths = episodes.map(({ legacy_id, token }) => ({
     // parameters must be strings
-    params: { id: `${id}` }
+    params: { id: `${legacy_id || token}` }
   }))
 
   return { paths, fallback: true }

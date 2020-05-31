@@ -40,7 +40,6 @@ function Episodes({ episodes }) {
             </Module.Description>
             <Welcome />
           </Module>
-
           <EpisodesList episodes={episodes} />
         </Content>
       </EpisodesPageGrid>
@@ -49,8 +48,8 @@ function Episodes({ episodes }) {
 }
 
 export async function getStaticProps() {
-  const episodes = await getEpisodes();
-  return { props: { episodes }}
+  const episodes = await getEpisodes({ limit: 1000, offset: 0 });
+  return { props: { episodes } }
 }
 
 export default Episodes;

@@ -1,16 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import useSWR from 'swr'
 import { PlayCircle } from '../Icons';
 import Module from '../Module';
 import LoadingSpinner from '../LoadingSpinner';
 import theme from '../../config/theme';
-import { getEpisodes } from '../../data';
 
 function EpisodesList({ episodes }) {
-  const { data, error } = useSWR('episodes', getEpisodes, { initialData: episodes, revalidateOnFocus: false})
-
-  if (error) {
+  if (!episodes || episodes.length === 0) {
     return (
       <Module tint={theme.brand.primary}>
         <Module.Title tint={theme.brand.primary}>
@@ -24,7 +20,7 @@ function EpisodesList({ episodes }) {
     )
   }
 
-  if (!data) {
+  if (!episodes) {
     return (
       <Module tint={theme.brand.primary}>
         <Module.Title tint={theme.brand.primary}>
@@ -36,8 +32,8 @@ function EpisodesList({ episodes }) {
     )
   }
 
-  return data.map(episode => (
-    <Link key={episode.id} href={`/episodes/[id]`} as={`/episodes/${episode.id}`}>
+  return episodes.map(episode => (
+    <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
       <a>
         <Module tint={theme.brand.primary} isLink>
           <Module.Title tint={theme.brand.primary}>
