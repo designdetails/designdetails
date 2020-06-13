@@ -12,6 +12,7 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }}
-          vercel-args: '--prod --scope specfm'
+          vercel-args: '--prod'
           vercel-org-id: ${{ secrets.ZEIT_ORG_ID }}
           vercel-project-id: ${{ secrets.ZEIT_PROJECT_ID}}
+          scope: 'specfm'
