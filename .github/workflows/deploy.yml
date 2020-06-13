@@ -12,6 +12,6 @@ jobs:
       - uses: amondnet/now-deployment@v2
         with:
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
-          now-args: '--prod'
+          now-args: '--prod --scope specfm'
           now-org-id: ${{ secrets.ZEIT_ORG_ID }}
           now-project-id: ${{ secrets.ZEIT_PROJECT_ID}}
