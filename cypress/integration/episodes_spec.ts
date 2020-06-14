@@ -28,3 +28,6 @@ describe('Episodes', () => {
     cy.get(`[data-cy="follow-button"]`).should('be.visible');
   });
 });
+
+// prevent typescript isolated modules warning
+export { }
