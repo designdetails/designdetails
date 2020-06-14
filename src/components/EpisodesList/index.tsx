@@ -34,7 +34,7 @@ function EpisodesList({ episodes }) {
 
   return episodes.map(episode => (
     <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
-      <a>
+      <a data-cy="episode-list-item">
         <Module tint={theme.brand.primary} isLink>
           <Module.Title tint={theme.brand.primary}>
             <PlayCircle />

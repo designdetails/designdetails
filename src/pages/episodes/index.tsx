@@ -29,7 +29,7 @@ function Episodes({ episodes }) {
         <EpisodesSidebar />
 
         <Content>
-          <Module tint={theme.brand.primary}>
+          <Module data-cy="suggested-episodes" tint={theme.brand.primary}>
             <Module.Title tint={theme.brand.primary}>
               <SearchCircle />
               Where to begin?
