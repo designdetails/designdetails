@@ -26,20 +26,9 @@ function Episode({ episode, id }) {
   );
 }
 
-export async function getStaticPaths() {
-  const episodes = await getEpisodes({ limit: 1000, offset: 0 });
-  const paths = episodes.map(({ legacy_id, token }) => ({
-    // parameters must be strings
-    params: { id: `${legacy_id || token}` }
-  }))
-
-  return { paths, fallback: true }
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const episode = await getEpisode(params.id);
   return {
-    unstable_revalidate: 60 * 60,
     props: { episode, id: params.id }
   }
 }
