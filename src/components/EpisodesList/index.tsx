@@ -32,7 +32,7 @@ function EpisodesList({ episodes }) {
     )
   }
 
-  return episodes.map(episode => (
+  return episodes.map((episode, i) => (
     <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
       <a data-cy="episode-list-item">
         <Module tint={theme.brand.primary} isLink>
@@ -45,8 +45,21 @@ function EpisodesList({ episodes }) {
             {episode.description}
           </Module.Description>
 
+          {i === 0 && (
+            <iframe
+              frameBorder="0"
+              height="200px"
+              scrolling="no"
+              seamless
+              src={`https://player.simplecast.com/${episode.id}?dark=false`}
+              width="100%"
+              data-cy="latest-episode"
+              style={{ marginBottom: '16px' }}
+            />
+          )}
+
           <Module.Description style={{ marginBottom: 0 }} tint={theme.brand.primary}>
-            <strong>Listen &rarr;</strong>
+            <strong>{i === 0 ? 'Read show notes' : 'Listen'} &rarr;</strong>
           </Module.Description>
         </Module>
       </a>

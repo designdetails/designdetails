@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import Module from '../Module';
 import { PlayCircle } from '../Icons';
 import theme from '../../config/theme';
@@ -31,7 +32,15 @@ function LatestEpisode({ episode }) {
         src={`https://player.simplecast.com/${episode.id}?dark=false`}
         width="100%"
         data-cy="latest-episode"
+        style={{ marginBottom: '16px' }}
       />
+      <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
+        <a>
+          <Module.Description style={{ marginBottom: 0 }} tint={theme.brand.primary}>
+            <strong>Read show notes &rarr;</strong>
+          </Module.Description>
+        </a>
+      </Link>
     </Module>
   );
 }

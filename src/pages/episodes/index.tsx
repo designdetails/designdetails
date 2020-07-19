@@ -29,17 +29,6 @@ function Episodes({ episodes }) {
         <EpisodesSidebar />
 
         <Content>
-          <Module data-cy="suggested-episodes" tint={theme.brand.primary}>
-            <Module.Title tint={theme.brand.primary}>
-              <SearchCircle />
-              Where to begin?
-            </Module.Title>
-            <Module.Description tint={theme.brand.primary}>
-              In the last five years we’ve recorded more than 300 episodes. Here are a
-              few of our favorites that will help make your start a little easier!
-            </Module.Description>
-            <Welcome />
-          </Module>
           <EpisodesList episodes={episodes} />
         </Content>
       </EpisodesPageGrid>
