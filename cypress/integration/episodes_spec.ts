@@ -16,10 +16,6 @@ describe('Episodes', () => {
     });
   });
 
-  it('should render suggested episodes', () => {
-    cy.get(`[data-cy="suggested-episodes"]`).should('be.visible');
-  });
-
   it('should render question button', () => {
     cy.get(`[data-cy="question-button"]`).should('be.visible');
   });
