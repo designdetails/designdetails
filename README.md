@@ -22,6 +22,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 
 ### Made possible by
 - [Fathom](https://designdetails.fm/fathom) - Fathom is a fast, simple, privacy-first analytics tool for your websites. Sign up now and get $20 off your first invoice.
+- [Float](https://www.float.com/?utm_source=designdetails&utm_medium=specfm) - More than 3,000 of the world's top design teams, including BuzzFeed, Ogilvy, MetaLab and Hulu use Float to plan their projects and schedule their team’s time.
 
 ### [Supporters](https://patreon.com/designdetails)
 - Aaron Heine
