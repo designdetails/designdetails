@@ -31,6 +31,11 @@ export const golden = [
     imageUrl: '/static/img/patreon/golden/float.png',
     url: 'https://www.float.com/?utm_source=designdetails&utm_medium=specfm',
     tagline: 'The resource planner that keeps projects on track.'
+  }, {
+    name: 'Webflow',
+    imageUrl: '/static/img/patreon/golden/webflow.png',
+    url: 'http://wfl.io/designdetails',
+    tagline: 'Build better business websites, faster. Without coding.'
   }
 ];
 
