@@ -12,7 +12,7 @@ export default {
   pocketCastsUrl: 'http://pca.st/itunes/947191070',
   rssFeedUrl: 'http://simplecast.fm/podcasts/1034/rss',
   googlePodcastsUrl:
-    'https://play.google.com/music/m/Iyvjpq3k44ux2azsmvlxe3cc5by?t=Design_Details',
+    'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9lZXdfdnlOTA',
   castroUrl: 'https://castro.fm/itunes/947191070',
   breakerUrl: 'https://www.breaker.audio/design-details',
   applePodcastId: '947191070',

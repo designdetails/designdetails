@@ -15,7 +15,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [Apple Podcasts](https://geo.itunes.apple.com/ca/podcast/feed/id947191070)
 - [Overcast](https://overcast.fm/itunes947191070)
 - [PocketCasts](http://pca.st/itunes/947191070)
-- [Google Podcasts](https://play.google.com/music/m/Iyvjpq3k44ux2azsmvlxe3cc5by?t=Design_Details)
+- [Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9lZXdfdnlOTA)
 - [Castro](https://castro.fm/itunes/947191070)
 - [Breaker](https://www.breaker.audio/design-details)
 - [RSS Feed](http://simplecast.fm/podcasts/1034/rss)
