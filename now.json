@@ -1,14 +1,3 @@
 {
-  "version": 2,
-  "github": {
-    "silent": true
-  },
-  "env": {
-    "SIMPLECAST_V2_API_KEY": "@simplecast-v2-api-key"
-  },
-  "build": {
-    "env": {
-      "SIMPLECAST_V2_API_KEY": "@simplecast-v2-api-key"
-    }
-  }
+  "version": 2
 }
