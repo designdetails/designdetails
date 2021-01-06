@@ -19,6 +19,6 @@ export default {
   featuredEpisodes: [161416, 113490, 74759, 48685],
   colors: {
     text: theme.brand.primary,
-    button: theme.brand.primary,
+    button: theme.brand.primary
   }
 };
