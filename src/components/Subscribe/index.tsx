@@ -1,5 +1,5 @@
-import { Grid, Option, Avatar, Label } from './style';
-import podcast from '../../config/podcasts';
+import { Grid, Option, Avatar, Label } from "./style";
+import podcast from "../../config/podcasts";
 
 export default () => {
   return (
@@ -85,23 +85,6 @@ export default () => {
               alt="Castro"
             />
             <Label>Castro</Label>
-          </Option>
-        </a>
-      )}
-
-      {podcast.breakerUrl && (
-        <a
-          href={podcast.breakerUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-cy="subscription-breaker"
-        >
-          <Option>
-            <Avatar
-              src="/static/img/subscription-icons/breaker.png"
-              alt="Breakrer"
-            />
-            <Label>Breaker</Label>
           </Option>
         </a>
       )}
