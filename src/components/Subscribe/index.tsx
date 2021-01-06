@@ -89,23 +89,6 @@ export default () => {
         </a>
       )}
 
-      {podcast.breakerUrl && (
-        <a
-          href={podcast.breakerUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-cy="subscription-breaker"
-        >
-          <Option>
-            <Avatar
-              src="/static/img/subscription-icons/breaker.png"
-              alt="Breakrer"
-            />
-            <Label>Breaker</Label>
-          </Option>
-        </a>
-      )}
-
       {podcast.rssFeedUrl && (
         <a
           href={podcast.rssFeedUrl}
