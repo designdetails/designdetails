@@ -1,5 +1,5 @@
-import { Grid, Option, Avatar, Label } from "./style";
-import podcast from "../../config/podcasts";
+import { Grid, Option, Avatar, Label } from './style';
+import podcast from '../../config/podcasts';
 
 export default () => {
   return (

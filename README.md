@@ -3,13 +3,11 @@
 A weekly conversation about design process and culture, hosted by [Brian Lovin](https://twitter.com/brian_lovin) and [Marshall Bock](https://twitter.com/marshallbock).
 
 ### What to do
-
 - [Listen to the show](https://spec.fm/podcasts/design-details)
 - [Ask us a question](https://github.com/specfm/design-details/issues/new)
 - [Support us on Patreon](https://patreon.com/designdetails)
 
 ### Quick links
-
 - [All Episodes](https://spec.fm/podcasts/design-details)
 - [Twitter](https://twitter.com/designdetailsfm)
 - [Instagram](https://instagram.com/designdetailsfm)
@@ -22,7 +20,6 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - [RSS Feed](http://simplecast.fm/podcasts/1034/rss)
 
 ### Made possible by
-
 - [Fathom](https://designdetails.fm/fathom) - Fathom is a fast, simple, privacy-first analytics tool for your websites. Sign up now and get $20 off your first invoice.
 - [Float](https://www.float.com/?utm_source=designdetails&utm_medium=specfm) - More than 3,000 of the world's top design teams, including BuzzFeed, Ogilvy, MetaLab and Hulu use Float to plan their projects and schedule their team’s time.
 
@@ -74,7 +71,7 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - John Wood
 - Joseph Brueggen [@josephbrueggen](https://twitter.com/josephbrueggen)
 - Justin Allen
-- Karl Koch [@\_kejk](https://twitter.com/_kejk)
+- Karl Koch [@_kejk](https://twitter.com/_kejk)
 - Kevin Bennett
 - Kris Puckett
 - Kryston Schwarze
@@ -197,10 +194,8 @@ A weekly conversation about design process and culture, hosted by [Brian Lovin](
 - Tanveer Singh Mahendra
 
 ### Team
-
 - [@marshallbock](https://twitter.com/marshallbock)
 - [@brian_lovin](https://twitter.com/brian_lovin)
 
 ### Spec
-
 Design Details is a member of the [Spec Network](https://spec.fm/) of podcasts.
