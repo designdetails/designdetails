@@ -1,4 +1,5 @@
-name: Test and deploy
+
+name: Tests
 on:
   push:
     branches:
@@ -7,43 +8,17 @@ on:
     branches:
     - main
 jobs:
-  cypress-run:
+  cypress:
     runs-on: ubuntu-latest
-    name: Cypress
+    name: Integration
     env:
       SIMPLECAST_V2_API_KEY: ${{ secrets.SIMPLECAST_V2_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Cypress run
+      - name: Run Cypress
         uses: cypress-io/github-action@v2
         with:
           build: yarn run build
           start: yarn run start
           browser: chrome
-  preview:
-    runs-on: ubuntu-latest
-    name: Preview deployment
-    steps:
-      - uses: actions/checkout@v2
-      - uses: amondnet/vercel-action@v20
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          scope: ${{ secrets.VERCEL_TEAM_ID }}
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deploy to production
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - uses: actions/checkout@v2
-      - uses: amondnet/vercel-action@v20
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-args: '--prod'
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          scope: ${{ secrets.VERCEL_TEAM_ID }}
