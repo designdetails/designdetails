@@ -14,6 +14,7 @@ export default {
   googlePodcastsUrl:
     'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9lZXdfdnlOTA',
   castroUrl: 'https://castro.fm/itunes/947191070',
+  breakerUrl: 'https://www.breaker.audio/design-details',
   applePodcastId: '947191070',
   twitterUsername: 'designdetailsfm',
   featuredEpisodes: [161416, 113490, 74759, 48685],
