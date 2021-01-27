@@ -26,17 +26,18 @@ export const golden = [
     url: 'https://designdetails.fm/fathom',
     tagline:
       'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.'
-  }, {
-    name: 'Float',
-    imageUrl: '/static/img/patreon/golden/float.png',
-    url: 'https://www.float.com/?utm_source=designdetails&utm_medium=specfm',
-    tagline: 'The resource planner that keeps projects on track.'
-  }, {
-    name: 'Webflow',
-    imageUrl: '/static/img/patreon/golden/webflow.png',
-    url: 'http://wfl.io/designdetails',
-    tagline: 'Build better business websites, faster. Without coding.'
-  }
+  },
+  // {
+  //   name: 'Float',
+  //   imageUrl: '/static/img/patreon/golden/float.png',
+  //   url: 'https://www.float.com/?utm_source=designdetails&utm_medium=specfm',
+  //   tagline: 'The resource planner that keeps projects on track.'
+  // }, {
+  //   name: 'Webflow',
+  //   imageUrl: '/static/img/patreon/golden/webflow.png',
+  //   url: 'http://wfl.io/designdetails',
+  //   tagline: 'Build better business websites, faster. Without coding.'
+  // }
 ];
 
 // Simply add a new Twitter display name inside the inverted commas. Once added, run a new build and deploy to see an updated Twitter URL for that Patreon supporter.
