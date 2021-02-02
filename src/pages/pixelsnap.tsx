@@ -5,7 +5,7 @@ export default class extends React.Component {
   static async getInitialProps({ res }) {
     if (res) {
       res.writeHead(302, {
-        Location: 'https://getpixelsnap.com'
+        Location: 'https://gumroad.com/a/641602675'
       })
       res.end()
     } else {
