@@ -27,6 +27,20 @@ export const golden = [
     tagline:
       'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.'
   },
+  {
+    name: 'Copilot',
+    imageUrl: '/static/img/patreon/golden/copilot.png',
+    url: 'https://copilot.money',
+    tagline:
+      'The app that changes the way you see your money, one emoji at a time 🍔'
+  },
+  {
+    name: 'Mailbrew',
+    imageUrl: '/static/img/patreon/golden/mailbrew.jpg',
+    url: 'https://mailbrew.com',
+    tagline:
+      'The best links you can’t miss, and the best content from your favorite creators and newsletters, in a daily digest.'
+  },
   // {
   //   name: 'Float',
   //   imageUrl: '/static/img/patreon/golden/float.png',
