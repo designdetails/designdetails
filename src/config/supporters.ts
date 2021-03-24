@@ -38,7 +38,7 @@ export const golden = [
     name: 'Around',
     imageUrl: '/static/img/patreon/golden/around.jpg',
     url: 'https://around.co/designdetails',
-    tagline: 'Video calls designed for energy, ideas and action.'
+    tagline: 'Lightweight video calls that float on your desktop. Designed for collaboration, not meetings. Loved by designers.'
   },
   {
     name: 'Mailbrew',
