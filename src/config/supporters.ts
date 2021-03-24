@@ -20,19 +20,25 @@ const randomPatreonImage = () => {
 };
 
 export const golden = [
+  // {
+  //   name: 'Fathom',
+  //   imageUrl: '/static/img/patreon/golden/fathom.png',
+  //   url: 'https://designdetails.fm/fathom',
+  //   tagline:
+  //     'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.'
+  // },
+  // {
+  //   name: 'Copilot',
+  //   imageUrl: '/static/img/patreon/golden/copilot.png',
+  //   url: 'https://copilot.money',
+  //   tagline:
+  //     'The app that changes the way you see your money, one emoji at a time 🍔'
+  // },
   {
-    name: 'Fathom',
-    imageUrl: '/static/img/patreon/golden/fathom.png',
-    url: 'https://designdetails.fm/fathom',
-    tagline:
-      'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.'
-  },
-  {
-    name: 'Copilot',
-    imageUrl: '/static/img/patreon/golden/copilot.png',
-    url: 'https://copilot.money',
-    tagline:
-      'The app that changes the way you see your money, one emoji at a time 🍔'
+    name: 'Around',
+    imageUrl: '/static/img/patreon/golden/around.jpg',
+    url: 'https://around.co/designdetails',
+    tagline: 'Video calls designed for energy, ideas and action.'
   },
   {
     name: 'Mailbrew',
