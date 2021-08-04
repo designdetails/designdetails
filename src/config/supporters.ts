@@ -24,7 +24,7 @@ export const golden = [
 		name: 'Baronfig',
 		imageUrl: '/static/img/patreon/golden/baronfig.jpg',
 		url: 'https://baronfig.com',
-		tagline: 'Tools for thinking.',
+		tagline: 'Use promo code DESIGNDETAILS21 to save 20% on orders over $50.',
 	},
 	{
 		name: 'Plume',
