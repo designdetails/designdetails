@@ -29,7 +29,7 @@ export const golden = [
 	{
 		name: 'Plume',
 		imageUrl: '/static/img/patreon/golden/plume.jpg',
-		url: 'https://designdetails.fm/plume',
+		url: '/plume',
 		tagline: 'Plume is hiring their next product designer.',
 	},
 	{
