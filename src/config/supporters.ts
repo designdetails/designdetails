@@ -20,11 +20,18 @@ const randomPatreonImage = () => {
 };
 
 export const golden = [
+	// {
+	// 	name: 'Baronfig',
+	// 	imageUrl: '/static/img/patreon/golden/baronfig.jpg',
+	// 	url: 'https://baronfig.com/designdetails',
+	// 	tagline: 'Use promo code DESIGNDETAILS21 to save 20% on orders over $50.',
+	// },
 	{
-		name: 'Baronfig',
-		imageUrl: '/static/img/patreon/golden/baronfig.jpg',
-		url: 'https://baronfig.com/designdetails',
-		tagline: 'Use promo code DESIGNDETAILS21 to save 20% on orders over $50.',
+		name: 'Play',
+		imageUrl: '/static/img/patreon/golden/play.png',
+		url: 'https://createwithplay.com',
+		tagline:
+			'The first native iOS design tool built for creating mobile products.',
 	},
 	{
 		name: 'Plume',
@@ -32,13 +39,13 @@ export const golden = [
 		url: '/plume',
 		tagline: 'Plume is hiring their next product designer.',
 	},
-	{
-		name: 'Fathom',
-		imageUrl: '/static/img/patreon/golden/fathom.png',
-		url: 'https://designdetails.fm/fathom',
-		tagline:
-			'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.',
-	},
+	// {
+	// 	name: 'Fathom',
+	// 	imageUrl: '/static/img/patreon/golden/fathom.png',
+	// 	url: 'https://designdetails.fm/fathom',
+	// 	tagline:
+	// 		'Simple analytics for bloggers & businesses. Click here to save $20 on your first invoice.',
+	// },
 	// {
 	//   name: 'Copilot',
 	//   imageUrl: '/static/img/patreon/golden/copilot.png',
