@@ -39,6 +39,12 @@ export const golden = [
 		url: '/plume',
 		tagline: 'Plume is hiring their next product designer.',
 	},
+	{
+		name: 'Sympli',
+		imageUrl: '/static/img/patreon/golden/sympli.png',
+		url: 'https://sympli.io',
+		tagline: 'Modern design version control, handoff and workflow tools.',
+	},
 	// {
 	// 	name: 'Fathom',
 	// 	imageUrl: '/static/img/patreon/golden/fathom.png',
