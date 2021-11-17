@@ -27,18 +27,25 @@ export const golden = [
 	// 	tagline: 'Use promo code DESIGNDETAILS21 to save 20% on orders over $50.',
 	// },
 	{
+		name: 'Patreon',
+		imageUrl: '/static/img/patreon/golden/patreon.png',
+		url: 'https://www.patreon.com/careers',
+		tagline:
+			'Patreon builds for creators, and they’re hiring product designers.',
+	},
+	{
 		name: 'Play',
 		imageUrl: '/static/img/patreon/golden/play.png',
 		url: 'https://createwithplay.com',
 		tagline:
 			'The first native iOS design tool built for creating mobile products.',
 	},
-	{
-		name: 'Plume',
-		imageUrl: '/static/img/patreon/golden/plume.jpg',
-		url: '/plume',
-		tagline: 'Plume is hiring their next product designer.',
-	},
+	// {
+	// 	name: 'Plume',
+	// 	imageUrl: '/static/img/patreon/golden/plume.jpg',
+	// 	url: '/plume',
+	// 	tagline: 'Plume is hiring their next product designer.',
+	// },
 	{
 		name: 'Sympli',
 		imageUrl: '/static/img/patreon/golden/sympli.png',
