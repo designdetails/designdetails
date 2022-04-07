@@ -26,11 +26,23 @@ export const golden = [
 	// 	url: 'https://baronfig.com/designdetails',
 	// 	tagline: 'Use promo code DESIGNDETAILS21 to save 20% on orders over $50.',
 	// },
+	// {
+	// 	name: 'Zeplin',
+	// 	imageUrl: '/static/img/patreon/golden/zeplin.jpg',
+	// 	url: 'https://zeplin.io/?utm_campaign=partner_designdetailsfm_podcast-february-2022',
+	// 	tagline: 'Organize screens. Publish locked designs. Scale design systems.',
+	// },
 	{
-		name: 'Zeplin',
-		imageUrl: '/static/img/patreon/golden/zeplin.jpg',
-		url: 'https://zeplin.io/?utm_campaign=partner_designdetailsfm_podcast-february-2022',
-		tagline: 'Organize screens. Publish locked designs. Scale design systems.',
+		name: 'BestPracticer',
+		imageUrl: '/static/img/patreon/golden/bestpracticer.jpg',
+		url: 'https://bestpracticer.com/designdetails',
+		tagline: 'Level up your career and achieve your goals with 1:1 coaching from design experts.',
+	},
+	{
+		name: 'Vagaro',
+		imageUrl: '/static/img/patreon/golden/vagaro.jpg',
+		url: 'https://sales.vagaro.com/careers',
+		tagline: 'Vagaro is hiring product designers who want to have direct impact through design.',
 	},
 	// {
 	// 	name: 'Patreon',
