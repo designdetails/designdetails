@@ -2,7 +2,7 @@ import PageWrapper from '../components/PageWrapper';
 import Module from '../components/Module';
 import Subscribe from '../components/Subscribe';
 import Welcome from '../components/Welcome';
-import SupportersGrid, { GoldenMicrophones } from '../components/SupportersGrid';
+import { GoldenMicrophones } from '../components/SupportersGrid';
 import Team from '../components/Team';
 import LatestEpisode from '../components/LatestEpisode';
 import { getLatestEpisode } from '../data';
