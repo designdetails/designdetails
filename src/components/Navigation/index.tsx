@@ -27,13 +27,11 @@ const Navigation = ({ router }: Props) => (
 			</NavItem>
 		</a>
 
-		<Link href="/jobs">
-			<a>
-				<NavItem>
-					Job Board <LinkExternal />
-				</NavItem>
-			</a>
-		</Link>
+		<a href="https://designdetails.fm/jobs" target="_blank" rel="noreferrer noopener">
+			<NavItem>
+				Job Board <LinkExternal />
+			</NavItem>
+		</a>
 	</Container>
 );
 
