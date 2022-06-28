@@ -17,12 +17,18 @@ export const golden = [
 	// 	url: 'https://bestpracticer.com/designdetails',
 	// 	tagline: 'Level up your career and achieve your goals with 1:1 coaching from design experts.',
 	// },
-	{
-		name: 'Vagaro',
-		imageUrl: '/static/img/patreon/golden/vagaro.jpg',
-		url: 'https://sales.vagaro.com/careers',
-		tagline: 'Vagaro is hiring product designers who want to have direct impact through design.',
-	},
+	// {
+	// 	name: 'Vagaro',
+	// 	imageUrl: '/static/img/patreon/golden/vagaro.jpg',
+	// 	url: 'https://sales.vagaro.com/careers',
+	// 	tagline: 'Vagaro is hiring product designers who want to have direct impact through design.',
+	// },
+  {
+    name: 'Figma',
+    imageUrl: '/static/img/patreon/golden/figma.png',
+    url: 'https://designdetails.pallet.com/jobs/65da40e2-6d99-4372-bc54-b669a47fc991',
+    tagline: 'Figma is hiring product designers to shape the future of FigJam.'
+  },
 	// {
 	// 	name: 'Patreon',
 	// 	imageUrl: '/static/img/patreon/golden/patreon.png',
