@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import theme from '../../config/theme'
+import styled from 'styled-components';
+import theme from '../../config/theme';
 
 export const Content = styled.div`
   audio {
     margin-bottom: 32px;
   }
-`
+`;
 
 export const Title = styled.h1`
   font-size: 40px;
@@ -19,7 +19,7 @@ export const Title = styled.h1`
     font-size: 32px;
     line-height: 1.1;
   }
-`
+`;
 
 export const Description = styled.h2`
   font-size: 22px;
@@ -30,14 +30,14 @@ export const Description = styled.h2`
   margin-top: 24px;
 
   @media (max-width: 968px) {
-    font-size: 18px; 
+    font-size: 18px;
     margin-bottom: 16px;
   }
 
   a:hover {
     color: ${theme.text.primary};
   }
-`
+`;
 
 export const Divider = styled.div`
   position: relative;
@@ -45,7 +45,7 @@ export const Divider = styled.div`
   border-bottom: 1px solid ${theme.ui.border};
   width: 100%;
   margin-top: 48px;
-`
+`;
 
 export const Label = styled.span`
   position: relative;
@@ -55,4 +55,4 @@ export const Label = styled.span`
   font-size: 16px;
   font-weight: 500;
   color: ${theme.text.secondary};
-`
+`;

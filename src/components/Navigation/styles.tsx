@@ -26,9 +26,10 @@ export const NavItem = styled.div`
   justify-content: center;
   padding: 12px 24px;
   font-weight: 500;
-  color: ${props => (props.active ? theme.text.primary : theme.text.tertiary)};
+  color: ${(props) =>
+    props.active ? theme.text.primary : theme.text.tertiary};
   border-bottom: 2px solid
-    ${props => (props.active ? theme.text.primary : 'transparent')};
+    ${(props) => (props.active ? theme.text.primary : 'transparent')};
   fill: blue;
   position: relative;
   bottom: -1px;
@@ -41,10 +42,10 @@ export const NavItem = styled.div`
   }
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.active ? theme.text.primary : theme.text.secondary};
     border-bottom: 2px solid
-      ${props => (props.active ? theme.text.primary : theme.ui.border)};
+      ${(props) => (props.active ? theme.text.primary : theme.ui.border)};
 
     svg {
       margin-left: 8px;

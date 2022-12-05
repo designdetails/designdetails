@@ -12,7 +12,7 @@ export default ({ style }: Props) => (
       alignItems: 'center',
       justifyContent: 'center',
       height: '100%',
-      ...style
+      ...style,
     }}
   >
     <Donut />

@@ -1,12 +1,12 @@
-import styled, { css } from 'styled-components'
-import ReactMarkdown from 'react-markdown'
+import styled, { css } from 'styled-components';
+import ReactMarkdown from 'react-markdown';
 import { tint } from '../utils';
 
 const Content = css`
   h1 {
     font-size: 32px;
     font-weight: 700;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 28px;
     margin-bottom: 4px;
   }
@@ -14,7 +14,7 @@ const Content = css`
   h2 {
     font-size: 28px;
     font-weight: 700;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 26px;
     margin-bottom: 4px;
   }
@@ -22,7 +22,7 @@ const Content = css`
   h3 {
     font-size: 20px;
     font-weight: 600;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 24px;
     margin-bottom: 4px;
   }
@@ -30,7 +30,7 @@ const Content = css`
   h4 {
     font-size: 18px;
     font-weight: 600;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 16px;
     margin-bottom: 4px;
   }
@@ -38,7 +38,7 @@ const Content = css`
   h5 {
     font-size: 18px;
     font-weight: 600;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 16px;
     margin-bottom: 4px;
   }
@@ -46,7 +46,7 @@ const Content = css`
   h6 {
     font-size: 16px;
     font-weight: 500;
-    color: ${props => props.theme.text.primary};
+    color: ${(props) => props.theme.text.primary};
     margin-top: 16px;
     text-transform: uppercase;
     margin-bottom: 4px;
@@ -56,12 +56,12 @@ const Content = css`
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    color: ${props => props.theme.text.secondary};
+    color: ${(props) => props.theme.text.secondary};
     margin-top: 16px;
   }
 
   a {
-    color: ${props => tint(props.theme.brand.primary, -20)};
+    color: ${(props) => tint(props.theme.brand.primary, -20)};
     font-weight: 600;
   }
 
@@ -82,9 +82,10 @@ const Content = css`
     font-weight: 400;
     line-height: 1.5;
     padding-left: 0;
-    color: ${props => props.theme.text.secondary};
+    color: ${(props) => props.theme.text.secondary};
 
-    ul, ol {
+    ul,
+    ol {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -108,4 +109,4 @@ export const Notes = styled(ReactMarkdown)`
   ${Content}
   max-width: 100%;
   word-break: break-word;
-`
+`;

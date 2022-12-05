@@ -1,11 +1,12 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import Module from '../Module';
 import { PlayCircle } from '../Icons';
 import theme from '../../config/theme';
 import LoadingSpinner from '../LoadingSpinner';
+import { Episode } from '../../types';
 
-function LatestEpisode({ episode }) {
+function LatestEpisode({ episode }: { episode: Episode }) {
   if (!episode) {
     return (
       <Module tint={theme.brand.primary} col={'1 / span 6'}>
@@ -34,12 +35,17 @@ function LatestEpisode({ episode }) {
         data-cy="latest-episode"
         style={{ marginBottom: '16px' }}
       />
-      <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
-        <a>
-          <Module.Description style={{ marginBottom: 0 }} tint={theme.brand.primary}>
-            <strong>Read show notes &rarr;</strong>
-          </Module.Description>
-        </a>
+      <Link
+        key={episode.legacy_id || episode.token}
+        href={`/episodes/[id]`}
+        as={`/episodes/${episode.legacy_id || episode.token}`}
+      >
+        <Module.Description
+          style={{ marginBottom: 0 }}
+          tint={theme.brand.primary}
+        >
+          <strong>Read show notes &rarr;</strong>
+        </Module.Description>
       </Link>
     </Module>
   );

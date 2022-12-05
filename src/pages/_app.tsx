@@ -1,22 +1,22 @@
-import * as React from 'react'
+import * as React from 'react';
 import App from 'next/app';
-import { trackPageview, load, setSiteId } from 'fathom-client'
-import Router from 'next/router'
+import { trackPageview, load, setSite } from 'fathom-client';
+import Router from 'next/router';
 import Providers from '../components/Providers';
 
 Router.events.on('routeChangeComplete', () => {
-  trackPageview()
-})
+  trackPageview();
+});
 
 function FathomProvider(props) {
   React.useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
-      load();
-      setSiteId('ZSRPOEMC');
+      load('ZSRPOEMC');
+      setSite('ZSRPOEMC');
       trackPageview();
     }
-  }, [])
-  return <div {...props} />
+  }, []);
+  return <div {...props} />;
 }
 
 class MyApp extends App {
