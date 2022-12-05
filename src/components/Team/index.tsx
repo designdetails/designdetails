@@ -4,7 +4,7 @@ import { Grid, Person, Avatar, Name, Role } from './styles';
 
 export default () => (
   <Grid>
-    {team.map(person => (
+    {team.map((person) => (
       <Person data-cy={`team-${person.name}`} key={person.twitterUsername}>
         <Avatar alt={`${person.name}'s avatar`} src={person.profilePhotoUrl} />
         <Name>{person.name}</Name>

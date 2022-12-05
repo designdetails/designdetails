@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { hexa, tint } from '../utils';
 import theme from '../../config/theme';
 
-const getPadding = size => {
+const getPadding = (size) => {
   switch (size) {
     case 'small':
       return '8px 12px';
@@ -16,7 +16,7 @@ const getPadding = size => {
   }
 };
 
-const getFontSize = size => {
+const getFontSize = (size) => {
   switch (size) {
     case 'small':
       return '14px';
@@ -38,7 +38,7 @@ const base = css`
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  font-size: ${props => getFontSize(props.size)};
+  font-size: ${(props) => getFontSize(props.size)};
   font-weight: 600;
   white-space: nowrap;
   word-break: keep-all;
@@ -47,9 +47,9 @@ const base = css`
   line-height: 1;
   position: relative;
   text-align: center;
-  padding: ${props => getPadding(props.size)};
-  opacity: ${props => (props.disabled ? '0.64' : '1')};
-  box-shadow: ${props =>
+  padding: ${(props) => getPadding(props.size)};
+  opacity: ${(props) => (props.disabled ? '0.64' : '1')};
+  box-shadow: ${(props) =>
     props.disabled ? 'none' : `0 1px 2px rgba(0,0,0,0.04)`};
 
   &:disabled {
@@ -58,7 +58,7 @@ const base = css`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    box-shadow: ${props =>
+    box-shadow: ${(props) =>
       props.disabled ? 'none' : `${theme.shadows.button}`};
   }
 
@@ -77,7 +77,7 @@ export const Button = styled.button`
   color: ${theme.text.secondary};
   background-color: ${theme.ui.default};
   background-image: ${`linear-gradient(to bottom, ${theme.ui.default}, ${theme.ui.wash})`};
-  
+
   &:hover {
     color: ${theme.text.primary};
   }
@@ -105,7 +105,7 @@ export const PrimaryButton = styled.button`
       theme.brand.primary,
       16
     )}, ${tint(theme.brand.primary, 16)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${(props) => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
@@ -114,10 +114,8 @@ export const PrimaryButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
-  theme.brand.primary,
-  0.16
-)};
+    box-shadow: 0 0 0 1px ${theme.ui.default},
+      0 0 0 3px ${hexa(theme.brand.primary, 0.16)};
   }
 `;
 
@@ -227,7 +225,7 @@ export const FacebookButton = styled.button`
       theme.social.facebook,
       16
     )}, ${tint(theme.social.facebook, 16)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${(props) => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
@@ -236,10 +234,8 @@ export const FacebookButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
-  theme.social.facebook,
-  0.16
-)};
+    box-shadow: 0 0 0 1px ${theme.ui.default},
+      0 0 0 3px ${hexa(theme.social.facebook, 0.16)};
   }
 `;
 
@@ -256,7 +252,7 @@ export const TwitterButton = styled.button`
       theme.social.twitter,
       4
     )}, ${tint(theme.social.twitter, 4)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${(props) => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
@@ -265,14 +261,12 @@ export const TwitterButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
-  theme.social.twitter,
-  0.16
-)};
+    box-shadow: 0 0 0 1px ${theme.ui.default},
+      0 0 0 3px ${hexa(theme.social.twitter, 0.16)};
   }
 
   svg {
-    fill: #FFF;
+    fill: #fff;
   }
 `;
 
@@ -283,14 +277,13 @@ export const PatreonButton = styled.button`
   background-color: ${theme.social.patreon};
   background-image: ${`linear-gradient(to bottom, ${theme.social.patreon}, ${theme.social.patreon})`};
 
-
   &:hover {
     color: ${theme.ui.default};
     background-image: ${`linear-gradient(to bottom, ${tint(
       theme.social.patreon,
       4
     )}, ${tint(theme.social.patreon, 4)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${(props) => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
@@ -299,10 +292,8 @@ export const PatreonButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
-  theme.social.patreon,
-  0.16
-)};
+    box-shadow: 0 0 0 1px ${theme.ui.default},
+      0 0 0 3px ${hexa(theme.social.patreon, 0.16)};
   }
 `;
 
@@ -313,14 +304,13 @@ export const GitHubButton = styled.button`
   background-color: ${theme.social.github};
   background-image: ${`linear-gradient(to bottom, ${theme.social.github}, ${theme.social.github})`};
 
-
   &:hover {
     color: ${theme.ui.default};
     background-image: ${`linear-gradient(to bottom, ${tint(
       theme.social.github,
       4
     )}, ${tint(theme.social.github, 4)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${(props) => (props.disabled ? 'none' : theme.shadows.button)};
   }
 
   &:active {
@@ -329,10 +319,8 @@ export const GitHubButton = styled.button`
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${hexa(
-  theme.social.github,
-  0.16
-)};
+    box-shadow: 0 0 0 1px ${theme.ui.default},
+      0 0 0 3px ${hexa(theme.social.github, 0.16)};
   }
 
   svg {

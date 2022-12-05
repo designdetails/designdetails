@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import Module from '../../components/Module';
 import Subscribe from '../../components/Subscribe';
 import {
@@ -11,7 +11,7 @@ import {
 import {
   PatreonButton,
   GitHubButton,
-  TwitterButton
+  TwitterButton,
 } from '../../components/Button';
 import theme from '../../config/theme';
 
@@ -20,7 +20,7 @@ const Sidebar = styled.div`
   display: grid;
   grid-gap: 24px;
   grid-auto-rows: min-content;
-`
+`;
 
 const EpisodesSidebar = () => (
   <Sidebar>
@@ -45,10 +45,7 @@ const EpisodesSidebar = () => (
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
 
-    <Module
-      data-cy="follow-button"
-      tint={theme.social.twitter}
-    >
+    <Module data-cy="follow-button" tint={theme.social.twitter}>
       <Module.Title tint={theme.social.twitter}>
         <TwitterCircle />
         Follow along

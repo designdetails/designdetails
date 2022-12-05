@@ -1,14 +1,10 @@
-import { NextSeo } from 'next-seo'
-import styled from 'styled-components'
+import styled from 'styled-components';
 import PageWrapper from '../../components/PageWrapper';
-import Module from '../../components/Module';
-import EpisodesList from '../../components/EpisodesList'
-import Welcome from '../../components/Welcome';
-import { SearchCircle } from '../../components/Icons';
-import theme from '../../config/theme';
+import EpisodesList from '../../components/EpisodesList';
 import { EpisodesPageGrid } from '../../components/PageWrapper/styles';
 import EpisodesSidebar from '../../components/EpisodesSidebar';
 import { getEpisodes } from '../../data';
+import { Episode } from '../../types';
 
 const Content = styled.div`
   grid-area: content;
@@ -20,9 +16,9 @@ const Content = styled.div`
   @media (max-width: 768px) {
     grid-gap: 12px;
   }
-`
+`;
 
-function Episodes({ episodes }) {
+function Episodes({ episodes }: { episodes: Episode[] }) {
   return (
     <PageWrapper>
       <EpisodesPageGrid>
@@ -38,7 +34,7 @@ function Episodes({ episodes }) {
 
 export async function getStaticProps() {
   const episodes = await getEpisodes({ limit: 1000, offset: 0 });
-  return { props: { episodes } }
+  return { props: { episodes } };
 }
 
 export default Episodes;

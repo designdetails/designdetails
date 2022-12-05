@@ -1,9 +1,8 @@
 // @flow
 import * as React from 'react';
-import rehypeRaw from 'rehype-raw'
-import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw';
+import rehypeSanitize from 'rehype-sanitize';
 import { Notes } from './style';
-
 
 function LinkRenderer(props: any) {
   const { children, href } = props;
@@ -14,8 +13,15 @@ function LinkRenderer(props: any) {
   );
 }
 
-function Markdown({ children }) {
-  return <Notes rehypePlugins={[rehypeRaw, rehypeSanitize]} components={{ link: LinkRenderer }}>{children}</Notes>;
+function Markdown({ children }: { children: string }) {
+  return (
+    <Notes
+      rehypePlugins={[rehypeRaw, rehypeSanitize]}
+      components={{ link: LinkRenderer }}
+    >
+      {children}
+    </Notes>
+  );
 }
 
 export default Markdown;

@@ -9,7 +9,7 @@ describe('Episodes', () => {
   });
 
   it('should render subscription options', () => {
-    cy.fixture('subscription-options').then(subscriptions => {
+    cy.fixture('subscription-options').then((subscriptions) => {
       subscriptions.map((subscription: string) =>
         cy.get(`[data-cy="subscription-${subscription}"]`).should('be.visible')
       );
@@ -26,4 +26,4 @@ describe('Episodes', () => {
 });
 
 // prevent typescript isolated modules warning
-export { }
+export {};

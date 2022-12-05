@@ -37,7 +37,7 @@ export const EpisodesPageGrid = styled.div`
   width: 100%;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: "sidebar content";
+  grid-template-areas: 'sidebar content';
   grid-gap: 24px;
   padding-top: 24px;
 
@@ -47,7 +47,7 @@ export const EpisodesPageGrid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-areas: "content" "sidebar";
+    grid-template-areas: 'content' 'sidebar';
     grid-gap: 12px;
   }
-`
+`;
