@@ -35,11 +35,9 @@ function LatestEpisode({ episode }) {
         style={{ marginBottom: '16px' }}
       />
       <Link key={episode.legacy_id || episode.token} href={`/episodes/[id]`} as={`/episodes/${episode.legacy_id || episode.token}`}>
-        <a>
           <Module.Description style={{ marginBottom: 0 }} tint={theme.brand.primary}>
             <strong>Read show notes &rarr;</strong>
           </Module.Description>
-        </a>
       </Link>
     </Module>
   );

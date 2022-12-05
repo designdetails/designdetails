@@ -42,10 +42,8 @@ export default () => (
         href={`/episodes/[id]`}
         as={`/episodes/${ep.id}`}
       >
-        <a>
           <Chevron />
           {ep.title}
-        </a>
       </Link>
     ))}
   </Grid>

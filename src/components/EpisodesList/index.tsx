@@ -48,8 +48,7 @@ function EpisodesList({ episodes }) {
 				key={episode.legacy_id || episode.token}
 				href={`/episodes/[id]`}
 				as={`/episodes/${episode.legacy_id || episode.token}`}
-			>
-				<a data-cy="episode-list-item">
+			  data-cy="episode-list-item">
 					<Module tint={theme.brand.primary} isLink>
 						<Module.Date tint={theme.brand.primary}>{date}</Module.Date>
 
@@ -82,7 +81,6 @@ function EpisodesList({ episodes }) {
 							<strong>{i === 0 ? 'Read show notes' : 'Listen'} &rarr;</strong>
 						</Module.Description>
 					</Module>
-				</a>
 			</Link>
 		);
 	});

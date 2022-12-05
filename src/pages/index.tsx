@@ -90,7 +90,6 @@ export default function Home({ latestEpisode }) {
 						entertaining, please consider supporting us directly by becoming a patron.
 					</Module.Description>
 					<PatreonButton>Support us on Patreon</PatreonButton>
-					<GoldenMicrophones />
 				</Module>
 			</GridWrapper>
 		</PageWrapper>
