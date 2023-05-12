@@ -1,6 +1,6 @@
-import { TwitterButton } from '../Button';
-import team from '../../config/team';
-import { Grid, Person, Avatar, Name, Role } from './styles';
+import { TwitterButton } from '../Button'
+import team from '../../config/team'
+import { Grid, Person, Avatar, Name, Role } from './styles'
 
 export default () => (
   <Grid>
@@ -19,4 +19,4 @@ export default () => (
       </Person>
     ))}
   </Grid>
-);
+)

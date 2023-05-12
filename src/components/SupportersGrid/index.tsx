@@ -1,12 +1,12 @@
-import React from 'react';
-import { golden } from '../../config/supporters';
+import React from 'react'
+import { golden } from '../../config/supporters'
 import {
   GoldenGrid,
   Microphone,
   MicAvatar,
   MicName,
   MicTagline,
-} from './styles';
+} from './styles'
 
 export const GoldenMicrophones = () => (
   <GoldenGrid>
@@ -24,4 +24,4 @@ export const GoldenMicrophones = () => (
       </Microphone>
     ))}
   </GoldenGrid>
-);
+)

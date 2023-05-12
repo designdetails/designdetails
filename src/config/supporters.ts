@@ -93,4 +93,4 @@ export const golden = [
   //   url: 'http://wfl.io/designdetails',
   //   tagline: 'Build better business websites, faster. Without coding.'
   // }
-];
+]

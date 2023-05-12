@@ -1,12 +1,12 @@
-import { ThemeProvider } from 'styled-components';
-import Head from 'next/head';
-import { DefaultSeo } from 'next-seo';
-import GlobalStyles from '../GlobalStyles';
-import SEO from '../../config/next-seo';
-import theme from '../../config/theme';
+import { ThemeProvider } from 'styled-components'
+import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
+import GlobalStyles from '../GlobalStyles'
+import SEO from '../../config/next-seo'
+import theme from '../../config/theme'
 
 interface Props {
-  children?: any;
+  children?: any
 }
 
 export default ({ children }: Props) => (
@@ -95,4 +95,4 @@ export default ({ children }: Props) => (
     <GlobalStyles />
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
   </>
-);
+)

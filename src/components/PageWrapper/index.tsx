@@ -1,10 +1,10 @@
-import HeroImage from '../HeroImage';
-import Navigation from '../Navigation';
-import Footer from '../Footer';
-import { Container } from './styles';
+import HeroImage from '../HeroImage'
+import Navigation from '../Navigation'
+import Footer from '../Footer'
+import { Container } from './styles'
 
 interface Props {
-  children?: any;
+  children?: any
 }
 
 export default ({ children }: Props) => (
@@ -14,4 +14,4 @@ export default ({ children }: Props) => (
     {children}
     <Footer />
   </Container>
-);
+)

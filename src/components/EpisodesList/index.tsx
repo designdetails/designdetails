@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
-import { PlayCircle } from '../Icons';
-import Module from '../Module';
-import LoadingSpinner from '../LoadingSpinner';
-import theme from '../../config/theme';
-import { Episode } from '../../types';
+import React from 'react'
+import Link from 'next/link'
+import { PlayCircle } from '../Icons'
+import Module from '../Module'
+import LoadingSpinner from '../LoadingSpinner'
+import theme from '../../config/theme'
+import { Episode } from '../../types'
 
 function EpisodesList({ episodes }: { episodes: Episode[] }) {
   if (!episodes || episodes.length === 0) {
@@ -22,7 +22,7 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
           later!
         </Module.Description>
       </Module>
-    );
+    )
   }
 
   if (!episodes) {
@@ -34,7 +34,7 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
         </Module.Title>
         <LoadingSpinner style={{ padding: '85px 0' }} />
       </Module>
-    );
+    )
   }
 
   return (
@@ -47,7 +47,7 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
             month: 'long',
             day: 'numeric',
           }
-        );
+        )
 
         return (
           <Link
@@ -89,10 +89,10 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
               </Module.Description>
             </Module>
           </Link>
-        );
+        )
       })}
     </>
-  );
+  )
 }
 
-export default EpisodesList;
+export default EpisodesList

@@ -1,5 +1,5 @@
-import React from 'react';
-import Router from 'next/router';
+import React from 'react'
+import Router from 'next/router'
 
 export default class extends React.Component {
   static async getInitialProps({ res }) {
@@ -7,11 +7,11 @@ export default class extends React.Component {
       res.writeHead(302, {
         Location:
           'https://podcasts.apple.com/us/podcast/design-details/id947191070',
-      });
-      res.end();
+      })
+      res.end()
     } else {
-      Router.push('/');
+      Router.push('/')
     }
-    return {};
+    return {}
   }
 }

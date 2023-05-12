@@ -1,6 +1,6 @@
-import { Grid } from './styles';
-import { Chevron } from '../Icons';
-import Link from 'next/link';
+import { Grid } from './styles'
+import { Chevron } from '../Icons'
+import Link from 'next/link'
 
 const startingEpisodes = [
   {
@@ -32,7 +32,7 @@ const startingEpisodes = [
     title:
       '314: Beauty, Vulnerability, and Doing Things That Matter (feat. Haraldur Thorleifsson)',
   },
-];
+]
 
 export default () => (
   <Grid>
@@ -43,4 +43,4 @@ export default () => (
       </Link>
     ))}
   </Grid>
-);
+)

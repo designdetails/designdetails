@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import theme from '../../config/theme';
+import styled from 'styled-components'
+import theme from '../../config/theme'
 
 export const Container = styled.div`
   background: ${theme.ui.wash};
@@ -12,7 +12,7 @@ export const Container = styled.div`
     margin: 32px auto;
     border-radius: 12px;
   }
-`;
+`
 
 export const GridWrapper = styled.div`
   display: grid;
@@ -30,7 +30,7 @@ export const GridWrapper = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 12px;
   }
-`;
+`
 
 export const EpisodesPageGrid = styled.div`
   display: grid;
@@ -50,4 +50,4 @@ export const EpisodesPageGrid = styled.div`
     grid-template-areas: 'content' 'sidebar';
     grid-gap: 12px;
   }
-`;
+`

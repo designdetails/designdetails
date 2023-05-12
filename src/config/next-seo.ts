@@ -20,4 +20,4 @@ export default {
     site: '@designdetailsfm',
     cardType: 'summary_large_image',
   },
-};
+}

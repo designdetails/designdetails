@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import { withRouter, Router } from 'next/router';
-import { Container, NavItem } from './styles';
-import { LinkExternal } from '../Icons';
+import Link from 'next/link'
+import { withRouter, Router } from 'next/router'
+import { Container, NavItem } from './styles'
+import { LinkExternal } from '../Icons'
 
 interface Props {
-  router: Router;
+  router: Router
 }
 
 const Navigation = ({ router }: Props) => (
@@ -27,6 +27,6 @@ const Navigation = ({ router }: Props) => (
       </NavItem>
     </a>
   </Container>
-);
+)
 
-export default withRouter(Navigation);
+export default withRouter(Navigation)

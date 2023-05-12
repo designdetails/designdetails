@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import theme from '../../config/theme';
-import { hexa } from '../utils';
+import styled from 'styled-components'
+import theme from '../../config/theme'
+import { hexa } from '../utils'
 
 export const Grid = styled.div`
   display: grid;
@@ -14,7 +14,7 @@ export const Grid = styled.div`
   @media (max-width: 512px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const Person = styled.div`
   border-radius: 8px;
@@ -28,14 +28,14 @@ export const Person = styled.div`
   button {
     width: 100%;
   }
-`;
+`
 
 export const Avatar = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 60px;
   margin: 0 auto;
-`;
+`
 
 export const Name = styled.h4`
   font-size: 18px;
@@ -43,7 +43,7 @@ export const Name = styled.h4`
   color: ${theme.text.primary};
   margin: 0;
   margin-top: 12px;
-`;
+`
 
 export const Role = styled.h4`
   font-size: 16px;
@@ -51,4 +51,4 @@ export const Role = styled.h4`
   color: ${theme.text.secondary};
   margin: 0;
   margin-bottom: 16px;
-`;
+`

@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import theme from '../../config/theme';
-import { tint } from '../utils';
+import styled, { css } from 'styled-components'
+import theme from '../../config/theme'
+import { tint } from '../utils'
 
 export const Grid = styled.div`
   display: grid;
@@ -20,7 +20,7 @@ export const Grid = styled.div`
   @media (max-width: 512px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const GoldenGrid = styled.div`
   display: grid;
@@ -36,7 +36,7 @@ export const GoldenGrid = styled.div`
   @media (max-width: 512px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const Microphone = styled.a`
   display: flex;
@@ -48,13 +48,13 @@ export const Microphone = styled.a`
   &:hover {
     background: ${tint('#FDE8E6', -4)};
   }
-`;
+`
 
 export const MicAvatar = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 8px;
-`;
+`
 
 export const MicName = styled.p`
   font-size: 18px;
@@ -62,7 +62,7 @@ export const MicName = styled.p`
   color: ${tint(theme.social.patreon, -50)};
   margin: 0;
   margin-top: 12px;
-`;
+`
 
 export const MicTagline = styled.p`
   font-size: 16px;
@@ -70,7 +70,7 @@ export const MicTagline = styled.p`
   color: ${tint(theme.social.patreon, -40)};
   margin: 0;
   margin-bottom: 16px;
-`;
+`
 
 export const Supporter = styled.div`
   display: flex;
@@ -82,7 +82,7 @@ export const Supporter = styled.div`
     display: flex;
     width: 100%;
   }
-`;
+`
 
 export const AvatarContainer = styled.div`
   display: flex;
@@ -101,7 +101,7 @@ export const AvatarContainer = styled.div`
     border-radius: 30px;
     border: 2px solid #fde8e6;
   }
-`;
+`
 
 export const Avatar = styled.div`
   width: 44px;
@@ -119,21 +119,21 @@ export const Avatar = styled.div`
       filter: grayscale(1);
       opacity: 0.5;
     `}
-`;
+`
 
 export const Meta = styled.div`
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const Name = styled.p`
   font-size: 16px;
   font-weight: 600;
   color: ${tint(theme.social.patreon, -50)};
-`;
+`
 
 export const Username = styled.p`
   font-size: 16px;
   font-weight: 500;
   color: ${tint(theme.social.patreon, -40)};
-`;
+`

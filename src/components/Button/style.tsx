@@ -1,34 +1,34 @@
-import styled, { css } from 'styled-components';
-import { hexa, tint } from '../utils';
-import theme from '../../config/theme';
+import styled, { css } from 'styled-components'
+import { hexa, tint } from '../utils'
+import theme from '../../config/theme'
 
 const getPadding = (size) => {
   switch (size) {
     case 'small':
-      return '8px 12px';
+      return '8px 12px'
     case 'default':
-      return '12px 16px';
+      return '12px 16px'
     case 'large':
-      return '16px 2px';
+      return '16px 2px'
     default: {
-      return '12px 16px';
+      return '12px 16px'
     }
   }
-};
+}
 
 const getFontSize = (size) => {
   switch (size) {
     case 'small':
-      return '14px';
+      return '14px'
     case 'default':
-      return '16px';
+      return '16px'
     case 'large':
-      return '18px';
+      return '18px'
     default: {
-      return '16px';
+      return '16px'
     }
   }
-};
+}
 
 const base = css`
   -webkit-appearance: none;
@@ -69,7 +69,7 @@ const base = css`
   svg {
     margin-right: 8px;
   }
-`;
+`
 
 export const Button = styled.button`
   ${base}
@@ -90,7 +90,7 @@ export const Button = styled.button`
   &:focus {
     box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${theme.ui.border};
   }
-`;
+`
 
 export const PrimaryButton = styled.button`
   ${base}
@@ -117,7 +117,7 @@ export const PrimaryButton = styled.button`
     box-shadow: 0 0 0 1px ${theme.ui.default},
       0 0 0 3px ${hexa(theme.brand.primary, 0.16)};
   }
-`;
+`
 
 export const GhostButton = styled.button`
   ${base} border: none;
@@ -136,7 +136,7 @@ export const GhostButton = styled.button`
     box-shadow: 0 0 0 1px ${theme.ui.default},
       0 0 0 3px ${hexa(theme.text.tertiary, 0.08)};
   }
-`;
+`
 
 export const OutlineButton = styled.button`
   ${base}
@@ -158,7 +158,7 @@ export const OutlineButton = styled.button`
   &:focus {
     box-shadow: 0 0 0 1px ${theme.ui.default}, 0 0 0 3px ${theme.ui.border};
   }
-`;
+`
 
 export const ButtonRow = styled.div`
   display: flex;
@@ -171,7 +171,7 @@ export const ButtonRow = styled.div`
       margin-top: 8px;
     }
   }
-`;
+`
 
 export const ButtonSegmentRow = styled.div`
   display: flex;
@@ -210,7 +210,7 @@ export const ButtonSegmentRow = styled.div`
         0 0 0 3px ${hexa(theme.brand.primary, 0.16)};
     }
   }
-`;
+`
 
 export const FacebookButton = styled.button`
   ${base}
@@ -237,7 +237,7 @@ export const FacebookButton = styled.button`
     box-shadow: 0 0 0 1px ${theme.ui.default},
       0 0 0 3px ${hexa(theme.social.facebook, 0.16)};
   }
-`;
+`
 
 export const TwitterButton = styled.button`
   ${base}
@@ -268,7 +268,7 @@ export const TwitterButton = styled.button`
   svg {
     fill: #fff;
   }
-`;
+`
 
 export const PatreonButton = styled.button`
   ${base}
@@ -295,7 +295,7 @@ export const PatreonButton = styled.button`
     box-shadow: 0 0 0 1px ${theme.ui.default},
       0 0 0 3px ${hexa(theme.social.patreon, 0.16)};
   }
-`;
+`
 
 export const GitHubButton = styled.button`
   ${base}
@@ -326,4 +326,4 @@ export const GitHubButton = styled.button`
   svg {
     fill: #fff;
   }
-`;
+`

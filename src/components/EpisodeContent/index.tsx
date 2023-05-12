@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import { NextSeo } from 'next-seo';
-import theme from '../../config/theme';
-import Module from '../Module';
-import Markdown from '../Markdown';
-import { Episode } from '../../types';
+import React from 'react'
+import styled from 'styled-components'
+import { NextSeo } from 'next-seo'
+import theme from '../../config/theme'
+import Module from '../Module'
+import Markdown from '../Markdown'
+import { Episode } from '../../types'
 
 const ModuleCustom = styled(Module)`
   @media (max-width: 768px) {
     background: none;
     padding: 0;
   }
-`;
+`
 
 export default function EpisodeContent({ episode }: { episode: Episode }) {
   if (!episode) {
@@ -21,14 +21,14 @@ export default function EpisodeContent({ episode }: { episode: Episode }) {
           Error loading episode
         </Module.Title>
       </Module>
-    );
+    )
   }
 
   const date = new Date(episode.published_at).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  });
+  })
 
   return (
     <React.Fragment>
@@ -64,5 +64,5 @@ export default function EpisodeContent({ episode }: { episode: Episode }) {
         <Markdown>{episode.long_description}</Markdown>
       </ModuleCustom>
     </React.Fragment>
-  );
+  )
 }

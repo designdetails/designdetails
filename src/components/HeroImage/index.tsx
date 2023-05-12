@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import theme from '../../config/theme';
+import styled from 'styled-components'
+import theme from '../../config/theme'
 
 export default styled.img`
   width: 100%;
@@ -15,4 +15,4 @@ export default styled.img`
   @media (max-width: 1280px) {
     min-height: 1px;
   }
-`;
+`

@@ -36,4 +36,4 @@ export default {
     hover: '0.2s ease-in',
     active: '0.2s ease-in-out',
   },
-};
+}

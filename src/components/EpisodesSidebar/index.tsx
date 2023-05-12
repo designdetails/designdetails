@@ -1,26 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
-import Module from '../../components/Module';
-import Subscribe from '../../components/Subscribe';
+import React from 'react'
+import styled from 'styled-components'
+import Module from '../../components/Module'
+import Subscribe from '../../components/Subscribe'
 import {
   PlusCircle,
   HeartCircle,
   QuestionCircle,
   TwitterCircle,
-} from '../../components/Icons';
+} from '../../components/Icons'
 import {
   PatreonButton,
   GitHubButton,
   TwitterButton,
-} from '../../components/Button';
-import theme from '../../config/theme';
+} from '../../components/Button'
+import theme from '../../config/theme'
 
 const Sidebar = styled.div`
   grid-area: sidebar;
   display: grid;
   grid-gap: 24px;
   grid-auto-rows: min-content;
-`;
+`
 
 const EpisodesSidebar = () => (
   <Sidebar>
@@ -77,6 +77,6 @@ const EpisodesSidebar = () => (
       <PatreonButton>Support us on Patreon</PatreonButton>
     </Module>
   </Sidebar>
-);
+)
 
-export default EpisodesSidebar;
+export default EpisodesSidebar

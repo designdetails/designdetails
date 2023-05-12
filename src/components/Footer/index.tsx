@@ -1,4 +1,4 @@
-import { Container, Text } from './styles';
+import { Container, Text } from './styles'
 function Footer() {
   return (
     <Container>
@@ -14,6 +14,6 @@ function Footer() {
         </a>
       </Text>
     </Container>
-  );
+  )
 }
-export default Footer;
+export default Footer

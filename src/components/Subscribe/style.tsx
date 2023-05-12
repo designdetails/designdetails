@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import theme from '../../config/theme';
+import styled from 'styled-components'
+import theme from '../../config/theme'
 
 export const Grid = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 8px;
-`;
+`
 
 export const Option = styled.div`
   display: grid;
@@ -26,14 +26,14 @@ export const Option = styled.div`
     background: ${theme.ui.border};
     transform: translateY(1px);
   }
-`;
+`
 
 export const Avatar = styled.img`
   width: 32px;
   height: 32px;
   border-radius: 10px;
   background-color: ${theme.ui.default};
-`;
+`
 
 export const Label = styled.p`
   font-size: 16px;
@@ -41,6 +41,6 @@ export const Label = styled.p`
   color: ${theme.text.secondary};
   align-items: center;
   display: flex;
-`;
+`
 
-export const Arrow = styled.span``;
+export const Arrow = styled.span``

@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import theme from '../../config/theme';
-import { hexa, tint } from '../utils';
+import styled, { css } from 'styled-components'
+import theme from '../../config/theme'
+import { hexa, tint } from '../utils'
 
 export const Container = styled.div`
   background: ${(props) =>
@@ -24,7 +24,7 @@ export const Container = styled.div`
       }
     }
   `}
-`;
+`
 
 export const Title = styled.h3`
   font-size: 20px;
@@ -44,13 +44,13 @@ export const Title = styled.h3`
     position: relative;
     top: 4px;
   }
-`;
+`
 
 export const LargeTitle = styled(Title)`
   font-size: 32px;
   line-height: 1.2;
   grid-template-columns: 1fr;
-`;
+`
 
 export const Description = styled.p`
   font-size: 16px;
@@ -62,7 +62,7 @@ export const Description = styled.p`
   margin-bottom: 16px;
   line-height: 1.4;
   word-break: break-word;
-`;
+`
 
 export const Date = styled.p`
   font-size: 14px;
@@ -76,4 +76,4 @@ export const Date = styled.p`
   margin-bottom: 12px;
   line-height: 1.4;
   word-break: break-word;
-`;
+`

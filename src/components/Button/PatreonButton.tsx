@@ -1,12 +1,12 @@
-import * as Styled from './style';
-import { Patreon } from '../Icons';
+import * as Styled from './style'
+import { Patreon } from '../Icons'
 
 interface Props {
-  children: React.ReactChildren | string;
+  children: React.ReactChildren | string
 }
 
 export default function PatreonButton(props: Props) {
-  const { children } = props;
+  const { children } = props
   return (
     <a
       href="https://patreon.com/designdetails"
@@ -19,5 +19,5 @@ export default function PatreonButton(props: Props) {
         {children}
       </Styled.PatreonButton>
     </a>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import Router from 'next/router';
+import React from 'react'
+import Router from 'next/router'
 
 export default class extends React.Component {
   static async getInitialProps({ res }) {
@@ -7,11 +7,11 @@ export default class extends React.Component {
       res.writeHead(302, {
         Location:
           'https://zeplin.io/?utm_campaign=partner_designdetailsfm_podcast-february-2022',
-      });
-      res.end();
+      })
+      res.end()
     } else {
-      Router.push('/');
+      Router.push('/')
     }
-    return {};
+    return {}
   }
 }

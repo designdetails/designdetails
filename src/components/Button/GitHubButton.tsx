@@ -1,12 +1,12 @@
-import * as Styled from './style';
-import { GitHub } from '../Icons';
+import * as Styled from './style'
+import { GitHub } from '../Icons'
 
 interface Props {
-  children: React.ReactChildren | string;
+  children: React.ReactChildren | string
 }
 
 export default function GitHubButton(props: Props) {
-  const { children } = props;
+  const { children } = props
   return (
     <a
       href="https://github.com/specfm/design-details/issues/new"
@@ -19,5 +19,5 @@ export default function GitHubButton(props: Props) {
         {children}
       </Styled.GitHubButton>
     </a>
-  );
+  )
 }

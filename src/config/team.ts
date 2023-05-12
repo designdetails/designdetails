@@ -13,4 +13,4 @@ export default [
     profilePhotoUrl: '/static/img/team/marshallbock.png',
     coverPhotoUrl: '/static/img/team/marshallbock_cover.jpeg',
   },
-];
+]

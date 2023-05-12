@@ -1,10 +1,10 @@
-import PageWrapper from '../components/PageWrapper';
-import Module from '../components/Module';
-import Subscribe from '../components/Subscribe';
-import Welcome from '../components/Welcome';
-import Team from '../components/Team';
-import LatestEpisode from '../components/LatestEpisode';
-import { getLatestEpisode } from '../data';
+import PageWrapper from '../components/PageWrapper'
+import Module from '../components/Module'
+import Subscribe from '../components/Subscribe'
+import Welcome from '../components/Welcome'
+import Team from '../components/Team'
+import LatestEpisode from '../components/LatestEpisode'
+import { getLatestEpisode } from '../data'
 import {
   PlusCircle,
   HeartCircle,
@@ -12,15 +12,15 @@ import {
   TwitterCircle,
   InfoCircle,
   SearchCircle,
-} from '../components/Icons';
+} from '../components/Icons'
 import {
   PatreonButton,
   GitHubButton,
   TwitterButton,
-} from '../components/Button';
-import theme from '../config/theme';
-import { GridWrapper } from '../components/PageWrapper/styles';
-import { Episode } from '../types';
+} from '../components/Button'
+import theme from '../config/theme'
+import { GridWrapper } from '../components/PageWrapper/styles'
+import { Episode } from '../types'
 
 export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
   return (
@@ -118,10 +118,10 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
         </Module>
       </GridWrapper>
     </PageWrapper>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const latestEpisode = await getLatestEpisode();
-  return { props: { latestEpisode } };
+  const latestEpisode = await getLatestEpisode()
+  return { props: { latestEpisode } }
 }

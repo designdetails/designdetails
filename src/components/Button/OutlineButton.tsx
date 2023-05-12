@@ -1,10 +1,10 @@
-import * as Styled from './style';
+import * as Styled from './style'
 
 interface Props {
-  children: React.ReactChildren;
+  children: React.ReactChildren
 }
 
 export default function OutlineButton(props: Props) {
-  const { children } = props;
-  return <Styled.OutlineButton {...props}>{children}</Styled.OutlineButton>;
+  const { children } = props
+  return <Styled.OutlineButton {...props}>{children}</Styled.OutlineButton>
 }

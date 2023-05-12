@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { hexa, tint } from '../utils';
-import theme from '../../config/theme';
+import styled from 'styled-components'
+import { hexa, tint } from '../utils'
+import theme from '../../config/theme'
 
 export const Grid = styled.div`
   display: grid;
@@ -47,4 +47,4 @@ export const Grid = styled.div`
       }
     }
   }
-`;
+`

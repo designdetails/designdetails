@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
-import Module from '../Module';
-import { PlayCircle } from '../Icons';
-import theme from '../../config/theme';
-import LoadingSpinner from '../LoadingSpinner';
-import { Episode } from '../../types';
+import React from 'react'
+import Link from 'next/link'
+import Module from '../Module'
+import { PlayCircle } from '../Icons'
+import theme from '../../config/theme'
+import LoadingSpinner from '../LoadingSpinner'
+import { Episode } from '../../types'
 
 function LatestEpisode({ episode }: { episode: Episode }) {
   if (!episode) {
@@ -16,7 +16,7 @@ function LatestEpisode({ episode }: { episode: Episode }) {
         </Module.Title>
         <LoadingSpinner style={{ padding: '85px 0' }} />
       </Module>
-    );
+    )
   }
 
   return (
@@ -48,7 +48,7 @@ function LatestEpisode({ episode }: { episode: Episode }) {
         </Module.Description>
       </Link>
     </Module>
-  );
+  )
 }
 
-export default LatestEpisode;
+export default LatestEpisode

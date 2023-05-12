@@ -1,4 +1,4 @@
-import theme from './theme';
+import theme from './theme'
 
 export default {
   id: 1034,
@@ -23,4 +23,4 @@ export default {
     text: theme.brand.primary,
     button: theme.brand.primary,
   },
-};
+}

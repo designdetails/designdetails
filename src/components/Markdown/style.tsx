@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import ReactMarkdown from 'react-markdown';
-import { tint } from '../utils';
+import styled, { css } from 'styled-components'
+import ReactMarkdown from 'react-markdown'
+import { tint } from '../utils'
 
 const Content = css`
   h1 {
@@ -103,10 +103,10 @@ const Content = css`
   hr {
     display: none;
   }
-`;
+`
 
 export const Notes = styled(ReactMarkdown)`
   ${Content}
   max-width: 100%;
   word-break: break-word;
-`;
+`

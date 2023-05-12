@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import theme from '../../config/theme';
+import styled from 'styled-components'
+import theme from '../../config/theme'
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
     border-left: 0;
     border-right: 0;
   }
-`;
+`
 export const NavItem = styled.div`
   display: flex;
   align-items: center;
@@ -52,4 +52,4 @@ export const NavItem = styled.div`
       fill: ${theme.icon.secondary};
     }
   }
-`;
+`

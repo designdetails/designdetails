@@ -1,10 +1,10 @@
-import * as Styled from './style';
+import * as Styled from './style'
 
 interface Props {
-  children: React.ReactChildren;
+  children: React.ReactChildren
 }
 
 export default function Button(props: Props) {
-  const { children } = props;
-  return <Styled.Button {...props}>{children}</Styled.Button>;
+  const { children } = props
+  return <Styled.Button {...props}>{children}</Styled.Button>
 }

@@ -1,12 +1,11 @@
-
 name: Tests
 on:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
 jobs:
   cypress:
     runs-on: ubuntu-latest
