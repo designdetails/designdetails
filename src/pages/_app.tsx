@@ -1,33 +1,40 @@
-import * as React from 'react';
-import App from 'next/app';
-import { trackPageview, load, setSite } from 'fathom-client';
-import Router from 'next/router';
-import Providers from '../components/Providers';
+import * as React from "react";
+import App from "next/app";
+import * as Fathom from "fathom-client";
+import Providers from "../components/Providers";
+import { useRouter } from "next/router";
 
-Router.events.on('routeChangeComplete', () => {
-  trackPageview();
-});
-
-function FathomProvider(props) {
+function FathomProvider() {
+  const router = useRouter();
   React.useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      load('ZSRPOEMC');
-      setSite('ZSRPOEMC');
-      trackPageview();
+    Fathom.load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
+      includedDomains: ["designdetails.fm"],
+      excludedDomains: ["vercel.app,localhost"],
+      spa: "auto",
+    });
+
+    function onRouteChangeComplete() {
+      Fathom.trackPageview();
     }
+
+    router.events.on("routeChangeComplete", onRouteChangeComplete);
+
+    return () => {
+      router.events.off("routeChangeComplete", onRouteChangeComplete);
+    };
   }, []);
-  return <div {...props} />;
+
+  return null;
 }
 
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <FathomProvider>
-        <Providers>
-          <Component {...pageProps} />
-        </Providers>
-      </FathomProvider>
+      <Providers>
+        <FathomProvider />
+        <Component {...pageProps} />
+      </Providers>
     );
   }
 }
