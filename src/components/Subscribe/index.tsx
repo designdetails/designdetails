@@ -9,7 +9,6 @@ export default function SubscribeContainer() {
           href={podcast.iTunesUrl}
           target="_blank"
           rel="noopener noreferrer"
-          data-cy="subscription-apple-podcasts"
         >
           <Option>
             <Avatar
@@ -26,7 +25,6 @@ export default function SubscribeContainer() {
           href={podcast.spotifyUrl}
           target="_blank"
           rel="noopener noreferrer"
-          data-cy="subscription-spotify"
         >
           <Option>
             <Avatar
@@ -43,7 +41,6 @@ export default function SubscribeContainer() {
           href={podcast.overcastUrl}
           target="_blank"
           rel="noopener noreferrer"
-          data-cy="subscription-overcast"
         >
           <Option>
             <Avatar
@@ -60,7 +57,6 @@ export default function SubscribeContainer() {
           href={podcast.pocketCastsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          data-cy="subscription-pocketcasts"
         >
           <Option>
             <Avatar

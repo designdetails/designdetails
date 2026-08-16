@@ -12,7 +12,6 @@ export const GoldenMicrophones = () => (
   <GoldenGrid>
     {golden.map((microphone) => (
       <Microphone
-        data-cy={`golden-${microphone.name}`}
         href={microphone.url}
         target="_blank"
         rel="noopener noreferrer"

@@ -54,7 +54,6 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
             key={episode.legacy_id || episode.token}
             href={`/episodes/[id]`}
             as={`/episodes/${episode.legacy_id || episode.token}`}
-            data-cy="episode-list-item"
           >
             <Module tint={theme.brand.primary} isLink>
               <Module.Date tint={theme.brand.primary}>{date}</Module.Date>
@@ -76,7 +75,6 @@ function EpisodesList({ episodes }: { episodes: Episode[] }) {
                   seamless
                   src={`https://player.simplecast.com/${episode.id}?dark=false`}
                   width="100%"
-                  data-cy="latest-episode"
                   style={{ marginBottom: '16px' }}
                 />
               )}
