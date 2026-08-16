@@ -1,5 +1,9 @@
-import { createHmac, randomUUID } from 'crypto'
+import { createHmac } from 'crypto'
 import type { NextApiRequest, NextApiResponse } from 'next'
+
+function uniqueId() {
+  return `${Date.now().toString(16)}-${Math.random().toString(16).slice(2)}`
+}
 
 function headerValue(req: NextApiRequest, name: string) {
   const raw = req.headers[name]
@@ -70,7 +74,7 @@ export default async function handler(
       speed: 'signal',
       summary: `Someone visited ${title}`,
       visibility: 'public',
-      idempotency_key: `design-details:visit:${randomUUID()}`,
+      idempotency_key: `design-details:visit:${uniqueId()}`,
       subject: { kind: 'page', label: title, href: path },
       meta: { path, title, ...geoFromHeaders(req) },
     }
@@ -80,15 +84,26 @@ export default async function handler(
     const url =
       process.env.ACTIVITY_INGEST_URL || 'https://brianlovin.com/api/activity'
 
-    await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-activity-signature': signature,
-      },
-      body: raw,
-      signal: AbortSignal.timeout(800),
-    }).catch(() => {})
+    const controller = new AbortController()
+    const timer = setTimeout(function () {
+      controller.abort()
+    }, 800)
+
+    try {
+      await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-activity-signature': signature,
+        },
+        body: raw,
+        signal: controller.signal,
+      })
+    } catch {
+      // fail open
+    } finally {
+      clearTimeout(timer)
+    }
 
     return res.status(200).json({ ok: true })
   } catch {
