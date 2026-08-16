@@ -13,7 +13,7 @@ const Content = styled.div`
   grid-auto-rows: min-content;
 `
 
-function Episode({ episode }: { episode: EpisodeType }) {
+function Episode({ episode }: { episode: EpisodeType | null }) {
   return (
     <PageWrapper>
       <EpisodesPageGrid>

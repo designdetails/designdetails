@@ -25,5 +25,19 @@ describe('Episodes', () => {
   })
 })
 
+describe('Episode page', () => {
+  it('should resolve a legacy Simplecast id and load the player', () => {
+    cy.visit('/episodes/306429')
+    cy.contains('Career Progression for Product Designers').should('be.visible')
+    cy.contains('Error loading episode').should('not.exist')
+    cy.contains('Invalid Date').should('not.exist')
+    cy.get('[data-cy="latest-episode"]')
+      .should('be.visible')
+      .and('have.attr', 'src')
+      .and('include', 'player.simplecast.com/')
+      .and('not.include', 'undefined')
+  })
+})
+
 // prevent typescript isolated modules warning
 export {}
