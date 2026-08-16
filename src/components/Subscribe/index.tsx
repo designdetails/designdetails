@@ -5,11 +5,7 @@ export default function SubscribeContainer() {
   return (
     <Grid>
       {podcast.iTunesUrl && (
-        <a
-          href={podcast.iTunesUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={podcast.iTunesUrl} target="_blank" rel="noopener noreferrer">
           <Option>
             <Avatar
               src="/static/img/subscription-icons/apple-podcasts.png"
@@ -21,11 +17,7 @@ export default function SubscribeContainer() {
       )}
 
       {podcast.spotifyUrl && (
-        <a
-          href={podcast.spotifyUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={podcast.spotifyUrl} target="_blank" rel="noopener noreferrer">
           <Option>
             <Avatar
               src="/static/img/subscription-icons/spotify.png"
@@ -37,11 +29,7 @@ export default function SubscribeContainer() {
       )}
 
       {podcast.overcastUrl && (
-        <a
-          href={podcast.overcastUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={podcast.overcastUrl} target="_blank" rel="noopener noreferrer">
           <Option>
             <Avatar
               src="/static/img/subscription-icons/overcast.png"
