@@ -35,18 +35,29 @@ function pingVisit(path: string) {
 
 function ActivityVisit() {
   const router = useRouter()
+  const lastPath = React.useRef<string | null>(null)
+
   React.useEffect(() => {
+    let cancelled = false
+
     function onRoute(url?: string) {
+      if (cancelled) return
       const path = (url || router.asPath || '/').split('?')[0]
+      if (lastPath.current === path) return
+      lastPath.current = path
       pingVisit(path)
     }
 
-    onRoute()
+    // Defer the mount ping so Strict Mode's immediate remount can
+    // cancel the first invoke before it fires.
+    const timer = window.setTimeout(onRoute, 0)
     router.events.on('routeChangeComplete', onRoute)
     return () => {
+      cancelled = true
+      window.clearTimeout(timer)
       router.events.off('routeChangeComplete', onRoute)
     }
-  }, [router])
+  }, [router.asPath])
 
   return null
 }
