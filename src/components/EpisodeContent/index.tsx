@@ -13,8 +13,12 @@ const ModuleCustom = styled(Module)`
   }
 `
 
-export default function EpisodeContent({ episode }: { episode: Episode }) {
-  if (!episode) {
+export default function EpisodeContent({
+  episode,
+}: {
+  episode: Episode | null
+}) {
+  if (!episode || !episode.id) {
     return (
       <Module tint={theme.brand.primary}>
         <Module.Title tint={theme.brand.primary}>
@@ -36,7 +40,9 @@ export default function EpisodeContent({ episode }: { episode: Episode }) {
         title={episode.title}
         description={episode.description}
         openGraph={{
-          url: `https://designdetails.fm/episodes/${episode.id}`,
+          url: `https://designdetails.fm/episodes/${
+            episode.token || episode.legacy_id || episode.id
+          }`,
           title: episode.title,
           description: episode.description,
         }}
@@ -60,7 +66,7 @@ export default function EpisodeContent({ episode }: { episode: Episode }) {
 
         <Module.Date tint={theme.brand.primary}>{date}</Module.Date>
 
-        <Markdown>{episode.long_description}</Markdown>
+        <Markdown>{episode.long_description || ''}</Markdown>
       </ModuleCustom>
     </React.Fragment>
   )
