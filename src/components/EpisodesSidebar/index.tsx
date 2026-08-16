@@ -4,15 +4,10 @@ import Module from '../../components/Module'
 import Subscribe from '../../components/Subscribe'
 import {
   PlusCircle,
-  HeartCircle,
   QuestionCircle,
   TwitterCircle,
 } from '../../components/Icons'
-import {
-  PatreonButton,
-  GitHubButton,
-  TwitterButton,
-} from '../../components/Button'
+import { GitHubButton, TwitterButton } from '../../components/Button'
 import theme from '../../config/theme'
 
 const Sidebar = styled.div`
@@ -62,19 +57,6 @@ const EpisodesSidebar = () => (
       >
         <TwitterButton>@designdetailsfm</TwitterButton>
       </a>
-    </Module>
-
-    <Module tint={theme.social.patreon}>
-      <Module.Title tint={theme.social.patreon}>
-        <HeartCircle />
-        Listener supported
-      </Module.Title>
-      <Module.Description tint={theme.social.patreon}>
-        This show is possible because of the generosity of our listeners. If
-        you’ve found our podcast useful or entertaining, please consider
-        supporting us directly by becoming a patron.
-      </Module.Description>
-      <PatreonButton>Support us on Patreon</PatreonButton>
     </Module>
   </Sidebar>
 )

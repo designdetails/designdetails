@@ -7,17 +7,12 @@ import LatestEpisode from '../components/LatestEpisode'
 import { getLatestEpisode } from '../data'
 import {
   PlusCircle,
-  HeartCircle,
   QuestionCircle,
   TwitterCircle,
   InfoCircle,
   SearchCircle,
 } from '../components/Icons'
-import {
-  PatreonButton,
-  GitHubButton,
-  TwitterButton,
-} from '../components/Button'
+import { GitHubButton, TwitterButton } from '../components/Button'
 import theme from '../config/theme'
 import { GridWrapper } from '../components/PageWrapper/styles'
 import { Episode } from '../types'
@@ -102,19 +97,6 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
           </Module.Description>
 
           <Team />
-        </Module>
-
-        <Module tint={theme.social.patreon} col={'1 / span 6'}>
-          <Module.Title tint={theme.social.patreon}>
-            <HeartCircle />
-            Listener supported
-          </Module.Title>
-          <Module.Description tint={theme.social.patreon}>
-            This show is possible because of the generosity of our listeners. If
-            you’ve found our podcast useful or entertaining, please consider
-            supporting us directly by becoming a patron.
-          </Module.Description>
-          <PatreonButton>Support us on Patreon</PatreonButton>
         </Module>
       </GridWrapper>
     </PageWrapper>
