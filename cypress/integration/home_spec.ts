@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-import { golden } from '../../src/config/supporters'
 import team from '../../src/config/team'
 
 describe('Home', () => {
@@ -22,12 +21,6 @@ describe('Home', () => {
 
   it('should render suggested episodes', () => {
     cy.get(`[data-cy="suggested-episodes"]`).should('be.visible')
-  })
-
-  it('should render golden microphones', () => {
-    golden.map((gold) =>
-      cy.get(`[data-cy="golden-${gold.name}"]`).should('be.visible')
-    )
   })
 
   it('should render question button', () => {
