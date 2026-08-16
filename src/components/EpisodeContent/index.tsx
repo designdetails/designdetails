@@ -59,7 +59,6 @@ export default function EpisodeContent({
           seamless
           src={`https://player.simplecast.com/${episode.id}?dark=false`}
           width="100%"
-          data-cy="latest-episode"
           style={{ margin: '0 0 32px' }}
         />
 

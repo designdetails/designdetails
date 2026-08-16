@@ -31,11 +31,7 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
           <Subscribe />
         </Module>
 
-        <Module
-          data-cy="suggested-episodes"
-          tint={theme.brand.primary}
-          col={'3 / span 4'}
-        >
+        <Module tint={theme.brand.primary} col={'3 / span 4'}>
           <Module.Title tint={theme.brand.primary}>
             <SearchCircle />
             Where to begin?
@@ -48,7 +44,7 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
           <Welcome />
         </Module>
 
-        <Module data-cy="question-button" col={'1 / span 3'}>
+        <Module col={'1 / span 3'}>
           <Module.Title>
             <QuestionCircle />
             Have a question?
@@ -61,11 +57,7 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
           <GitHubButton>Ask us a question</GitHubButton>
         </Module>
 
-        <Module
-          data-cy="follow-button"
-          tint={theme.social.twitter}
-          col={'4 / span 3'}
-        >
+        <Module tint={theme.social.twitter} col={'4 / span 3'}>
           <Module.Title tint={theme.social.twitter}>
             <TwitterCircle />
             Follow along
@@ -84,7 +76,7 @@ export default function Home({ latestEpisode }: { latestEpisode: Episode }) {
           </a>
         </Module>
 
-        <Module data-cy="team" col={'1 / span 6'}>
+        <Module col={'1 / span 6'}>
           <Module.Title>
             <InfoCircle />
             About us

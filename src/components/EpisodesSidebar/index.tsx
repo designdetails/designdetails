@@ -27,7 +27,7 @@ const EpisodesSidebar = () => (
       <Subscribe />
     </Module>
 
-    <Module data-cy="question-button">
+    <Module>
       <Module.Title>
         <QuestionCircle />
         Have a question?
@@ -40,7 +40,7 @@ const EpisodesSidebar = () => (
       <GitHubButton>Ask us a question</GitHubButton>
     </Module>
 
-    <Module data-cy="follow-button" tint={theme.social.twitter}>
+    <Module tint={theme.social.twitter}>
       <Module.Title tint={theme.social.twitter}>
         <TwitterCircle />
         Follow along
