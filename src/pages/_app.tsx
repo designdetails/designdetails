@@ -4,6 +4,53 @@ import * as Fathom from 'fathom-client'
 import Providers from '../components/Providers'
 import { useRouter } from 'next/router'
 
+function shouldPing(path: string) {
+  if (path === '/') return true
+  return /^\/episodes\/[^/]+\/?$/.test(path)
+}
+
+function visitTitle(path: string) {
+  if (path === '/') return 'Design Details'
+  const fromDoc = typeof document !== 'undefined' ? document.title : ''
+  const cleaned = fromDoc.replace(/\s*[·|\-–—].*$/, '').trim()
+  return cleaned || 'an episode'
+}
+
+function pingVisit(path: string) {
+  if (typeof window !== 'undefined') {
+    const host = window.location.hostname
+    if (host === 'localhost' || host === '127.0.0.1') return
+  }
+  if (!shouldPing(path)) return
+  void fetch('/api/activity', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      path,
+      title: visitTitle(path),
+    }),
+    signal: AbortSignal.timeout(800),
+  }).catch(() => {})
+}
+
+function ActivityVisit() {
+  const router = useRouter()
+  React.useEffect(() => {
+    function onRoute(url?: string) {
+      const path = (url || router.asPath || '/').split('?')[0]
+      pingVisit(path)
+    }
+
+    onRoute()
+    router.events.on('routeChangeComplete', onRoute)
+    return () => {
+      router.events.off('routeChangeComplete', onRoute)
+    }
+  }, [router])
+
+  return null
+}
+
 function FathomProvider() {
   const router = useRouter()
   React.useEffect(() => {
@@ -33,6 +80,7 @@ class MyApp extends App {
     return (
       <Providers>
         <FathomProvider />
+        <ActivityVisit />
         <Component {...pageProps} />
       </Providers>
     )
