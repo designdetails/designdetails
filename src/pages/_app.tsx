@@ -4,8 +4,6 @@ import * as Fathom from 'fathom-client'
 import Providers from '../components/Providers'
 import { useRouter } from 'next/router'
 
-const ACTIVITY_URL = 'https://brianlovin.com/api/activity/visit'
-
 function shouldPing(path: string) {
   if (path === '/') return true
   return /^\/episodes\/[^/]+\/?$/.test(path)
@@ -24,12 +22,11 @@ function pingVisit(path: string) {
     if (host === 'localhost' || host === '127.0.0.1') return
   }
   if (!shouldPing(path)) return
-  void fetch(ACTIVITY_URL, {
+  void fetch('/api/activity', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       path,
-      source: 'design-details',
       title: visitTitle(path),
     }),
     signal: AbortSignal.timeout(800),
