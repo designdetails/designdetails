@@ -17,6 +17,11 @@ function headerValue(req: NextApiRequest, name: string) {
   }
 }
 
+function parseCoord(value: string, min: number, max: number) {
+  const n = Number.parseFloat(value)
+  return Number.isFinite(n) && n >= min && n <= max ? n : undefined
+}
+
 function geoFromHeaders(req: NextApiRequest) {
   const country =
     headerValue(req, 'x-vercel-ip-country') || headerValue(req, 'cf-ipcountry')
@@ -25,10 +30,30 @@ function geoFromHeaders(req: NextApiRequest) {
     headerValue(req, 'cf-region')
   const city =
     headerValue(req, 'x-vercel-ip-city') || headerValue(req, 'cf-ipcity')
-  const geo: { country?: string; region?: string; city?: string } = {}
+  const latitude = parseCoord(
+    headerValue(req, 'x-vercel-ip-latitude') ||
+      headerValue(req, 'cf-iplatitude'),
+    -90,
+    90
+  )
+  const longitude = parseCoord(
+    headerValue(req, 'x-vercel-ip-longitude') ||
+      headerValue(req, 'cf-iplongitude'),
+    -180,
+    180
+  )
+  const geo: {
+    country?: string
+    region?: string
+    city?: string
+    latitude?: number
+    longitude?: number
+  } = {}
   if (country) geo.country = country
   if (region) geo.region = region
   if (city) geo.city = city
+  if (latitude !== undefined) geo.latitude = latitude
+  if (longitude !== undefined) geo.longitude = longitude
   return geo
 }
 
