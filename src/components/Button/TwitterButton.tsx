@@ -2,7 +2,7 @@ import * as Styled from './style'
 import { Twitter } from '../Icons'
 
 interface Props {
-  children: React.ReactChildren | string
+  children: React.ReactNode | string
 }
 
 export default function TwitterButton(props: Props) {

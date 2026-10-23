@@ -2,7 +2,7 @@ import * as Styled from './style'
 import { Facebook } from '../Icons'
 
 interface Props {
-  children: React.ReactChildren
+  children: React.ReactNode
 }
 
 export default function FacebookButton(props: Props) {

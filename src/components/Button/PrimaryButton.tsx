@@ -1,7 +1,7 @@
 import * as Styled from './style'
 
 interface Props {
-  children: React.ReactChildren
+  children: React.ReactNode
 }
 
 export default function PrimaryButton(props: Props) {
